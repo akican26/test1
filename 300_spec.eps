@@ -1,0 +1,962 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 14 5 267 238
+%%Creator: IgorPro
+%%Title: Graph0
+%%Creation Date: 2019”N4ŒŽ19“ú 12:33
+%%DocumentFonts:  (atend) 
+%%LanguageLevel: 2
+%%EndComments
+%%BeginProlog
+%%EndProlog
+%%BeginResource: procset IgorProcset 1.0 0
+/IgorSave save def		% Level 2 procs
+
+200 dict begin
+
+0 setgray 0 setlinecap
+1 setlinewidth 0 setlinejoin
+1 setmiterlimit [] 0 setdash
+
+/aw 0 def 	/ah 0 def
+/x0 0 def	/y0 0 def	/x1 0 def	/y1 0 def
+/rx0 0 def	/ry0 0 def	/rx1 0 def	/ry1 0 def
+/tmp0 0 def /tmp1 0 def
+/packedRed 0 def /packedGreen 0 def /packedBlue 0 def
+/x 0 def	/y 0 def	/w 0 def	/c 0 string def
+
+/rbak 1 def	/gbak 1 def	/bbak 1 def
+/rfor 0 def	/gfor 0 def	/bfor 0 def
+
+/bdef{bind def}bind def
+/ldef{load def}bdef
+/xdef{exch def}bdef
+
+/useCMYK 0 def
+/useRound false def
+
+
+/Mysetrgbcolor{	% r g b
+	useCMYK 1 eq
+	{
+		3 {1 exch sub 3 -1 roll} repeat			% c=1-r, m= 1-g, y= 1-b
+		dup
+		2 index 2 copy gt {exch} if pop
+		3 index 2 copy gt {exch} if pop
+%		2 div									% k= (min of c,m,y)/2
+		4 1 roll
+		3 {3 index sub 3 -1 roll} repeat		% sub k from c,m & y
+		4 -1 roll
+		setcmykcolor
+	}
+	{ setrgbcolor }
+	ifelse
+}bdef
+
+%******** BEGIN NEW PAT STUFF ********** [
+/transparentPats 0 def
+
+/l {lineto} bdef
+/m {moveto} bdef
+/PatCom{pop transparentPats 0 eq {UseBack 0 0 8 8 rectfill} if UseFore}bdef
+
+/SpecialPatProcs
+<<
+	/p0102040810204080 {PatCom 6.5 0 m 0 6.5 l 0 7.5 l 7.5 0 l 6.5 0 l 8 6.5 m 6.5 8 l 7.5 8 l 8 7.5 l 8 6.5 l fill}bind
+	/p8040201008040201 {PatCom 0 0.5 m 7.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 0.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l 7.5 0 m 8 0.5 l 8 0 l 7.5 0 l fill}bind
+	/p03060C183060C081 {PatCom 5.5 0 m 0 5.5 l 0 7.5 l 7.5 0 l 5.5 0 l 8 5.5 m 5.5 8 l 7.5 8 l 8 7.5 l 8 5.5 l fill}bind
+	/pC06030180C060381 {PatCom 0 0 m 0 1.5 l 6.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l 6.5 0 m 8 1.5 l 8 0 l 6.5 0 l fill}bind
+	/p83070E1C3870E0C1 {PatCom 5.5 0 m 0 5.5 l 0 8 l 0.5 8 l 8 0.5 l 8 0 l 5.5 0 l 0 0 m 0 0.5 l 0.5 0 l 0 0 l 8 5.5 m 5.5 8 l 8 8 l 8 5.5 l fill}bind
+	/pC1E070381C0E0783 {PatCom 0 0 m 0 1.5 l 6.5 8 l 8 8 l 8 6.5 l 1.5 0 l 0 0 l 0 6.5 m 0 8 l 1.5 8 l 0 6.5 l 6.5 0 m 8 1.5 l 8 0 l 6.5 0 l fill}bind
+	/p1122448811224488 {PatCom 2.5 0 m 0 2.5 l 0 3.5 l 3.5 0 l 2.5 0 l 6.5 0 m 0 6.5 l 0 7.5 l 7.5 0 l 6.5 0 l 8 2.5 m 2.5 8 l 3.5 8 l 8 3.5 l 8 2.5 l 8 6.5 m 6.5 8 l 7.5 8 l 8 7.5 l 8 6.5 l fill}bind
+	/p8844221188442211 {PatCom 7.5 0 m 8 0.5 l 8 0 l 7.5 0 l 3.5 0 m 8 4.5 l 8 3.5 l 4.5 0 l 3.5 0 l 0 0 m 0 0.5 l 7.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 3.5 m 0 4.5 l 3.5 8 l 4.5 8 l 0 3.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l fill}bind
+	
+	/p3366CC993366CC99 {PatCom 1.5 0 m 0 1.5 l 0 3.5 l 3.5 0 l 1.5 0 l 5.5 0 m 0 5.5 l 0 7.5 l 7.5 0 l 5.5 0 l 8 1.5 m 1.5 8 l 3.5 8 l 8 3.5 l 8 1.5 l 8 5.5 m 5.5 8 l 7.5 8 l 8 7.5 l 8 5.5 l fill}bind
+	/pCC663399CC663399 {PatCom 6.5 0 m 8 1.5 l 8 0 l 6.5 0 l 2.5 0 m 8 5.5 l 8 3.5 l 4.5 0 l 2.5 0 l 0 0 m 0 1.5 l 6.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 3.5 m 0 5.5 l 2.5 8 l 4.5 8 l 0 3.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l fill}bind
+	/p77EEDDBB77EEDDBB {PatCom 0.5 0 m 0 0.5 l 0 3.5 l 3.5 0 l 0.5 0 l 4.5 0 m 0 4.5 l 0 7.5 l 7.5 0 l 4.5 0 l 8 0.5 m 0.5 8 l 3.5 8 l 8 3.5 l 8 0.5 l 8 4.5 m 4.5 8 l 7.5 8 l 8 7.5 l 8 4.5 l fill}bind
+	/pEE77BBDDEE77BBDD {PatCom 0 0 m 0 2.5 l 5.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 1.5 0 m 8 6.5 l 8 3.5 l 4.5 0 l 1.5 0 l 5.5 0 m 8 2.5 l 8 0 l 5.5 0 l 0 3.5 m 0 6.5 l 1.5 8 l 4.5 8 l 0 3.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l fill}bind
+	/pE4C993274E9C3972 {PatCom 0 0 m 0 2.5 l 2.5 0 l 0 0 l 4.5 0 m 0 4.5 l 0 5.5 l 5.5 0 l 4.5 0 l 7.5 0 m 0 7.5 l 0 8 l 2.5 8 l 8 2.5 l 8 0 l 7.5 0 l 8 4.5 m 4.5 8 l 5.5 8 l 8 5.5 l 8 4.5 l 8 7.5 m 7.5 8 l 8 8 l 8 7.5 l fill}bind
+	/p2793C9E472399C4E {PatCom 5.5 0 m 8 2.5 l 8 1.5 l 6.5 0 l 5.5 0 l 0.5 0 m 8 7.5 l 8 4.5 l 3.5 0 l 0.5 0 l 0 1.5 m 0 2.5 l 5.5 8 l 6.5 8 l 0 1.5 l 0 4.5 m 0 7.5 l 0.5 8 l 3.5 8 l 0 4.5 l fill}bind
+>>
+def
+
+/Pat8Image2{			% patternstring -- 
+	transparentPats 0 eq {UseBack 0 0 8 8 rectfill} if
+	UseFore
+	0 exch									% y patstr
+	{
+		0 exch								% y x value
+		128 8{								% y x value bitmask
+			dup 2 index and 0 eq not{		% y x bitmask value boolval
+				2 index 4 index 1 1 rectfill
+			}if
+			-1 bitshift 3 2 roll 
+			1 add
+			3 1 roll
+		}repeat
+		pop pop pop
+		1 add
+	}forall
+	pop
+}bdef
+
+/PatstrToName{
+	(p0000000000000000)	17 string copy	% apparantly literal strings are global objects
+	exch 1 exch
+	{
+		16 (00) cvrs dup length 
+		3 index 3 index 3 -1 roll 2 exch sub add
+		3 -1 roll putinterval
+		2 add
+	}forall
+	pop
+	cvn
+}bdef
+
+
+
+/ThePatTemplate
+<<
+	/PatternType 1		% Tiling pattern
+	/PaintType 1		% Colored
+	/TilingType 1
+	/BBox [0 0 8 8]
+	/XStep 8
+	/YStep 8
+	/mypatstr <03060C183060C081>
+	/PaintProc {begin mypatstr Pat8Image2 end}bind
+>>
+def
+
+
+
+/FillPattern{	% patternstring --
+	gsave
+	ThePatTemplate /mypatstr 2 index put
+	PatstrToName SpecialPatProcs 1 index known{
+		SpecialPatProcs exch get
+	}{
+		{begin mypatstr Pat8Image2 end}bind
+	}ifelse
+	ThePatTemplate /PaintProc 3 -1 roll put
+	ThePatTemplate matrix makepattern setpattern fill
+	grestore
+	/transparentPats 0 def
+}bdef
+
+%******** END NEW PAT STUFF ********** ]
+
+
+
+/UseBack{ rbak gbak bbak Mysetrgbcolor }bdef
+/UseFore{ rfor gfor bfor Mysetrgbcolor }bdef
+/SetBack {/bbak xdef /gbak xdef /rbak xdef }bdef
+/SetFore {/bfor xdef /gfor xdef /rfor xdef }bdef
+
+
+/ps {setlinewidth} bdef	
+/clw {currentlinewidth} bdef
+/sd {0 setdash} bdef
+
+/mstroke {0 clw eq {newpath}{stroke} ifelse} bdef
+
+/_R{ .5 sub round .5 add}bdef
+/allign{ useRound {transform _R exch _R exch itransform} if }bdef
+/L {allign lineto} bdef
+/M {allign moveto} bdef
+
+/addto { dup load exec 3 -1 roll add store }bdef
+/MacLine{		% xto yto xfrom yfrom MacLine --
+	newpath		% only handles horizontal or vertical lines
+	/y0 xdef /x0 xdef /y1 xdef /x1 xdef
+	x1 x0 sub abs
+	y1 y0 sub abs gt
+	{clw x1 x0 gt {/x1}{/x0}ifelse  addto  clw 2 div dup /y0 addto /y1 addto}
+	{clw y1 y0 gt {/y1}{/y0}ifelse  addto  clw 2 div dup /x0 addto /x1 addto}
+	ifelse
+	x0 y0 M
+	x1 y1 L
+	mstroke
+}bdef
+
+/FillPath{		% graylevel FillPath --   fills current path and leaves path alive
+	gsave
+	dup 1 exch sub		% glev 1-glev
+	rbak 2 index mul	rfor 2 index mul add
+	gbak 3 index mul	gfor 3 index mul add
+	bbak 4 index mul	bfor 4 index mul add
+	Mysetrgbcolor
+	pop pop
+	fill
+	grestore
+}bdef
+
+/StrokePath{		% linejoin StrokePath --   strokes current path and leaves path alive
+	gsave
+	setlinejoin
+	mstroke
+	grestore
+}bdef
+
+/RectPath{		% x0 y0 x1 y1 RectPath -- sets current path to a rectange
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 y0 M
+	x1 y0 L
+	x1 y1 L
+	x0 y1 L
+	closepath
+}bdef
+
+/PaintRect{		% x0 y0 x1 y1 graylevel PaintRect --
+	gsave
+	5 1 roll
+	RectPath
+	FillPath
+	grestore
+}bdef
+
+
+
+
+% **** begin image stuff *****
+% The following are used for images. This has to be kept
+% in synch with corresponding code in ImageDisp.c.In particular
+% the expansion factor, 8, has to be in synch. LH010606: now to
+% fix colorscales in layouts, expansion factor is in variable.
+% packedcolor is (red*256+green)*256+blue
+
+/ExpFact 8 def	% default expansion factor
+
+/SetPackedColor{	% packedcolor SetPackedColor --
+	dup 256 mod /tmp0 xdef	% extract blue
+	256 idiv
+	dup 256 mod /tmp1 xdef	% extract green
+	256 idiv 				% extract red
+	255 div /packedRed xdef
+	tmp1 255 div /packedGreen xdef
+	tmp0 255 div /packedBlue xdef
+}bdef
+
+/IR_FillRect{
+	gsave
+	newpath
+	rx0 ry0 M
+	rx1 ry0 L
+	rx1 ry1 L
+	rx0 ry1 L
+	closepath
+	packedRed packedGreen packedBlue Mysetrgbcolor
+	fill
+	grestore
+}bdef
+
+/NewRectImageLine{	% x0 y0 x1 y1 packedcolor NewRectImageLine --
+	SetPackedColor
+
+	/ry1 xdef /rx1 xdef /ry0 xdef /rx0 xdef	% remember starting rectange for following calls
+	
+	IR_FillRect
+}bdef
+
+/rx{		% xdist rx --
+	ExpFact div
+	dup 0 lt
+	{ rx0 /rx1 xdef rx1 add /rx0 xdef }		% neg delta steps left
+	{ rx1 /rx0 xdef rx0 add /rx1 xdef }
+	ifelse
+	IR_FillRect
+}bdef
+
+/ry{		% ydist rr --
+	ExpFact div
+	dup 0 lt
+	{ ry1 /ry0 xdef ry0 exch sub /ry1 xdef }		% neg delta steps down
+	{ ry0 /ry1 xdef ry1 exch sub /ry0 xdef }
+	ifelse
+	IR_FillRect
+}bdef
+
+
+/cx{		% xdist packedcolor cx --
+	SetPackedColor
+	rx
+}bdef
+
+/cy{		% ydist packedcolor cx --
+	SetPackedColor
+	ry
+}bdef
+
+% **** end image stuff *****
+
+
+
+/EraseRect{		% x0 y0 x1 y1 EraseRect --  fills rect with background color
+	gsave
+	RectPath
+	UseBack fill
+	grestore
+}bdef
+
+/FrameRect{		% x0 y0 x1 y1 FrameRect --
+	RectPath
+	mstroke
+}bdef
+
+/FrameMacRect{		% x0 y0 x1 y1 FrameMacRect --  Mac-like version
+	RectPath
+	mstroke
+}bdef
+
+
+/ellipse{
+	/savematrix matrix currentmatrix def
+	translate scale 0 0 1 0 360 arc
+	savematrix setmatrix
+}bdef
+
+
+
+/OvalPath{		% x0 y0 x1 y1 OvalPath -- sets current path to an oval inside rectange
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 x1 sub abs 2 div y0 y1 sub abs 2 div x0 x1 add 2 div y0 y1 add 2 div ellipse
+	closepath
+}bdef
+
+
+/PaintOval{		% x0 y0 x1 y1 graylevel PaintOval --
+	gsave
+	5 1 roll
+	OvalPath
+	FillPath
+	grestore
+}bdef
+
+/EraseOval{		% x0 y0 x1 y1 EraseOval --  fills with background color
+	gsave
+	OvalPath
+	UseBack fill
+	grestore
+}bdef
+
+/FrameOval{		% x0 y0 x1 y1 FrameOval --
+	OvalPath
+	mstroke
+}bdef
+
+
+/RRectPath{		% x0 y0 x1 y1 r OvalPath -- sets current path to rounded rectange, radius r
+	/radius xdef
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 radius add y0 M
+	x1 y0 x1 y1 radius arcto 4{pop}repeat
+	x1 y1 x0 y1 radius arcto 4{pop}repeat
+	x0 y1 x0 y0 radius arcto 4{pop}repeat
+	x0 y0 x1 y0 radius arcto 4{pop}repeat
+	closepath
+}bdef
+
+
+/PaintRRect{		% x0 y0 x1 y1 r graylevel PaintRRect --
+	gsave
+	6 1 roll
+	RRectPath
+	FillPath
+	grestore
+}bdef
+
+/EraseRRect{		% x0 y0 x1 y1 r EraseRRect --  fills rect with background color
+	gsave
+	RRectPath
+	UseBack fill
+	grestore
+}bdef
+
+/FrameRRect{		% x0 y0 x1 y1 r FrameRect --
+	RRectPath
+	mstroke
+}bdef
+
+
+
+
+/CapLine{		% x0 y0 x1 y1 linecap CapLine -- draws line using given line cap
+	gsave
+	setlinecap
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 y0 M
+	x1 y1 L
+	mstroke
+	grestore
+}bdef
+
+/Arrow{		% x0 y0 x1 y1 width height graylevel Arrow -- draws arrow at end of line from P0 to P1
+	gsave
+	/gl xdef 1 add /aw xdef 1 add /ah xdef /y0 xdef /x0 xdef /y1 xdef /x1 xdef 
+	x0 y0 translate
+	/x1 x1 x0 sub def
+	/y1 y1 y0 sub def
+	y1 x1 atan rotate
+	newpath
+	0 0 M
+	aw ah 2 div L
+	aw ah 2 div neg L
+	closepath
+	gl FillPath
+%	10 setmiterlimit
+%	1 ps
+%	0 StrokePath
+	grestore
+}bdef
+
+
+% ************ fonts ************
+
+
+/normal 0 def
+/bold 1 def
+/italic 2 def
+/underline 4 def
+/outline 8 def
+/shadow 16 def
+
+/FACE1 bold italic or def
+/FACE2 outline shadow or def
+
+/Shadow {
+	gsave
+	siz 0.08 mul 1 index mul x add
+	exch siz 0.07 mul mul y add M
+	c show
+	grestore
+} def
+
+/Outline {
+	gsave
+	siz .02 mul setlinewidth
+	x y M c true charpath
+	gsave UseBack fill grestore stroke
+	grestore
+} def
+
+/Underline{
+	gsave
+	siz 0.08 mul ps
+	x y clw add M x c stringwidth pop add y clw add L stroke
+	grestore
+}bdef
+
+/DoShow{	% assumes x,y,c are already set
+	fontkind FACE2 and
+	dup normal eq 				{c x y M show} if
+	dup outline eq 				{Outline} if
+	dup shadow eq 				{1 Shadow Outline} if
+	outline shadow or eq 		{1 Shadow 1.5 Shadow Outline} if
+	fontkind underline and 0 ne { Underline } if
+}bdef
+
+/DoWShow{	% assumes x,y,c & w are already set
+	gsave
+	x y translate
+	/x 0 def  /y 0 def
+	w c stringwidth pop div 1 scale
+	DoShow
+	grestore
+}bdef
+
+/S{
+	/y xdef /x xdef /c xdef
+	DoShow
+}bdef
+
+/WS{		% string x y desiredwidth WS -
+	/w xdef /y xdef /x xdef /c xdef
+	DoWShow
+}bdef
+
+/F{
+	/fontkind xdef
+	findfont exch /siz xdef [siz 0 0 siz neg  0 0] makefont setfont
+}bdef
+
+
+
+/Re-encode {
+	dup length array copy
+	/eap 0 def
+	exch {
+		dup type /integertype eq
+		{ /eap xdef }
+		{
+			1 index
+			exch
+			eap exch
+			put
+			/eap eap 1 add def
+		}
+		ifelse
+	} forall
+} bind def
+
+[ 39/quotesingle 96/grave 128/.notdef/.notdef/quotesinglbase
+/florin/quotedblbase/ellipsis/dagger/daggerdbl/circumflex
+/perthousand/Scaron/guilsinglleft/OE/.notdef/.notdef
+/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright
+/bullet/endash/emdash/tilde/trademark/scaron/guilsinglright
+/oe/.notdef/.notdef/Ydieresis/.notdef/exclamdown/cent
+/sterling/currency/yen/brokenbar/section/dieresis/copyright
+/ordfeminine/guillemotleft/logicalnot/.notdef/registered
+/macron/degree/plusminus/twosuperior/threesuperior/acute
+/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown
+/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE
+/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave
+/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave
+/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae
+/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute
+/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute
+/ucircumflex/udieresis/yacute/thorn/ydieresis]
+/zzz xdef
+
+/OurEncoding{ zzz StandardEncoding Re-encode }bdef
+
+/EncodeFont	{
+	findfont
+	dup length dict begin
+	{
+		1 index /FID ne
+		{ def }
+		{ pop pop }
+		ifelse
+	} forall
+	/FontName xdef
+	/Encoding xdef
+	FontName currentdict
+	end
+	definefont pop
+} bind def
+
+%%EndResource
+%%BeginFont: /OF0
+11 dict begin
+/FontName /OF0 def
+% TT Name: Symbol
+/FontType 3 def
+/FontMatrix [0.001 0 0 -0.001 0 0] def
+/FontBBox [0 -466 569 212] def
+/Encoding 256 array def 0 1 255{Encoding exch/.notdef put}for
+Encoding 103 /s103 put
+Encoding 109 /s109 put
+/BoundingBoxes 2 dict def
+BoundingBoxes begin
+/s103 [0 -466 423 212] def
+/s109 [60 -458 569 212] def
+end
+/Metrics 2 dict def
+ Metrics begin
+/s103 412 def
+/s109 577 def
+end
+/CharProcs 2 dict def
+ CharProcs begin
+/.notdef {} def
+/s103 {
+325 -458 moveto
+423 -458 325 -458 423 -458 curveto
+417 -438 391 -379 343 -281 curveto
+324 -241 310 -211 302 -191 curveto
+297 -180 293 -170 288 -159 curveto
+234 -44 288 -159 234 -44 curveto
+236 -26 237 -7 238 12 curveto
+239 30 240 46 240 58 curveto
+240 102 237 136 230 161 curveto
+225 180 218 193 209 200 curveto
+200 208 190 212 179 212 curveto
+166 212 154 207 144 196 curveto
+134 185 129 171 129 154 curveto
+129 128 134 99 144 67 curveto
+154 34 168 -2 187 -40 curveto
+164 -202 146 -298 133 -330 curveto
+120 -361 104 -377 84 -377 curveto
+72 -377 62 -373 55 -366 curveto
+49 -359 43 -337 38 -301 curveto
+0 -301 38 -301 0 -301 curveto
+0 -317 0 -328 0 -333 curveto
+0 -378 9 -413 28 -438 curveto
+43 -457 63 -466 88 -466 curveto
+110 -466 127 -461 138 -450 curveto
+159 -429 176 -391 189 -335 curveto
+206 -264 217 -190 223 -112 curveto
+250 -247 223 -112 250 -247 curveto
+269 -311 294 -382 325 -458 curveto
+closepath
+} bind def
+/s109 {
+475 -458 moveto
+475 -160 475 -458 475 -160 curveto
+475 -122 477 -95 480 -79 curveto
+482 -72 486 -66 490 -63 curveto
+494 -60 498 -58 502 -58 curveto
+506 -58 511 -61 517 -67 curveto
+522 -73 526 -90 530 -117 curveto
+569 -117 530 -117 569 -117 curveto
+563 -65 552 -30 534 -12 curveto
+517 6 494 15 467 15 curveto
+441 15 420 7 404 -9 curveto
+388 -26 379 -50 377 -81 curveto
+354 -47 327 -22 297 -7 curveto
+267 8 240 15 217 15 curveto
+201 15 186 12 171 6 curveto
+157 -0 148 -8 145 -18 curveto
+144 21 148 57 157 91 curveto
+163 117 166 135 166 145 curveto
+166 165 161 181 150 193 curveto
+140 206 127 212 113 212 curveto
+98 212 86 206 77 195 curveto
+66 181 60 164 60 143 curveto
+60 133 62 120 67 103 curveto
+75 76 80 52 82 30 curveto
+86 -8 88 -41 88 -67 curveto
+88 -458 88 -67 88 -458 curveto
+188 -458 88 -458 188 -458 curveto
+188 -173 188 -458 188 -173 curveto
+188 -141 190 -118 195 -106 curveto
+200 -93 209 -83 221 -76 curveto
+233 -69 245 -65 257 -65 curveto
+273 -65 291 -70 312 -79 curveto
+333 -88 354 -103 375 -122 curveto
+375 -458 375 -122 375 -458 curveto
+475 -458 375 -458 475 -458 curveto
+closepath
+} bind def
+end
+/BuildGlyph { exch begin dup Metrics exch get 0 2 index BoundingBoxes exch get aload pop setcachedevice CharProcs exch 2 copy known not{pop/.notdef}if get exec fill end } def
+/BuildChar { 1 index /Encoding get exch get 1 index /BuildGlyph get exec } bind def
+currentdict end /OF0 exch definefont pop
+%%EndFont
+0 252 translate  1 -1 scale
+/AnObj save def
+1 1 1 SetBack   0 0 0 SetFore  UseFore
+0 0 translate
+0.000 0.000 0.000 setrgbcolor
+gsave 1.75 ps [ ] sd newpath 65.25 16.00 M 65.25 198.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 265.38 16.00 M 265.38 198.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 266.25 28.12 M 256.12 28.12 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 28.12 M 74.50 28.12 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 20.12] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(1.8) 0.00 12.88 17.50 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 266.25 52.38 M 256.12 52.38 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 52.38 M 74.50 52.38 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 44.38] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(1.6) 0.00 12.88 17.50 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 266.25 76.62 M 256.12 76.62 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 76.62 M 74.50 76.62 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 68.62] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(1.4) 0.00 12.88 17.50 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 266.25 100.88 M 256.12 100.88 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 100.88 M 74.50 100.88 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 92.88] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(1.2) 0.00 12.88 17.50 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 266.25 125.25 M 256.12 125.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 125.25 M 74.50 125.25 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 117.25] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(1.0) 0.00 12.88 17.50 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 266.25 149.50 M 256.12 149.50 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 149.50 M 74.50 149.50 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 141.50] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(0.8) 0.00 12.88 17.50 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 266.25 173.75 M 256.12 173.75 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 173.75 M 74.50 173.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 165.75] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(0.6) 0.00 12.88 17.50 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 266.25 198.00 M 256.12 198.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 64.38 198.00 M 74.50 198.00 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 42.75 190.00] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(0.4) 0.00 12.88 17.50 WS
+grestore
+gsave
+[0.00 -1.00 1.00 0.00 12.00 171.00] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(Spectrum Width[nm]) 0.00 12.88 128.12 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 65.25 198.00 M 265.38 198.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 65.25 16.00 M 265.38 16.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 249.75 15.12 M 249.75 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 249.75 198.88 M 249.75 193.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 218.50 15.12 M 218.50 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 218.50 198.88 M 218.50 188.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 208.00 203.88] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(400) 0.00 12.88 21.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 187.25 15.12 M 187.25 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 187.25 198.88 M 187.25 193.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 155.88 15.12 M 155.88 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 155.88 198.88 M 155.88 188.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 145.38 203.88] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(200) 0.00 12.88 21.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 124.62 15.12 M 124.62 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 124.62 198.88 M 124.62 193.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 93.38 15.12 M 93.38 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 93.38 198.88 M 93.38 188.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 89.88 203.88] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(0) 0.00 12.88 7.00 WS
+grestore
+gsave
+[1.00 0.00 0.00 1.00 127.12 228.75] concat
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(Slit Width[) 0.00 14.12 66.25 WS
+14.00 (OF0) 1 F
+(m) 66.25 14.12 8.00 WS
+ OurEncoding /_Times-Bold /Times-Bold EncodeFont
+14.00 (_Times-Bold) 1 F
+(m]) 74.25 14.12 16.12 WS
+grestore
+newpath 75.00 182.25 M
+75.00 180.74 76.24 179.50 77.75 179.50 curveto
+79.26 179.50 80.50 180.74 80.50 182.25 curveto
+80.50 183.76 79.26 185.00 77.75 185.00 curveto
+76.24 185.00 75.00 183.76 75.00 182.25 curveto
+closepath
+1.000 0.000 0.000 setrgbcolor
+gsave fill grestore
+0.50 ps
+mstroke
+newpath 78.12 181.00 M
+78.12 179.49 79.36 178.25 80.88 178.25 curveto
+82.39 178.25 83.62 179.49 83.62 181.00 curveto
+83.62 182.51 82.39 183.75 80.88 183.75 curveto
+79.36 183.75 78.12 182.51 78.12 181.00 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 81.25 183.00 M
+81.25 181.49 82.49 180.25 84.00 180.25 curveto
+85.51 180.25 86.75 181.49 86.75 183.00 curveto
+86.75 184.51 85.51 185.75 84.00 185.75 curveto
+82.49 185.75 81.25 184.51 81.25 183.00 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 84.38 183.12 M
+84.38 181.61 85.61 180.38 87.12 180.38 curveto
+88.64 180.38 89.88 181.61 89.88 183.12 curveto
+89.88 184.64 88.64 185.88 87.12 185.88 curveto
+85.61 185.88 84.38 184.64 84.38 183.12 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 87.50 183.75 M
+87.50 182.24 88.74 181.00 90.25 181.00 curveto
+91.76 181.00 93.00 182.24 93.00 183.75 curveto
+93.00 185.26 91.76 186.50 90.25 186.50 curveto
+88.74 186.50 87.50 185.26 87.50 183.75 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 90.62 183.88 M
+90.62 182.36 91.86 181.12 93.38 181.12 curveto
+94.89 181.12 96.12 182.36 96.12 183.88 curveto
+96.12 185.39 94.89 186.62 93.38 186.62 curveto
+91.86 186.62 90.62 185.39 90.62 183.88 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 93.75 181.00 M
+93.75 179.49 94.99 178.25 96.50 178.25 curveto
+98.01 178.25 99.25 179.49 99.25 181.00 curveto
+99.25 182.51 98.01 183.75 96.50 183.75 curveto
+94.99 183.75 93.75 182.51 93.75 181.00 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 96.88 178.12 M
+96.88 176.61 98.11 175.38 99.62 175.38 curveto
+101.14 175.38 102.38 176.61 102.38 178.12 curveto
+102.38 179.64 101.14 180.88 99.62 180.88 curveto
+98.11 180.88 96.88 179.64 96.88 178.12 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 100.00 172.50 M
+100.00 170.99 101.24 169.75 102.75 169.75 curveto
+104.26 169.75 105.50 170.99 105.50 172.50 curveto
+105.50 174.01 104.26 175.25 102.75 175.25 curveto
+101.24 175.25 100.00 174.01 100.00 172.50 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 103.12 167.00 M
+103.12 165.49 104.36 164.25 105.88 164.25 curveto
+107.39 164.25 108.62 165.49 108.62 167.00 curveto
+108.62 168.51 107.39 169.75 105.88 169.75 curveto
+104.36 169.75 103.12 168.51 103.12 167.00 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 106.25 160.38 M
+106.25 158.86 107.49 157.62 109.00 157.62 curveto
+110.51 157.62 111.75 158.86 111.75 160.38 curveto
+111.75 161.89 110.51 163.12 109.00 163.12 curveto
+107.49 163.12 106.25 161.89 106.25 160.38 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 109.38 151.62 M
+109.38 150.11 110.61 148.88 112.12 148.88 curveto
+113.64 148.88 114.88 150.11 114.88 151.62 curveto
+114.88 153.14 113.64 154.38 112.12 154.38 curveto
+110.61 154.38 109.38 153.14 109.38 151.62 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 112.50 143.12 M
+112.50 141.61 113.74 140.38 115.25 140.38 curveto
+116.76 140.38 118.00 141.61 118.00 143.12 curveto
+118.00 144.64 116.76 145.88 115.25 145.88 curveto
+113.74 145.88 112.50 144.64 112.50 143.12 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 115.62 133.88 M
+115.62 132.36 116.86 131.12 118.38 131.12 curveto
+119.89 131.12 121.12 132.36 121.12 133.88 curveto
+121.12 135.39 119.89 136.62 118.38 136.62 curveto
+116.86 136.62 115.62 135.39 115.62 133.88 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 118.75 124.50 M
+118.75 122.99 119.99 121.75 121.50 121.75 curveto
+123.01 121.75 124.25 122.99 124.25 124.50 curveto
+124.25 126.01 123.01 127.25 121.50 127.25 curveto
+119.99 127.25 118.75 126.01 118.75 124.50 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 121.88 114.25 M
+121.88 112.74 123.11 111.50 124.62 111.50 curveto
+126.14 111.50 127.38 112.74 127.38 114.25 curveto
+127.38 115.76 126.14 117.00 124.62 117.00 curveto
+123.11 117.00 121.88 115.76 121.88 114.25 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 137.50 69.75 M
+137.50 68.24 138.74 67.00 140.25 67.00 curveto
+141.76 67.00 143.00 68.24 143.00 69.75 curveto
+143.00 71.26 141.76 72.50 140.25 72.50 curveto
+138.74 72.50 137.50 71.26 137.50 69.75 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 153.12 41.88 M
+153.12 40.36 154.36 39.12 155.88 39.12 curveto
+157.39 39.12 158.62 40.36 158.62 41.88 curveto
+158.62 43.39 157.39 44.62 155.88 44.62 curveto
+154.36 44.62 153.12 43.39 153.12 41.88 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 168.88 33.38 M
+168.88 31.86 170.11 30.62 171.62 30.62 curveto
+173.14 30.62 174.38 31.86 174.38 33.38 curveto
+174.38 34.89 173.14 36.12 171.62 36.12 curveto
+170.11 36.12 168.88 34.89 168.88 33.38 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 184.50 33.12 M
+184.50 31.61 185.74 30.38 187.25 30.38 curveto
+188.76 30.38 190.00 31.61 190.00 33.12 curveto
+190.00 34.64 188.76 35.88 187.25 35.88 curveto
+185.74 35.88 184.50 34.64 184.50 33.12 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 200.12 33.12 M
+200.12 31.61 201.36 30.38 202.88 30.38 curveto
+204.39 30.38 205.62 31.61 205.62 33.12 curveto
+205.62 34.64 204.39 35.88 202.88 35.88 curveto
+201.36 35.88 200.12 34.64 200.12 33.12 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 215.75 33.00 M
+215.75 31.49 216.99 30.25 218.50 30.25 curveto
+220.01 30.25 221.25 31.49 221.25 33.00 curveto
+221.25 34.51 220.01 35.75 218.50 35.75 curveto
+216.99 35.75 215.75 34.51 215.75 33.00 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 231.38 33.38 M
+231.38 31.86 232.61 30.62 234.12 30.62 curveto
+235.64 30.62 236.88 31.86 236.88 33.38 curveto
+236.88 34.89 235.64 36.12 234.12 36.12 curveto
+232.61 36.12 231.38 34.89 231.38 33.38 curveto
+closepath
+gsave fill grestore
+mstroke
+newpath 247.00 33.25 M
+247.00 31.74 248.24 30.50 249.75 30.50 curveto
+251.26 30.50 252.50 31.74 252.50 33.25 curveto
+252.50 34.76 251.26 36.00 249.75 36.00 curveto
+248.24 36.00 247.00 34.76 247.00 33.25 curveto
+closepath
+gsave fill grestore
+mstroke
+AnObj restore
+end
+IgorSave restore
+%%Trailer
+%%DocumentFonts: Times-Bold
+%%EOF
