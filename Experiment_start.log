@@ -1,0 +1,462 @@
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.6)  7 MAY 2019 15:11
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Experiment_start.tex
+(./Experiment_start.tex
+pLaTeX2e <2018-12-01u02> (based on LaTeX2e <2018-12-01>)
+(c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2018/12/11 jsclasses (okumura, texjporg)
+
+c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jsarticle.cls:236: Class jsarticle Error: You are running upLaTeX.
+(jsarticle)              Please use pLaTeX instead, or add 'uplatex' to
+(jsarticle)              the class option list.
+
+See the jsarticle class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236       {\@ehc}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\jsc@mpt=\dimen118
+\jsc@mmm=\dimen119
+\jsc@smallskipamount=\skip41
+LaTeX Info: Redefining \rmfamily on input line 466.
+LaTeX Info: Redefining \sffamily on input line 469.
+LaTeX Info: Redefining \ttfamily on input line 472.
+LaTeX Info: Redefining \textmc on input line 476.
+LaTeX Info: Redefining \textgt on input line 478.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY2/mc/m/n --> JY2/gt/m/n on input line 540.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 731.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 731.
+\fullwidth=\dimen120
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 7.39746pt on input line 884.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 7.39746pt on input line 884.
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\@abstractbox=\box43
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\jsc@tocl@width=\dimen121
+\@lnumwidth=\dimen122
+\bibindent=\dimen123
+(c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2017/02/24 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 94.
+LaTeX Info: Redefining \LaTeX on input line 147.
+LaTeX Info: Redefining \LaTeXe on input line 200.
+)
+\heisei=\count91
+) (c:/texlive/2018/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2018/03/09 v2.0h ascmac wrapper (community edition) 
+ (c:/texlive/2018/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2018/03/09 v2.0h ascmac package (community edition) 
+\@savetbaselineshift=\dimen124
+\@saveybaselineshift=\dimen125
+\scb@x=\box44
+\scscb@x=\box45
+\@bw=\dimen126
+\@nbox=\box46
+\@nbody=\box47
+\@scw=\dimen127
+\ascmac@hoboxa=\box48
+\ascmac@hoboxb=\box49
+\@itemh=\dimen128
+\@iboxpos=\toks15
+\@iboxstr=\box50
+\@bwsp=\box51
+\@@bwsp=\box52
+\@bcal=\count92
+\shaderule=\dimen129
+)) (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen130
+)) (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen131
+) (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+\big@size=\dimen132
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks17
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks18
+\eqnshift@=\dimen133
+\alignsep@=\dimen134
+\tagshift@=\dimen135
+\tagwidth@=\dimen136
+\totwidth@=\dimen137
+\lineht@=\dimen138
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 99.
+ (c:/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+) (c:/texlive/2018/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+\circlebox=\box55
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+ (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 8.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 8.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+\circleboxwdht=\skip47
+ (./Experiment_start.aux)
+\openout1 = `Experiment_start.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 15.9785pt on input line 26.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 15.9785pt on input line 26.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 26.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 26.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 26.
+ [1
+
+]
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 34.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 34.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 34.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 34.
+ (./Experiment_start.toc
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 3.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `Experiment_start.toc'.
+
+ [1
+
+] [1
+
+]
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 48.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 48.
+File: monochromator.eps Graphic file (type eps)
+<monochromator.eps>
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 57.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 57.
+ [2]
+File: grating.eps Graphic file (type eps)
+<grating.eps>
+ [3]
+File: start_fibor.jpg Graphic file (type bmp)
+<start_fibor.jpg>
+File: start_photon_abs.jpg Graphic file (type bmp)
+<start_photon_abs.jpg>
+File: start_photon_rel.jpg Graphic file (type bmp)
+<start_photon_rel.jpg>
+File: start_photon_ind.jpg Graphic file (type bmp)
+<start_photon_ind.jpg>
+
+Overfull \hbox (14.60025pt too wide) in paragraph at lines 92--115
+ [][][][] 
+ []
+
+File: start_semi_laser.jpg Graphic file (type bmp)
+<start_semi_laser.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5]
+File: start_gas_laser.jpg Graphic file (type bmp)
+<start_gas_laser.jpg>
+ [6]
+File: start_sensitivity.jpg Graphic file (type bmp)
+<start_sensitivity.jpg>
+ [7] [8]
+File: start_semiconductor.eps Graphic file (type eps)
+<start_semiconductor.eps>
+ [9]
+File: start_subband.eps Graphic file (type eps)
+<start_subband.eps>
+ [10]
+File: start_exciton.jpg Graphic file (type bmp)
+<start_exciton.jpg>
+File: start_exciton_binding.jpg Graphic file (type bmp)
+<start_exciton_binding.jpg>
+ [11]
+File: start_system1.eps Graphic file (type eps)
+<start_system1.eps>
+ [12]
+File: start_system2.eps Graphic file (type eps)
+<start_system2.eps>
+ [13]
+File: start_system3.eps Graphic file (type eps)
+<start_system3.eps>
+ [14]
+File: start_system4.eps Graphic file (type eps)
+<start_system4.eps>
+ [15]
+File: start_AlGaAs.jpg Graphic file (type bmp)
+<start_AlGaAs.jpg>
+ [16]
+File: start1_300Spectrum.jpg Graphic file (type bmp)
+<start1_300Spectrum.jpg>
+ [17]
+File: start1_300Resolution.jpg Graphic file (type bmp)
+<start1_300Resolution.jpg>
+ [18]
+File: start1_300Int.jpg Graphic file (type bmp)
+<start1_300Int.jpg>
+ [19]
+File: start1_1200Spectrum.jpg Graphic file (type bmp)
+<start1_1200Spectrum.jpg>
+File: start1_1200Resolution.jpg Graphic file (type bmp)
+<start1_1200Resolution.jpg>
+ [20]
+File: start1_1200Intensity.jpg Graphic file (type bmp)
+<start1_1200Intensity.jpg>
+ [21]
+File: start1_Resolution.jpg Graphic file (type bmp)
+<start1_Resolution.jpg>
+ [22]
+File: start2_CdS_rt_Spectrum_wav.jpg Graphic file (type bmp)
+<start2_CdS_rt_Spectrum_wav.jpg>
+
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 519--520
+[][] 
+ []
+
+File: start2_CdS_rt_Spectrum_eV.jpg Graphic file (type bmp)
+<start2_CdS_rt_Spectrum_eV.jpg>
+
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 524--525
+ [][] 
+ []
+
+
+Overfull \hbox (15.33333pt too wide) in paragraph at lines 515--527
+ [][][][] 
+ []
+
+File: start2_CdS_rt_Int.eps Graphic file (type eps)
+<start2_CdS_rt_Int.eps>
+[23] [24]
+File: start2_CdS_imp_Spectrum_wav.jpg Graphic file (type bmp)
+<start2_CdS_imp_Spectrum_wav.jpg>
+
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 566--567
+[][] 
+ []
+
+File: start2_CdS_imp_Spectrum_eV.jpg Graphic file (type bmp)
+<start2_CdS_imp_Spectrum_eV.jpg>
+
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 571--572
+ [][] 
+ []
+
+
+Overfull \hbox (15.33333pt too wide) in paragraph at lines 562--574
+ [][][][] 
+ []
+
+[25]
+File: start2_CdS_imp_Int.eps Graphic file (type eps)
+<start2_CdS_imp_Int.eps>
+ [26]
+File: start2_GaAs_rt_Spectrum_wav.jpg Graphic file (type bmp)
+<start2_GaAs_rt_Spectrum_wav.jpg>
+
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 614--615
+[][] 
+ []
+
+File: start2_GaAs_rt_Spectrum_eV.jpg Graphic file (type bmp)
+<start2_GaAs_rt_Spectrum_eV.jpg>
+
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 619--620
+ [][] 
+ []
+
+
+Overfull \hbox (23.47226pt too wide) in paragraph at lines 610--622
+ [][][][] 
+ []
+
+[27]
+File: start2_GaAs_rt_Int.eps Graphic file (type eps)
+<start2_GaAs_rt_Int.eps>
+ [28]
+File: start_lumine.jpg Graphic file (type bmp)
+<start_lumine.jpg>
+ [29]
+File: start2_MQW_rt_Spectrum_wav.jpg Graphic file (type bmp)
+<start2_MQW_rt_Spectrum_wav.jpg>
+
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 683--684
+[][] 
+ []
+
+File: start2_MQW_rt_Spectrum_eV.eps Graphic file (type eps)
+<start2_MQW_rt_Spectrum_eV.eps>
+
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 688--689
+ [][] 
+ []
+
+
+Overfull \hbox (23.47226pt too wide) in paragraph at lines 679--691
+ [][][][] 
+ []
+
+File: start2_MQW_rt_Peak.eps Graphic file (type eps)
+<start2_MQW_rt_Peak.eps>
+[30] [31]
+File: start2_MQW_77K_Spectrum_wav.jpg Graphic file (type bmp)
+<start2_MQW_77K_Spectrum_wav.jpg>
+
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 733--734
+[][] 
+ []
+
+File: start2_MQW_77K_Spectrum_eV.eps Graphic file (type eps)
+<start2_MQW_77K_Spectrum_eV.eps>
+
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 738--739
+ [][] 
+ []
+
+
+Overfull \hbox (23.47226pt too wide) in paragraph at lines 729--741
+ [][][][] 
+ []
+
+File: start2_MQW_77K_Peak.eps Graphic file (type eps)
+<start2_MQW_77K_Peak.eps>
+[32] [33]
+File: start2_MQW_77K_Eg.jpg Graphic file (type bmp)
+<start2_MQW_77K_Eg.jpg>
+ [34]
+File: start2_MQW_77K_wellLength.eps Graphic file (type eps)
+<start2_MQW_77K_wellLength.eps>
+ [35]
+File: start2_MQW_77K_GaAs.jpg Graphic file (type bmp)
+<start2_MQW_77K_GaAs.jpg>
+ [36]
+Underfull \hbox (badness 10000) in paragraph at lines 844--845
+[]\OT1/cmr/m/n/10 Thorlabhttps://www.thorlabs.co.jp/newgrouppage9.cfm?objectgroup[]id=10776
+ []
+
+
+Underfull \hbox (badness 3019) in paragraph at lines 848--849
+[]\JY2/mc/m/n/10 中山正昭 半導体結晶の光学的評価 \OT1/cmr/m/n/10 http://www.a-phys.eng.osaka-cu.ac.jp/hikari-
+ []
+
+[37] (./Experiment_start.aux) ) 
+Here is how much of TeX's memory you used:
+ 1835 strings out of 493215
+ 24398 string characters out of 6147105
+ 91925 words of memory out of 5000000
+ 5759 multiletter control sequences out of 15000+600000
+ 18249 words of font info for 85 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 27i,12n,21p,1030b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on Experiment_start.dvi (39 pages, 62188 bytes).

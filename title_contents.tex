@@ -1,0 +1,34 @@
+\documentclass[11pt,a4j]{jsarticle}
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{upgreek}
+
+\newsavebox{\circlebox}
+\savebox{\circlebox}{\fontencoding{OMS}\selectfont\Large\char13}
+\newlength{\circleboxwdht}
+\newcommand{\centercircle}[1]{%
+  \setlength{\circleboxwdht}{\wd\circlebox}%
+  \addtolength{\circleboxwdht}{\dp\circlebox}%
+  \raisebox{0.4\dp\circlebox}{%
+    \parbox[][\circleboxwdht][c]{\wd\circlebox}{\centering#1}}%
+  \llap{\usebox{\circlebox}}%
+}	%丸数字(文字)環境。\centercircle{入れたい文字} で丸文字を表示する。
+
+
+\title{宮島研究室2019年度B4スタート実験}
+\author{宮島研究室B4 渡辺慧}
+\date{\today}
+
+\begin{document}
+
+\maketitle %タイトル
+
+\newpage
+
+\tableofcontents %目次
+
+
+%\listoffigures%図目次。確認用。後で消す
+
+\end{document}

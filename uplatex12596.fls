@@ -1,0 +1,4 @@
+PWD C:/Users/akica/Desktop/宮島Lab/Satoru Watanabe/2019スタート実験/tex
+INPUT c:/texlive/2018/texmf.cnf
+INPUT c:/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt
+INPUT Experiment_start.tex
