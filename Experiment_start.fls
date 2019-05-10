@@ -1,4 +1,4 @@
-PWD C:/Users/akica/Desktop/宮島Lab/Satoru Watanabe/2019スタート実験/tex
+PWD C:/Users/akica/Desktop/MiyajimaLab/Satoru_Watanabe/2019start/tex
 INPUT c:/texlive/2018/texmf.cnf
 INPUT c:/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt
 INPUT Experiment_start.tex
@@ -119,8 +119,8 @@ INPUT start_subband.eps
 INPUT start_subband.eps
 INPUT start_exciton.JPG
 INPUT extractbb -B cropbox -O start_exciton.jpg
-INPUT start_exciton_binding.JPG
-INPUT extractbb -B cropbox -O start_exciton_binding.jpg
+INPUT start_exciton_binding.eps
+INPUT start_exciton_binding.eps
 INPUT start_system1.eps
 INPUT start_system1.eps
 INPUT start_system2.eps
@@ -135,48 +135,48 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
-INPUT start1_300Spectrum.jpg
-INPUT extractbb -B cropbox -O start1_300Spectrum.jpg
-INPUT start1_300Resolution.jpg
-INPUT extractbb -B cropbox -O start1_300Resolution.jpg
+INPUT start1_300Spectrum1.eps
+INPUT start1_300Spectrum1.eps
+INPUT start1_300Resolution.eps
+INPUT start1_300Resolution.eps
 INPUT start1_300Int.jpg
 INPUT extractbb -B cropbox -O start1_300Int.jpg
-INPUT start1_1200Spectrum.jpg
-INPUT extractbb -B cropbox -O start1_1200Spectrum.jpg
-INPUT start1_1200Resolution.jpg
-INPUT extractbb -B cropbox -O start1_1200Resolution.jpg
+INPUT start1_1200Spectrum1.eps
+INPUT start1_1200Spectrum1.eps
+INPUT start1_1200Resolution.eps
+INPUT start1_1200Resolution.eps
 INPUT start1_1200Intensity.jpg
 INPUT extractbb -B cropbox -O start1_1200Intensity.jpg
 INPUT start1_Resolution.jpg
 INPUT extractbb -B cropbox -O start1_Resolution.jpg
-INPUT start2_CdS_rt_Spectrum_wav.jpg
-INPUT extractbb -B cropbox -O start2_CdS_rt_Spectrum_wav.jpg
-INPUT start2_CdS_rt_Spectrum_eV.jpg
-INPUT extractbb -B cropbox -O start2_CdS_rt_Spectrum_eV.jpg
+INPUT start2_CdS_rt_Spectrum_wav.eps
+INPUT start2_CdS_rt_Spectrum_wav.eps
+INPUT start2_CdS_rt_Spectrum_eV.eps
+INPUT start2_CdS_rt_Spectrum_eV.eps
 INPUT start2_CdS_rt_Int.eps
 INPUT start2_CdS_rt_Int.eps
-INPUT start2_CdS_imp_Spectrum_wav.jpg
-INPUT extractbb -B cropbox -O start2_CdS_imp_Spectrum_wav.jpg
-INPUT start2_CdS_imp_Spectrum_eV.jpg
-INPUT extractbb -B cropbox -O start2_CdS_imp_Spectrum_eV.jpg
+INPUT start2_CdS_imp_Spectrum_wav.eps
+INPUT start2_CdS_imp_Spectrum_wav.eps
+INPUT start2_CdS_imp_Spectrum_eV.eps
+INPUT start2_CdS_imp_Spectrum_eV.eps
 INPUT start2_CdS_imp_Int.eps
 INPUT start2_CdS_imp_Int.eps
-INPUT start2_GaAs_rt_Spectrum_wav.jpg
-INPUT extractbb -B cropbox -O start2_GaAs_rt_Spectrum_wav.jpg
-INPUT start2_GaAs_rt_Spectrum_eV.jpg
-INPUT extractbb -B cropbox -O start2_GaAs_rt_Spectrum_eV.jpg
+INPUT start2_GaAs_rt_Spectrum_wav.eps
+INPUT start2_GaAs_rt_Spectrum_wav.eps
+INPUT start2_GaAs_rt_Spectrum_eV.eps
+INPUT start2_GaAs_rt_Spectrum_eV.eps
 INPUT start2_GaAs_rt_Int.eps
 INPUT start2_GaAs_rt_Int.eps
 INPUT start_lumine.JPG
 INPUT extractbb -B cropbox -O start_lumine.jpg
-INPUT start2_MQW_rt_Spectrum_wav.jpg
-INPUT extractbb -B cropbox -O start2_MQW_rt_Spectrum_wav.jpg
+INPUT start2_MQW_rt_Spectrum_wav.eps
+INPUT start2_MQW_rt_Spectrum_wav.eps
 INPUT start2_MQW_rt_Spectrum_eV.eps
 INPUT start2_MQW_rt_Spectrum_eV.eps
 INPUT start2_MQW_rt_Peak.eps
 INPUT start2_MQW_rt_Peak.eps
-INPUT start2_MQW_77K_Spectrum_wav.jpg
-INPUT extractbb -B cropbox -O start2_MQW_77K_Spectrum_wav.jpg
+INPUT start2_MQW_77K_Spectrum_wav.eps
+INPUT start2_MQW_77K_Spectrum_wav.eps
 INPUT start2_MQW_77K_Spectrum_eV.eps
 INPUT start2_MQW_77K_Spectrum_eV.eps
 INPUT start2_MQW_77K_Peak.eps

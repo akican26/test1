@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.6)  7 MAY 2019 15:11
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.6)  10 MAY 2019 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -278,8 +278,8 @@ File: start_subband.eps Graphic file (type eps)
  [10]
 File: start_exciton.jpg Graphic file (type bmp)
 <start_exciton.jpg>
-File: start_exciton_binding.jpg Graphic file (type bmp)
-<start_exciton_binding.jpg>
+File: start_exciton_binding.eps Graphic file (type eps)
+<start_exciton_binding.eps>
  [11]
 File: start_system1.eps Graphic file (type eps)
 <start_system1.eps>
@@ -296,19 +296,19 @@ File: start_system4.eps Graphic file (type eps)
 File: start_AlGaAs.jpg Graphic file (type bmp)
 <start_AlGaAs.jpg>
  [16]
-File: start1_300Spectrum.jpg Graphic file (type bmp)
-<start1_300Spectrum.jpg>
+File: start1_300Spectrum1.eps Graphic file (type eps)
+<start1_300Spectrum1.eps>
  [17]
-File: start1_300Resolution.jpg Graphic file (type bmp)
-<start1_300Resolution.jpg>
+File: start1_300Resolution.eps Graphic file (type eps)
+<start1_300Resolution.eps>
  [18]
 File: start1_300Int.jpg Graphic file (type bmp)
 <start1_300Int.jpg>
  [19]
-File: start1_1200Spectrum.jpg Graphic file (type bmp)
-<start1_1200Spectrum.jpg>
-File: start1_1200Resolution.jpg Graphic file (type bmp)
-<start1_1200Resolution.jpg>
+File: start1_1200Spectrum1.eps Graphic file (type eps)
+<start1_1200Spectrum1.eps>
+File: start1_1200Resolution.eps Graphic file (type eps)
+<start1_1200Resolution.eps>
  [20]
 File: start1_1200Intensity.jpg Graphic file (type bmp)
 <start1_1200Intensity.jpg>
@@ -316,44 +316,64 @@ File: start1_1200Intensity.jpg Graphic file (type bmp)
 File: start1_Resolution.jpg Graphic file (type bmp)
 <start1_Resolution.jpg>
  [22]
-File: start2_CdS_rt_Spectrum_wav.jpg Graphic file (type bmp)
-<start2_CdS_rt_Spectrum_wav.jpg>
+File: start2_CdS_rt_Spectrum_wav.eps Graphic file (type eps)
+<start2_CdS_rt_Spectrum_wav.eps>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 519--520
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 532--533
 [][] 
  []
 
-File: start2_CdS_rt_Spectrum_eV.jpg Graphic file (type bmp)
-<start2_CdS_rt_Spectrum_eV.jpg>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
+
+ []
+
+File: start2_CdS_rt_Spectrum_eV.eps Graphic file (type eps)
+<start2_CdS_rt_Spectrum_eV.eps>
+
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 541--542
  [][] 
  []
 
 
-Overfull \hbox (15.33333pt too wide) in paragraph at lines 515--527
+Overfull \hbox (43.07727pt too wide) in paragraph at lines 528--544
  [][][][] 
  []
 
 File: start2_CdS_rt_Int.eps Graphic file (type eps)
 <start2_CdS_rt_Int.eps>
 [23] [24]
-File: start2_CdS_imp_Spectrum_wav.jpg Graphic file (type bmp)
-<start2_CdS_imp_Spectrum_wav.jpg>
+File: start2_CdS_imp_Spectrum_wav.eps Graphic file (type eps)
+<start2_CdS_imp_Spectrum_wav.eps>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 566--567
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 583--584
 [][] 
  []
 
-File: start2_CdS_imp_Spectrum_eV.jpg Graphic file (type bmp)
-<start2_CdS_imp_Spectrum_eV.jpg>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+
+ []
+
+File: start2_CdS_imp_Spectrum_eV.eps Graphic file (type eps)
+<start2_CdS_imp_Spectrum_eV.eps>
+
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 592--593
  [][] 
  []
 
 
-Overfull \hbox (15.33333pt too wide) in paragraph at lines 562--574
+Overfull \hbox (43.07727pt too wide) in paragraph at lines 579--595
  [][][][] 
  []
 
@@ -361,22 +381,32 @@ Overfull \hbox (15.33333pt too wide) in paragraph at lines 562--574
 File: start2_CdS_imp_Int.eps Graphic file (type eps)
 <start2_CdS_imp_Int.eps>
  [26]
-File: start2_GaAs_rt_Spectrum_wav.jpg Graphic file (type bmp)
-<start2_GaAs_rt_Spectrum_wav.jpg>
+File: start2_GaAs_rt_Spectrum_wav.eps Graphic file (type eps)
+<start2_GaAs_rt_Spectrum_wav.eps>
 
-Overfull \hbox (16.05293pt too wide) in paragraph at lines 614--615
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 635--636
 [][] 
  []
 
-File: start2_GaAs_rt_Spectrum_eV.jpg Graphic file (type bmp)
-<start2_GaAs_rt_Spectrum_eV.jpg>
 
-Overfull \hbox (32.72778pt too wide) in paragraph at lines 619--620
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
+
+ []
+
+File: start2_GaAs_rt_Spectrum_eV.eps Graphic file (type eps)
+<start2_GaAs_rt_Spectrum_eV.eps>
+
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 644--645
  [][] 
  []
 
 
-Overfull \hbox (23.47226pt too wide) in paragraph at lines 610--622
+Overfull \hbox (51.2162pt too wide) in paragraph at lines 631--647
  [][][][] 
  []
 
@@ -387,44 +417,64 @@ File: start2_GaAs_rt_Int.eps Graphic file (type eps)
 File: start_lumine.jpg Graphic file (type bmp)
 <start_lumine.jpg>
  [29]
-File: start2_MQW_rt_Spectrum_wav.jpg Graphic file (type bmp)
-<start2_MQW_rt_Spectrum_wav.jpg>
+File: start2_MQW_rt_Spectrum_wav.eps Graphic file (type eps)
+<start2_MQW_rt_Spectrum_wav.eps>
 
-Overfull \hbox (16.05293pt too wide) in paragraph at lines 683--684
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 708--709
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
+
  []
 
 File: start2_MQW_rt_Spectrum_eV.eps Graphic file (type eps)
 <start2_MQW_rt_Spectrum_eV.eps>
 
-Overfull \hbox (32.72778pt too wide) in paragraph at lines 688--689
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 717--718
  [][] 
  []
 
 
-Overfull \hbox (23.47226pt too wide) in paragraph at lines 679--691
+Overfull \hbox (51.2162pt too wide) in paragraph at lines 704--720
  [][][][] 
  []
 
 File: start2_MQW_rt_Peak.eps Graphic file (type eps)
 <start2_MQW_rt_Peak.eps>
 [30] [31]
-File: start2_MQW_77K_Spectrum_wav.jpg Graphic file (type bmp)
-<start2_MQW_77K_Spectrum_wav.jpg>
+File: start2_MQW_77K_Spectrum_wav.eps Graphic file (type eps)
+<start2_MQW_77K_Spectrum_wav.eps>
 
-Overfull \hbox (16.05293pt too wide) in paragraph at lines 733--734
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 762--763
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
+
  []
 
 File: start2_MQW_77K_Spectrum_eV.eps Graphic file (type eps)
 <start2_MQW_77K_Spectrum_eV.eps>
 
-Overfull \hbox (32.72778pt too wide) in paragraph at lines 738--739
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 771--772
  [][] 
  []
 
 
-Overfull \hbox (23.47226pt too wide) in paragraph at lines 729--741
+Overfull \hbox (51.2162pt too wide) in paragraph at lines 758--774
  [][][][] 
  []
 
@@ -440,23 +490,23 @@ File: start2_MQW_77K_wellLength.eps Graphic file (type eps)
 File: start2_MQW_77K_GaAs.jpg Graphic file (type bmp)
 <start2_MQW_77K_GaAs.jpg>
  [36]
-Underfull \hbox (badness 10000) in paragraph at lines 844--845
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
 []\OT1/cmr/m/n/10 Thorlabhttps://www.thorlabs.co.jp/newgrouppage9.cfm?objectgroup[]id=10776
  []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 848--849
+Underfull \hbox (badness 3019) in paragraph at lines 881--882
 []\JY2/mc/m/n/10 中山正昭 半導体結晶の光学的評価 \OT1/cmr/m/n/10 http://www.a-phys.eng.osaka-cu.ac.jp/hikari-
  []
 
 [37] (./Experiment_start.aux) ) 
 Here is how much of TeX's memory you used:
- 1835 strings out of 493215
- 24398 string characters out of 6147105
+ 1822 strings out of 493215
+ 23744 string characters out of 6147105
  91925 words of memory out of 5000000
  5759 multiletter control sequences out of 15000+600000
  18249 words of font info for 85 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,12n,21p,1030b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,21p,1117b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Experiment_start.dvi (39 pages, 62188 bytes).
+Output written on Experiment_start.dvi (39 pages, 65188 bytes).

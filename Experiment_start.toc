@@ -11,6 +11,7 @@
 \contentsline {subsubsection}{\numberline {2.2.1}波長校正}{7}% 
 \contentsline {subsubsection}{\numberline {2.2.2}分光器感度補正}{7}% 
 \contentsline {subsubsection}{\numberline {2.2.3}フィルター感度補正}{8}% 
+\contentsline {subsubsection}{\numberline {2.2.4}$\lambda ^2$補正}{8}% 
 \contentsline {subsection}{\numberline {2.3}半導体の発光の特性}{9}% 
 \contentsline {subsubsection}{\numberline {2.3.1}バンド間発光}{9}% 
 \contentsline {subsubsection}{\numberline {2.3.2}量子井戸}{10}% 
