@@ -43,6 +43,8 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT c:/texlive/2018/texmf-dist/tex/latex/was/upgreek.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/was/upgreek.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/cases/cases.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/cases/cases.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
@@ -107,8 +109,8 @@ INPUT start_photon_rel.JPG
 INPUT extractbb -B cropbox -O start_photon_rel.jpg
 INPUT start_photon_ind.JPG
 INPUT extractbb -B cropbox -O start_photon_ind.jpg
-INPUT start_semi_laser.JPG
-INPUT extractbb -B cropbox -O start_semi_laser.jpg
+INPUT pin.eps
+INPUT pin.eps
 INPUT start_gas_laser.JPG
 INPUT extractbb -B cropbox -O start_gas_laser.jpg
 INPUT start_sensitivity.jpg
@@ -121,6 +123,8 @@ INPUT start_exciton.JPG
 INPUT extractbb -B cropbox -O start_exciton.jpg
 INPUT start_exciton_binding.eps
 INPUT start_exciton_binding.eps
+INPUT alphabeta.eps
+INPUT alphabeta.eps
 INPUT start_system1.eps
 INPUT start_system1.eps
 INPUT start_system2.eps
@@ -135,6 +139,7 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
+INPUT start1_300Spectrum1.eps
 INPUT start1_300Spectrum1.eps
 INPUT start1_300Spectrum1.eps
 INPUT start1_300Resolution.eps

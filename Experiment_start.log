@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.6)  10 MAY 2019 14:00
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.6)  16 MAY 2019 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -162,61 +162,63 @@ Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
 \symugrf@m=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+) (c:/texlive/2018/texmf-dist/tex/latex/cases/cases.sty
+Package: cases 2002/05/02 ver 2.5 
 )
 \circlebox=\box55
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
  (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 8.
+(Font)              scaled to size 13.31541pt on input line 9.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 8.
+(Font)              scaled to size 13.31541pt on input line 9.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
 \circleboxwdht=\skip47
  (./Experiment_start.aux)
 \openout1 = `Experiment_start.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 26.
+(Font)              scaled to size 15.9785pt on input line 27.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 26.
+(Font)              scaled to size 15.9785pt on input line 27.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 26.
+(Font)              scaled to size 11.09619pt on input line 27.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 26.
+(Font)              scaled to size 11.09619pt on input line 27.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 26.
+(Font)              scaled to size 5.5481pt on input line 27.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 34.
+(Font)              scaled to size 9.24683pt on input line 35.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 34.
+(Font)              scaled to size 9.24683pt on input line 35.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 34.
+(Font)              scaled to size 13.31541pt on input line 35.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 34.
+(Font)              scaled to size 13.31541pt on input line 35.
  (./Experiment_start.toc
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 3.
@@ -232,15 +234,15 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 48.
+(Font)              scaled to size 11.09619pt on input line 49.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 48.
+(Font)              scaled to size 11.09619pt on input line 49.
 File: monochromator.eps Graphic file (type eps)
 <monochromator.eps>
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 57.
+(Font)              scaled to size 8.32214pt on input line 58.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 57.
+(Font)              scaled to size 8.32214pt on input line 58.
  [2]
 File: grating.eps Graphic file (type eps)
 <grating.eps>
@@ -254,12 +256,12 @@ File: start_photon_rel.jpg Graphic file (type bmp)
 File: start_photon_ind.jpg Graphic file (type bmp)
 <start_photon_ind.jpg>
 
-Overfull \hbox (14.60025pt too wide) in paragraph at lines 92--115
+Overfull \hbox (14.60025pt too wide) in paragraph at lines 93--116
  [][][][] 
  []
 
-File: start_semi_laser.jpg Graphic file (type bmp)
-<start_semi_laser.jpg>
+File: pin.eps Graphic file (type eps)
+<pin.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -281,232 +283,187 @@ File: start_exciton.jpg Graphic file (type bmp)
 File: start_exciton_binding.eps Graphic file (type eps)
 <start_exciton_binding.eps>
  [11]
+File: alphabeta.eps Graphic file (type eps)
+<alphabeta.eps>
+ [12]
 File: start_system1.eps Graphic file (type eps)
 <start_system1.eps>
- [12]
+ [13]
 File: start_system2.eps Graphic file (type eps)
 <start_system2.eps>
- [13]
+ [14]
 File: start_system3.eps Graphic file (type eps)
 <start_system3.eps>
- [14]
+ [15]
 File: start_system4.eps Graphic file (type eps)
 <start_system4.eps>
- [15]
+ [16]
 File: start_AlGaAs.jpg Graphic file (type bmp)
 <start_AlGaAs.jpg>
- [16]
+ [17]
 File: start1_300Spectrum1.eps Graphic file (type eps)
 <start1_300Spectrum1.eps>
- [17]
+File: start1_300Spectrum1.eps Graphic file (type eps)
+<start1_300Spectrum1.eps>
+ [18]
 File: start1_300Resolution.eps Graphic file (type eps)
 <start1_300Resolution.eps>
- [18]
+ [19]
 File: start1_300Int.jpg Graphic file (type bmp)
 <start1_300Int.jpg>
- [19]
+ [20] [21]
 File: start1_1200Spectrum1.eps Graphic file (type eps)
 <start1_1200Spectrum1.eps>
 File: start1_1200Resolution.eps Graphic file (type eps)
 <start1_1200Resolution.eps>
- [20]
+ [22]
 File: start1_1200Intensity.jpg Graphic file (type bmp)
 <start1_1200Intensity.jpg>
- [21]
+ [23]
 File: start1_Resolution.jpg Graphic file (type bmp)
 <start1_Resolution.jpg>
- [22]
+ [24]
 File: start2_CdS_rt_Spectrum_wav.eps Graphic file (type eps)
 <start2_CdS_rt_Spectrum_wav.eps>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 532--533
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 566--567
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
-
  []
 
 File: start2_CdS_rt_Spectrum_eV.eps Graphic file (type eps)
 <start2_CdS_rt_Spectrum_eV.eps>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 541--542
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 575--576
  [][] 
  []
 
 
-Overfull \hbox (43.07727pt too wide) in paragraph at lines 528--544
+Overfull \hbox (43.07727pt too wide) in paragraph at lines 562--578
  [][][][] 
  []
 
 File: start2_CdS_rt_Int.eps Graphic file (type eps)
 <start2_CdS_rt_Int.eps>
-[23] [24]
+[25] [26]
 File: start2_CdS_imp_Spectrum_wav.eps Graphic file (type eps)
 <start2_CdS_imp_Spectrum_wav.eps>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 583--584
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 617--618
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--588
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--588
-
  []
 
 File: start2_CdS_imp_Spectrum_eV.eps Graphic file (type eps)
 <start2_CdS_imp_Spectrum_eV.eps>
 
-Overfull \hbox (24.19186pt too wide) in paragraph at lines 592--593
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 626--627
  [][] 
  []
 
 
-Overfull \hbox (43.07727pt too wide) in paragraph at lines 579--595
+Overfull \hbox (43.07727pt too wide) in paragraph at lines 613--629
  [][][][] 
  []
 
-[25]
+[27]
 File: start2_CdS_imp_Int.eps Graphic file (type eps)
 <start2_CdS_imp_Int.eps>
- [26]
+ [28]
 File: start2_GaAs_rt_Spectrum_wav.eps Graphic file (type eps)
 <start2_GaAs_rt_Spectrum_wav.eps>
 
-Overfull \hbox (16.05293pt too wide) in paragraph at lines 635--636
+Overfull \hbox (24.19186pt too wide) in paragraph at lines 669--670
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
-
  []
 
 File: start2_GaAs_rt_Spectrum_eV.eps Graphic file (type eps)
 <start2_GaAs_rt_Spectrum_eV.eps>
 
-Overfull \hbox (32.72778pt too wide) in paragraph at lines 644--645
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 678--679
  [][] 
  []
 
 
-Overfull \hbox (51.2162pt too wide) in paragraph at lines 631--647
+Overfull \hbox (43.07727pt too wide) in paragraph at lines 665--681
  [][][][] 
  []
 
-[27]
+[29]
 File: start2_GaAs_rt_Int.eps Graphic file (type eps)
 <start2_GaAs_rt_Int.eps>
- [28]
+ [30]
 File: start_lumine.jpg Graphic file (type bmp)
 <start_lumine.jpg>
- [29]
+ [31]
 File: start2_MQW_rt_Spectrum_wav.eps Graphic file (type eps)
 <start2_MQW_rt_Spectrum_wav.eps>
 
-Overfull \hbox (16.05293pt too wide) in paragraph at lines 708--709
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 742--743
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
-
  []
 
 File: start2_MQW_rt_Spectrum_eV.eps Graphic file (type eps)
 <start2_MQW_rt_Spectrum_eV.eps>
 
-Overfull \hbox (32.72778pt too wide) in paragraph at lines 717--718
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 751--752
  [][] 
  []
 
 
-Overfull \hbox (51.2162pt too wide) in paragraph at lines 704--720
+Overfull \hbox (51.2162pt too wide) in paragraph at lines 738--754
  [][][][] 
  []
 
 File: start2_MQW_rt_Peak.eps Graphic file (type eps)
 <start2_MQW_rt_Peak.eps>
-[30] [31]
+[32] [33]
 File: start2_MQW_77K_Spectrum_wav.eps Graphic file (type eps)
 <start2_MQW_77K_Spectrum_wav.eps>
 
-Overfull \hbox (16.05293pt too wide) in paragraph at lines 762--763
+Overfull \hbox (16.05293pt too wide) in paragraph at lines 796--797
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 766--767
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 766--767
-
  []
 
 File: start2_MQW_77K_Spectrum_eV.eps Graphic file (type eps)
 <start2_MQW_77K_Spectrum_eV.eps>
 
-Overfull \hbox (32.72778pt too wide) in paragraph at lines 771--772
+Overfull \hbox (32.72778pt too wide) in paragraph at lines 805--806
  [][] 
  []
 
 
-Overfull \hbox (51.2162pt too wide) in paragraph at lines 758--774
+Overfull \hbox (51.2162pt too wide) in paragraph at lines 792--808
  [][][][] 
  []
 
 File: start2_MQW_77K_Peak.eps Graphic file (type eps)
 <start2_MQW_77K_Peak.eps>
-[32] [33]
+[34] [35]
 File: start2_MQW_77K_Eg.jpg Graphic file (type bmp)
 <start2_MQW_77K_Eg.jpg>
- [34]
+ [36]
 File: start2_MQW_77K_wellLength.eps Graphic file (type eps)
 <start2_MQW_77K_wellLength.eps>
- [35]
+ [37]
 File: start2_MQW_77K_GaAs.jpg Graphic file (type bmp)
 <start2_MQW_77K_GaAs.jpg>
- [36]
-Underfull \hbox (badness 10000) in paragraph at lines 877--878
+ [38]
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
 []\OT1/cmr/m/n/10 Thorlabhttps://www.thorlabs.co.jp/newgrouppage9.cfm?objectgroup[]id=10776
  []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 881--882
+Underfull \hbox (badness 3019) in paragraph at lines 915--916
 []\JY2/mc/m/n/10 中山正昭 半導体結晶の光学的評価 \OT1/cmr/m/n/10 http://www.a-phys.eng.osaka-cu.ac.jp/hikari-
  []
 
-[37] (./Experiment_start.aux) ) 
+[39] (./Experiment_start.aux) ) 
 Here is how much of TeX's memory you used:
- 1822 strings out of 493215
- 23744 string characters out of 6147105
- 91925 words of memory out of 5000000
- 5759 multiletter control sequences out of 15000+600000
+ 1847 strings out of 493215
+ 24103 string characters out of 6147105
+ 92925 words of memory out of 5000000
+ 5781 multiletter control sequences out of 15000+600000
  18249 words of font info for 85 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,12n,21p,1117b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,21p,1687b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Experiment_start.dvi (39 pages, 65188 bytes).
+Output written on Experiment_start.dvi (41 pages, 69436 bytes).

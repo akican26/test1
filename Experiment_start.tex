@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{upgreek}
+\usepackage{cases}%連立方程式
 
 \newsavebox{\circlebox}
 \savebox{\circlebox}{\fontencoding{OMS}\selectfont\Large\char13}
@@ -122,7 +123,7 @@ CCDの受光部分は平面上に光検出素子を並べたものである。�
 
 \begin{figure}[h]
  \centering
- \includegraphics[clip,width=10cm]{start_semi_laser.jpg}
+ \includegraphics[clip,width=10cm]{pin.eps}
  \caption{レーザー発振概略図.}
  \label{fig_laser1}
 \end{figure}
@@ -173,12 +174,12 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
 
 実験で得られる発光スペクトルの横軸は波長である。つまり、発光強度$I$は$\lambda$の関数$I(\lambda)$として表せる。スペクトルの物理的な考察を行うとき、横軸をエネルギーであるほうが都合がよいため、発光強度$I$をエネルギー$E$の関数$I(E)$とする必要がある。この変換においては、
 \begin{equation}
-  I(E)dE=I(\lambda)d\lambda \nonumber
+ I(E)dE=I(\lambda)d\lambda \nonumber
 \end{equation}
 を満たす必要がある。ここで、エネルギーと波長の関係は$E=hc/\lambda$であるため、$dE=hc\frac{1}{\lambda^2}d\lambda$が導ける。よって、波長からエネルギーへの変換は、
 
 \begin{equation}
-  I(E)=I(\lambda)\frac{\lambda^2}{hc}\propto I(\lambda)\lambda^2 \nonumber
+ I(E)=I(\lambda)\frac{\lambda^2}{hc}\propto I(\lambda)\lambda^2 \nonumber
 \end{equation}
 のようになる。すなわち、横軸を波長からエネルギーに変換するとき、発光スペクトルに$\lambda^2$を乗算する補正を行う必要がある。
 
@@ -217,7 +218,7 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
  \label{fig_qw1}
 \end{figure}
 
-量子井戸に形成された、離散的なエネルギー準位をサブバンドと呼ぶ。サブバンドが形成された量子井戸では、価電子帯と伝導帯の電子の移動は、価電子帯のサブバンドのうちの最もエネルギー準位が高いものと、伝導帯のサブバンドのうちの最もエネルギー準位の低いものとの間で行われる。また、それらのサブバンドのエネルギー準位と、物質の元々のエネルギー準位との差$\Delta E$は、井戸幅$L$を用いて、
+量子井戸に形成された、離散的なエネルギー準位をサブバンドと呼ぶ。サブバンドが形成された量子井戸では、光学遷移はサブバンド間で行われる。そのうち、価電子帯のサブバンドのうちの最もエネルギー準位が高いものと、伝導帯のサブバンドのうちの最もエネルギー準位の低いものとの間での遷移が最も起こりやすい。また、それらのサブバンドのエネルギー準位と、物質の元々のエネルギー準位との差$\Delta E$は、井戸幅$L$を用いて、
 \begin{equation}
  \Delta E=\frac{\mathrm{\hbar}^{2}\uppi^{2}}{2mL^{2}}
  \label{eq_qw}
@@ -242,7 +243,31 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
  \label{fig_exciton2}
 \end{figure}
 
-励起子はクーロン束縛されているため、図\ref{fig_exciton2}のように、元々のバンドギャップエネルギー$E_{\mathrm{g}}$よりも束縛エネルギーの分だけエネルギーギャップが狭い状態にある。そのため、励起子が生成される物質の発光スペクトルや吸収スペクトルでは、励起子の影響が表れる。
+励起子はクーロン束縛されているため、図\ref{fig_exciton2}のように、元々のバンドギャップエネルギー$E_{\mathrm{g}}$よりも束縛エネルギーの分だけエネルギーギャップが狭い状態にある。そのため、励起子が生成される物質の発光スペクトルや吸収スペクトルでは、励起子の影響が現れる。
+
+\subsubsection{半導体の発光強度}
+
+励起光によって励起した半導体中の電子が元の準位に戻る過程には、発光を伴う遷移(再結合)と発光を伴なわない遷移の2種類がある。前者を輻射緩和、後者を無輻射緩和と呼ぶ。励起された電子の数(=照射した光子の数)に対する、輻射緩和を起こした電子の割合が発光効率である。輻射緩和の起こりやすさは励起光強度依存性があるが、無輻射緩和の起こりやすさには励起光強度依存性がない。この性質を利用して、発光強度の励起光強度依存性を求めることができる。図\ref{alphabeta}のように、ある励起光強度での輻射緩和の起こりやすさを$\beta$、無輻射緩和の起こりやすさを$\alpha$とする。この時、再結合によって放出される光子の数は$\frac{\beta}{\alpha+\beta}$である。そこから励起光強度がN倍になった時、つまり電子密度や正孔密度がN倍になった時を考える。再結合は電子と正孔の空間的な衝突によって発生するため、励起子が生成されない状況下では、輻射緩和の起こりやすさは電子密度$\times$正孔密度に比例する。したがって、輻射緩和の起こりやすさは$N^2\beta$となる。励起子が生成される状況下では、再結合できる電子と正孔の組み合わせが限定されるため、輻射緩和の起こりやすさは電子密度(あるいは正孔密度)に比例し、$N\beta$となる。よって、励起光強度がN倍になった時、再結合によって放出される光子の数は
+\begin{numcases}
+ {}
+ \frac{N^2\beta}{\alpha+N^2\beta}\times N=\frac{N^3\beta}{\alpha+N^2\beta}(励起子なし)\\
+ \frac{N\beta}{\alpha+N\beta}\times N=\frac{N^2\beta}{\alpha+N\beta}(励起子あり)
+\end{numcases}
+
+となる。したがって、発光強度は
+\begin{numcases}
+ {}
+ \frac{N^3(\alpha+\beta)}{\alpha+N^2\beta}(励起子なし)\\
+ \frac{N^2(\alpha+\beta)}{\alpha+N\beta}(励起子あり)
+\end{numcases}
+となる。励起された電子がすべて再結合する($\alpha\to0$)と考えた時、発光強度は$N$に比例する。
+
+\begin{figure}[bh]
+ \centering
+ \includegraphics[clip,width=5cm]{alphabeta.eps}
+ \caption{電子の緩和過程.}
+ \label{alphabeta}
+\end{figure}
 
 \newpage
 \section{分光計の扱い方及び半導体の発光スペクトルの観測方法}
@@ -426,7 +451,16 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
 \begin{enumerate}%箇条書き環境下では文頭では自力で空白を入れる
  \item 300 g/mmの回折格子を用いた測定
 
-       300 g/mmの回折格子を用いた時の、分光器のスリット幅とスペクトル幅の関係を図\ref{fig_300spectrum1}に示す。
+       300 g/mmの回折格子を用いた測定で得られたスペクトルを図\ref{fig_300all}に示す。
+
+       \begin{figure}[ht]
+        \centering
+        \includegraphics[clip,width=9cm]{start1_300Spectrum1.eps}
+        \caption{300 g/mmの回折格子における分光器のスリット幅とスペクトル幅の関係.}
+        \label{fig_300all}
+       \end{figure}
+
+       の、分光器のスリット幅とスペクトル幅の関係を図\ref{fig_300spectrum1}に示す。
 
        \begin{figure}[ht]
         \centering
@@ -462,7 +496,7 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
        \end{figure}
 
 
-       縦軸は入射光強度、横軸はスリット幅である。スリット幅が大きいほど強い光が入射していることが分かる。スリット幅が200 $\upmu$mより広い部分で、入射光強度の増加量が減っている。これは、光ファイバーのコアの幅が有限であるためである。スリット幅がファイバーのコアの直径より狭いうちは、スリット幅に比例して入射光強度が大きくなるが、コアの直径を超えた時点で、入射光強度はコアの直径によって定まってしまうため、スリット幅では入射光強度を調整できなくなる。\\
+       縦軸は入射光強度、横軸はスリット幅である。入射光強度には、発光スペクトルを積分した値を用いた。スリット幅が大きいほど強い光が入射していることが分かる。スリット幅が200 $\upmu$mより広い部分で、入射光強度の増加量が減っている。これは、光ファイバーのコアの幅が有限であるためである。スリット幅がファイバーのコアの直径より狭いうちは、スリット幅に比例して入射光強度が大きくなるが、コアの直径を超えた時点で、入射光強度はコアの直径によって定まってしまうため、スリット幅では入射光強度を調整できなくなる。\\
        入射光強度が大きいほど、ノイズの影響が小さくなるので、入射光強度だけを考えるのならば、スリット幅が広ければ広いほど実験の精度が良くなる。したがって、実験を行う際はスペクトル幅と入射光強度の兼ね合いでスリット幅を決定する必要がある。ただし、スリットからの入射光強度は、スリット幅以外での調整が可能なため、スペクトル幅を重視し、なるだけ狭いスリット幅で実験を行うべきである。
 
        \newpage
@@ -533,7 +567,7 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
   \end{minipage}
 
   \begin{minipage}{0.06\hsize}%図間隔
-    \hspace{5mm}
+   \hspace{5mm}
   \end{minipage}
 
   \begin{minipage}{0.5\hsize}
@@ -584,7 +618,7 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
   \end{minipage}
 
   \begin{minipage}{0.06\hsize}%図間隔
-    \hspace{5mm}
+   \hspace{5mm}
   \end{minipage}
 
   \begin{minipage}{0.5\hsize}
@@ -635,9 +669,9 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
    \includegraphics[clip,width=8cm]{start2_GaAs_rt_Spectrum_wav.eps}
   \end{minipage}
 
-    \begin{minipage}{0.06\hsize}%図間隔
-      \hspace{1mm}
-    \end{minipage}
+  \begin{minipage}{0.06\hsize}%図間隔
+   \hspace{1mm}
+  \end{minipage}
 
   \begin{minipage}{0.5\hsize}
    \centering
@@ -708,9 +742,9 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
           \includegraphics[clip,width=8cm]{start2_MQW_rt_Spectrum_wav.eps}
          \end{minipage}
 
-           \begin{minipage}{0.06\hsize}%図間隔
-             \hspace{5mm}
-           \end{minipage}
+         \begin{minipage}{0.06\hsize}%図間隔
+          \hspace{5mm}
+         \end{minipage}
 
          \begin{minipage}{0.5\hsize}
           \centering
@@ -762,9 +796,9 @@ He-Neレーザーに期待するのは波長632.8 nmの光だが、異なる波�
           \includegraphics[clip,width=8cm]{start2_MQW_77K_Spectrum_wav.eps}
          \end{minipage}
 
-           \begin{minipage}{0.06\hsize}%図間隔
-             \hspace{5mm}
-           \end{minipage}
+         \begin{minipage}{0.06\hsize}%図間隔
+          \hspace{5mm}
+         \end{minipage}
 
          \begin{minipage}{0.5\hsize}
           \centering

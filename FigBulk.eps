@@ -1,0 +1,7147 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 9 5 318 273
+%%Creator: IgorPro
+%%Title: Graph0
+%%Creation Date: 2019”N5ŒŽ13“ú 11:37
+%%LanguageLevel: 2
+%%EndComments
+%%BeginProlog
+%%EndProlog
+%%BeginResource: procset IgorProcset 1.0 0
+/IgorSave save def		% Level 2 procs
+
+200 dict begin
+
+0 setgray 0 setlinecap
+1 setlinewidth 0 setlinejoin
+1 setmiterlimit [] 0 setdash
+
+/aw 0 def 	/ah 0 def
+/x0 0 def	/y0 0 def	/x1 0 def	/y1 0 def
+/rx0 0 def	/ry0 0 def	/rx1 0 def	/ry1 0 def
+/tmp0 0 def /tmp1 0 def
+/packedRed 0 def /packedGreen 0 def /packedBlue 0 def
+/x 0 def	/y 0 def	/w 0 def	/c 0 string def
+
+/rbak 1 def	/gbak 1 def	/bbak 1 def
+/rfor 0 def	/gfor 0 def	/bfor 0 def
+
+/bdef{bind def}bind def
+/ldef{load def}bdef
+/xdef{exch def}bdef
+
+/useCMYK 0 def
+/useRound false def
+
+
+/Mysetrgbcolor{	% r g b
+	useCMYK 1 eq
+	{
+		3 {1 exch sub 3 -1 roll} repeat			% c=1-r, m= 1-g, y= 1-b
+		dup
+		2 index 2 copy gt {exch} if pop
+		3 index 2 copy gt {exch} if pop
+%		2 div									% k= (min of c,m,y)/2
+		4 1 roll
+		3 {3 index sub 3 -1 roll} repeat		% sub k from c,m & y
+		4 -1 roll
+		setcmykcolor
+	}
+	{ setrgbcolor }
+	ifelse
+}bdef
+
+%******** BEGIN NEW PAT STUFF ********** [
+/transparentPats 0 def
+
+/l {lineto} bdef
+/m {moveto} bdef
+/PatCom{pop transparentPats 0 eq {UseBack 0 0 8 8 rectfill} if UseFore}bdef
+
+/SpecialPatProcs
+<<
+	/p0102040810204080 {PatCom 6.5 0 m 0 6.5 l 0 7.5 l 7.5 0 l 6.5 0 l 8 6.5 m 6.5 8 l 7.5 8 l 8 7.5 l 8 6.5 l fill}bind
+	/p8040201008040201 {PatCom 0 0.5 m 7.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 0.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l 7.5 0 m 8 0.5 l 8 0 l 7.5 0 l fill}bind
+	/p03060C183060C081 {PatCom 5.5 0 m 0 5.5 l 0 7.5 l 7.5 0 l 5.5 0 l 8 5.5 m 5.5 8 l 7.5 8 l 8 7.5 l 8 5.5 l fill}bind
+	/pC06030180C060381 {PatCom 0 0 m 0 1.5 l 6.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l 6.5 0 m 8 1.5 l 8 0 l 6.5 0 l fill}bind
+	/p83070E1C3870E0C1 {PatCom 5.5 0 m 0 5.5 l 0 8 l 0.5 8 l 8 0.5 l 8 0 l 5.5 0 l 0 0 m 0 0.5 l 0.5 0 l 0 0 l 8 5.5 m 5.5 8 l 8 8 l 8 5.5 l fill}bind
+	/pC1E070381C0E0783 {PatCom 0 0 m 0 1.5 l 6.5 8 l 8 8 l 8 6.5 l 1.5 0 l 0 0 l 0 6.5 m 0 8 l 1.5 8 l 0 6.5 l 6.5 0 m 8 1.5 l 8 0 l 6.5 0 l fill}bind
+	/p1122448811224488 {PatCom 2.5 0 m 0 2.5 l 0 3.5 l 3.5 0 l 2.5 0 l 6.5 0 m 0 6.5 l 0 7.5 l 7.5 0 l 6.5 0 l 8 2.5 m 2.5 8 l 3.5 8 l 8 3.5 l 8 2.5 l 8 6.5 m 6.5 8 l 7.5 8 l 8 7.5 l 8 6.5 l fill}bind
+	/p8844221188442211 {PatCom 7.5 0 m 8 0.5 l 8 0 l 7.5 0 l 3.5 0 m 8 4.5 l 8 3.5 l 4.5 0 l 3.5 0 l 0 0 m 0 0.5 l 7.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 3.5 m 0 4.5 l 3.5 8 l 4.5 8 l 0 3.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l fill}bind
+	
+	/p3366CC993366CC99 {PatCom 1.5 0 m 0 1.5 l 0 3.5 l 3.5 0 l 1.5 0 l 5.5 0 m 0 5.5 l 0 7.5 l 7.5 0 l 5.5 0 l 8 1.5 m 1.5 8 l 3.5 8 l 8 3.5 l 8 1.5 l 8 5.5 m 5.5 8 l 7.5 8 l 8 7.5 l 8 5.5 l fill}bind
+	/pCC663399CC663399 {PatCom 6.5 0 m 8 1.5 l 8 0 l 6.5 0 l 2.5 0 m 8 5.5 l 8 3.5 l 4.5 0 l 2.5 0 l 0 0 m 0 1.5 l 6.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 0 3.5 m 0 5.5 l 2.5 8 l 4.5 8 l 0 3.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l fill}bind
+	/p77EEDDBB77EEDDBB {PatCom 0.5 0 m 0 0.5 l 0 3.5 l 3.5 0 l 0.5 0 l 4.5 0 m 0 4.5 l 0 7.5 l 7.5 0 l 4.5 0 l 8 0.5 m 0.5 8 l 3.5 8 l 8 3.5 l 8 0.5 l 8 4.5 m 4.5 8 l 7.5 8 l 8 7.5 l 8 4.5 l fill}bind
+	/pEE77BBDDEE77BBDD {PatCom 0 0 m 0 2.5 l 5.5 8 l 8 8 l 8 7.5 l 0.5 0 l 0 0 l 1.5 0 m 8 6.5 l 8 3.5 l 4.5 0 l 1.5 0 l 5.5 0 m 8 2.5 l 8 0 l 5.5 0 l 0 3.5 m 0 6.5 l 1.5 8 l 4.5 8 l 0 3.5 l 0 7.5 m 0 8 l 0.5 8 l 0 7.5 l fill}bind
+	/pE4C993274E9C3972 {PatCom 0 0 m 0 2.5 l 2.5 0 l 0 0 l 4.5 0 m 0 4.5 l 0 5.5 l 5.5 0 l 4.5 0 l 7.5 0 m 0 7.5 l 0 8 l 2.5 8 l 8 2.5 l 8 0 l 7.5 0 l 8 4.5 m 4.5 8 l 5.5 8 l 8 5.5 l 8 4.5 l 8 7.5 m 7.5 8 l 8 8 l 8 7.5 l fill}bind
+	/p2793C9E472399C4E {PatCom 5.5 0 m 8 2.5 l 8 1.5 l 6.5 0 l 5.5 0 l 0.5 0 m 8 7.5 l 8 4.5 l 3.5 0 l 0.5 0 l 0 1.5 m 0 2.5 l 5.5 8 l 6.5 8 l 0 1.5 l 0 4.5 m 0 7.5 l 0.5 8 l 3.5 8 l 0 4.5 l fill}bind
+>>
+def
+
+/Pat8Image2{			% patternstring -- 
+	transparentPats 0 eq {UseBack 0 0 8 8 rectfill} if
+	UseFore
+	0 exch									% y patstr
+	{
+		0 exch								% y x value
+		128 8{								% y x value bitmask
+			dup 2 index and 0 eq not{		% y x bitmask value boolval
+				2 index 4 index 1 1 rectfill
+			}if
+			-1 bitshift 3 2 roll 
+			1 add
+			3 1 roll
+		}repeat
+		pop pop pop
+		1 add
+	}forall
+	pop
+}bdef
+
+/PatstrToName{
+	(p0000000000000000)	17 string copy	% apparantly literal strings are global objects
+	exch 1 exch
+	{
+		16 (00) cvrs dup length 
+		3 index 3 index 3 -1 roll 2 exch sub add
+		3 -1 roll putinterval
+		2 add
+	}forall
+	pop
+	cvn
+}bdef
+
+
+
+/ThePatTemplate
+<<
+	/PatternType 1		% Tiling pattern
+	/PaintType 1		% Colored
+	/TilingType 1
+	/BBox [0 0 8 8]
+	/XStep 8
+	/YStep 8
+	/mypatstr <03060C183060C081>
+	/PaintProc {begin mypatstr Pat8Image2 end}bind
+>>
+def
+
+
+
+/FillPattern{	% patternstring --
+	gsave
+	ThePatTemplate /mypatstr 2 index put
+	PatstrToName SpecialPatProcs 1 index known{
+		SpecialPatProcs exch get
+	}{
+		{begin mypatstr Pat8Image2 end}bind
+	}ifelse
+	ThePatTemplate /PaintProc 3 -1 roll put
+	ThePatTemplate matrix makepattern setpattern fill
+	grestore
+	/transparentPats 0 def
+}bdef
+
+%******** END NEW PAT STUFF ********** ]
+
+
+
+/UseBack{ rbak gbak bbak Mysetrgbcolor }bdef
+/UseFore{ rfor gfor bfor Mysetrgbcolor }bdef
+/SetBack {/bbak xdef /gbak xdef /rbak xdef }bdef
+/SetFore {/bfor xdef /gfor xdef /rfor xdef }bdef
+
+
+/ps {setlinewidth} bdef	
+/clw {currentlinewidth} bdef
+/sd {0 setdash} bdef
+
+/mstroke {0 clw eq {newpath}{stroke} ifelse} bdef
+
+/_R{ .5 sub round .5 add}bdef
+/allign{ useRound {transform _R exch _R exch itransform} if }bdef
+/L {allign lineto} bdef
+/M {allign moveto} bdef
+
+/addto { dup load exec 3 -1 roll add store }bdef
+/MacLine{		% xto yto xfrom yfrom MacLine --
+	newpath		% only handles horizontal or vertical lines
+	/y0 xdef /x0 xdef /y1 xdef /x1 xdef
+	x1 x0 sub abs
+	y1 y0 sub abs gt
+	{clw x1 x0 gt {/x1}{/x0}ifelse  addto  clw 2 div dup /y0 addto /y1 addto}
+	{clw y1 y0 gt {/y1}{/y0}ifelse  addto  clw 2 div dup /x0 addto /x1 addto}
+	ifelse
+	x0 y0 M
+	x1 y1 L
+	mstroke
+}bdef
+
+/FillPath{		% graylevel FillPath --   fills current path and leaves path alive
+	gsave
+	dup 1 exch sub		% glev 1-glev
+	rbak 2 index mul	rfor 2 index mul add
+	gbak 3 index mul	gfor 3 index mul add
+	bbak 4 index mul	bfor 4 index mul add
+	Mysetrgbcolor
+	pop pop
+	fill
+	grestore
+}bdef
+
+/StrokePath{		% linejoin StrokePath --   strokes current path and leaves path alive
+	gsave
+	setlinejoin
+	mstroke
+	grestore
+}bdef
+
+/RectPath{		% x0 y0 x1 y1 RectPath -- sets current path to a rectange
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 y0 M
+	x1 y0 L
+	x1 y1 L
+	x0 y1 L
+	closepath
+}bdef
+
+/PaintRect{		% x0 y0 x1 y1 graylevel PaintRect --
+	gsave
+	5 1 roll
+	RectPath
+	FillPath
+	grestore
+}bdef
+
+
+
+
+% **** begin image stuff *****
+% The following are used for images. This has to be kept
+% in synch with corresponding code in ImageDisp.c.In particular
+% the expansion factor, 8, has to be in synch. LH010606: now to
+% fix colorscales in layouts, expansion factor is in variable.
+% packedcolor is (red*256+green)*256+blue
+
+/ExpFact 8 def	% default expansion factor
+
+/SetPackedColor{	% packedcolor SetPackedColor --
+	dup 256 mod /tmp0 xdef	% extract blue
+	256 idiv
+	dup 256 mod /tmp1 xdef	% extract green
+	256 idiv 				% extract red
+	255 div /packedRed xdef
+	tmp1 255 div /packedGreen xdef
+	tmp0 255 div /packedBlue xdef
+}bdef
+
+/IR_FillRect{
+	gsave
+	newpath
+	rx0 ry0 M
+	rx1 ry0 L
+	rx1 ry1 L
+	rx0 ry1 L
+	closepath
+	packedRed packedGreen packedBlue Mysetrgbcolor
+	fill
+	grestore
+}bdef
+
+/NewRectImageLine{	% x0 y0 x1 y1 packedcolor NewRectImageLine --
+	SetPackedColor
+
+	/ry1 xdef /rx1 xdef /ry0 xdef /rx0 xdef	% remember starting rectange for following calls
+	
+	IR_FillRect
+}bdef
+
+/rx{		% xdist rx --
+	ExpFact div
+	dup 0 lt
+	{ rx0 /rx1 xdef rx1 add /rx0 xdef }		% neg delta steps left
+	{ rx1 /rx0 xdef rx0 add /rx1 xdef }
+	ifelse
+	IR_FillRect
+}bdef
+
+/ry{		% ydist rr --
+	ExpFact div
+	dup 0 lt
+	{ ry1 /ry0 xdef ry0 exch sub /ry1 xdef }		% neg delta steps down
+	{ ry0 /ry1 xdef ry1 exch sub /ry0 xdef }
+	ifelse
+	IR_FillRect
+}bdef
+
+
+/cx{		% xdist packedcolor cx --
+	SetPackedColor
+	rx
+}bdef
+
+/cy{		% ydist packedcolor cx --
+	SetPackedColor
+	ry
+}bdef
+
+% **** end image stuff *****
+
+
+
+/EraseRect{		% x0 y0 x1 y1 EraseRect --  fills rect with background color
+	gsave
+	RectPath
+	UseBack fill
+	grestore
+}bdef
+
+/FrameRect{		% x0 y0 x1 y1 FrameRect --
+	RectPath
+	mstroke
+}bdef
+
+/FrameMacRect{		% x0 y0 x1 y1 FrameMacRect --  Mac-like version
+	RectPath
+	mstroke
+}bdef
+
+
+/ellipse{
+	/savematrix matrix currentmatrix def
+	translate scale 0 0 1 0 360 arc
+	savematrix setmatrix
+}bdef
+
+
+
+/OvalPath{		% x0 y0 x1 y1 OvalPath -- sets current path to an oval inside rectange
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 x1 sub abs 2 div y0 y1 sub abs 2 div x0 x1 add 2 div y0 y1 add 2 div ellipse
+	closepath
+}bdef
+
+
+/PaintOval{		% x0 y0 x1 y1 graylevel PaintOval --
+	gsave
+	5 1 roll
+	OvalPath
+	FillPath
+	grestore
+}bdef
+
+/EraseOval{		% x0 y0 x1 y1 EraseOval --  fills with background color
+	gsave
+	OvalPath
+	UseBack fill
+	grestore
+}bdef
+
+/FrameOval{		% x0 y0 x1 y1 FrameOval --
+	OvalPath
+	mstroke
+}bdef
+
+
+/RRectPath{		% x0 y0 x1 y1 r OvalPath -- sets current path to rounded rectange, radius r
+	/radius xdef
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 radius add y0 M
+	x1 y0 x1 y1 radius arcto 4{pop}repeat
+	x1 y1 x0 y1 radius arcto 4{pop}repeat
+	x0 y1 x0 y0 radius arcto 4{pop}repeat
+	x0 y0 x1 y0 radius arcto 4{pop}repeat
+	closepath
+}bdef
+
+
+/PaintRRect{		% x0 y0 x1 y1 r graylevel PaintRRect --
+	gsave
+	6 1 roll
+	RRectPath
+	FillPath
+	grestore
+}bdef
+
+/EraseRRect{		% x0 y0 x1 y1 r EraseRRect --  fills rect with background color
+	gsave
+	RRectPath
+	UseBack fill
+	grestore
+}bdef
+
+/FrameRRect{		% x0 y0 x1 y1 r FrameRect --
+	RRectPath
+	mstroke
+}bdef
+
+
+
+
+/CapLine{		% x0 y0 x1 y1 linecap CapLine -- draws line using given line cap
+	gsave
+	setlinecap
+	/y1 xdef /x1 xdef /y0 xdef /x0 xdef
+	newpath
+	x0 y0 M
+	x1 y1 L
+	mstroke
+	grestore
+}bdef
+
+/Arrow{		% x0 y0 x1 y1 width height graylevel Arrow -- draws arrow at end of line from P0 to P1
+	gsave
+	/gl xdef 1 add /aw xdef 1 add /ah xdef /y0 xdef /x0 xdef /y1 xdef /x1 xdef 
+	x0 y0 translate
+	/x1 x1 x0 sub def
+	/y1 y1 y0 sub def
+	y1 x1 atan rotate
+	newpath
+	0 0 M
+	aw ah 2 div L
+	aw ah 2 div neg L
+	closepath
+	gl FillPath
+%	10 setmiterlimit
+%	1 ps
+%	0 StrokePath
+	grestore
+}bdef
+
+
+% ************ fonts ************
+
+
+/normal 0 def
+/bold 1 def
+/italic 2 def
+/underline 4 def
+/outline 8 def
+/shadow 16 def
+
+/FACE1 bold italic or def
+/FACE2 outline shadow or def
+
+/Shadow {
+	gsave
+	siz 0.08 mul 1 index mul x add
+	exch siz 0.07 mul mul y add M
+	c show
+	grestore
+} def
+
+/Outline {
+	gsave
+	siz .02 mul setlinewidth
+	x y M c true charpath
+	gsave UseBack fill grestore stroke
+	grestore
+} def
+
+/Underline{
+	gsave
+	siz 0.08 mul ps
+	x y clw add M x c stringwidth pop add y clw add L stroke
+	grestore
+}bdef
+
+/DoShow{	% assumes x,y,c are already set
+	fontkind FACE2 and
+	dup normal eq 				{c x y M show} if
+	dup outline eq 				{Outline} if
+	dup shadow eq 				{1 Shadow Outline} if
+	outline shadow or eq 		{1 Shadow 1.5 Shadow Outline} if
+	fontkind underline and 0 ne { Underline } if
+}bdef
+
+/DoWShow{	% assumes x,y,c & w are already set
+	gsave
+	x y translate
+	/x 0 def  /y 0 def
+	w c stringwidth pop div 1 scale
+	DoShow
+	grestore
+}bdef
+
+/S{
+	/y xdef /x xdef /c xdef
+	DoShow
+}bdef
+
+/WS{		% string x y desiredwidth WS -
+	/w xdef /y xdef /x xdef /c xdef
+	DoWShow
+}bdef
+
+/F{
+	/fontkind xdef
+	findfont exch /siz xdef [siz 0 0 siz neg  0 0] makefont setfont
+}bdef
+
+
+
+/Re-encode {
+	dup length array copy
+	/eap 0 def
+	exch {
+		dup type /integertype eq
+		{ /eap xdef }
+		{
+			1 index
+			exch
+			eap exch
+			put
+			/eap eap 1 add def
+		}
+		ifelse
+	} forall
+} bind def
+
+[ 39/quotesingle 96/grave 128/.notdef/.notdef/quotesinglbase
+/florin/quotedblbase/ellipsis/dagger/daggerdbl/circumflex
+/perthousand/Scaron/guilsinglleft/OE/.notdef/.notdef
+/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright
+/bullet/endash/emdash/tilde/trademark/scaron/guilsinglright
+/oe/.notdef/.notdef/Ydieresis/.notdef/exclamdown/cent
+/sterling/currency/yen/brokenbar/section/dieresis/copyright
+/ordfeminine/guillemotleft/logicalnot/.notdef/registered
+/macron/degree/plusminus/twosuperior/threesuperior/acute
+/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown
+/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE
+/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave
+/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave
+/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae
+/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute
+/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute
+/ucircumflex/udieresis/yacute/thorn/ydieresis]
+/zzz xdef
+
+/OurEncoding{ zzz StandardEncoding Re-encode }bdef
+
+/EncodeFont	{
+	findfont
+	dup length dict begin
+	{
+		1 index /FID ne
+		{ def }
+		{ pop pop }
+		ifelse
+	} forall
+	/FontName xdef
+	/Encoding xdef
+	FontName currentdict
+	end
+	definefont pop
+} bind def
+
+%%EndResource
+%%BeginFont: /OF0
+11 dict begin
+/FontName /OF0 def
+% TT Name: Times New Roman
+/FontType 3 def
+/FontMatrix [0.001 0 0 -0.001 0 0] def
+/FontBBox [9 -678 527 216] def
+/Encoding 256 array def 0 1 255{Encoding exch/.notdef put}for
+Encoding 32 /s32 put
+Encoding 33 /s33 put
+Encoding 34 /s34 put
+Encoding 35 /s35 put
+Encoding 36 /s36 put
+Encoding 37 /s37 put
+Encoding 38 /s38 put
+Encoding 39 /s39 put
+Encoding 40 /s40 put
+Encoding 41 /s41 put
+Encoding 42 /s42 put
+Encoding 43 /s43 put
+Encoding 44 /s44 put
+Encoding 45 /s45 put
+Encoding 46 /s46 put
+Encoding 47 /s47 put
+Encoding 48 /s48 put
+Encoding 49 /s49 put
+Encoding 50 /s50 put
+Encoding 51 /s51 put
+Encoding 52 /s52 put
+Encoding 53 /s53 put
+Encoding 54 /s54 put
+/BoundingBoxes 23 dict def
+BoundingBoxes begin
+/s32 [66 -676 424 0] def
+/s33 [36 -676 463 14] def
+/s34 [24 -676 451 0] def
+/s35 [16 -676 442 14] def
+/s36 [25 -676 459 0] def
+/s37 [33 -663 462 14] def
+/s38 [37 -676 470 14] def
+/s39 [34 -663 477 14] def
+/s40 [20 -663 365 0] def
+/s41 [35 -470 527 0] def
+/s42 [18 -625 323 6] def
+/s43 [39 -470 421 13] def
+/s44 [40 -470 353 13] def
+/s45 [19 -678 268 0] def
+/s46 [9 -457 490 216] def
+/s47 [105 -663 301 183] def
+/s48 [45 -470 484 6] def
+/s49 [44 -150 207 13] def
+/s50 [31 -457 524 13] def
+/s51 [33 -663 229 183] def
+/s52 [31 -676 463 14] def
+/s53 [35 -673 465 14] def
+/s54 [29 -676 367 -338] def
+end
+/Metrics 23 dict def
+ Metrics begin
+/s32 500 def
+/s33 500 def
+/s34 500 def
+/s35 500 def
+/s36 500 def
+/s37 500 def
+/s38 500 def
+/s39 500 def
+/s40 389 def
+/s41 556 def
+/s42 333 def
+/s43 444 def
+/s44 389 def
+/s45 278 def
+/s46 500 def
+/s47 333 def
+/s48 500 def
+/s49 250 def
+/s50 556 def
+/s51 333 def
+/s52 500 def
+/s53 500 def
+/s54 400 def
+end
+/CharProcs 23 dict def
+ CharProcs begin
+/.notdef {} def
+/s32 {
+326 -676 moveto
+326 -134 326 -676 326 -134 curveto
+326 -93 328 -67 331 -56 curveto
+335 -44 342 -35 354 -28 curveto
+365 -21 384 -17 409 -17 curveto
+424 -17 409 -17 424 -17 curveto
+424 0 424 -17 424 0 curveto
+75 0 424 0 75 0 curveto
+75 -17 75 0 75 -17 curveto
+93 -17 75 -17 93 -17 curveto
+121 -17 141 -20 153 -27 curveto
+165 -33 173 -42 178 -54 curveto
+182 -65 184 -92 184 -134 curveto
+184 -478 184 -134 184 -478 curveto
+184 -509 183 -528 180 -536 curveto
+177 -544 171 -550 163 -556 curveto
+155 -561 146 -564 136 -564 curveto
+119 -564 99 -558 75 -548 curveto
+66 -565 75 -548 66 -565 curveto
+310 -676 66 -565 310 -676 curveto
+326 -676 310 -676 326 -676 curveto
+closepath
+} bind def
+/s33 {
+463 -331 moveto
+463 -265 454 -203 435 -146 curveto
+424 -111 409 -82 391 -59 curveto
+372 -37 351 -19 327 -6 curveto
+303 7 277 14 249 14 curveto
+217 14 189 6 163 -10 curveto
+137 -27 114 -50 95 -80 curveto
+80 -102 68 -132 57 -169 curveto
+43 -219 36 -270 36 -323 curveto
+36 -395 46 -461 66 -522 curveto
+83 -571 108 -610 142 -636 curveto
+176 -663 212 -676 249 -676 curveto
+288 -676 324 -663 357 -637 curveto
+390 -610 415 -575 430 -531 curveto
+452 -470 463 -403 463 -331 curveto
+closepath
+313 -332 moveto
+313 -448 312 -515 311 -535 curveto
+308 -580 300 -610 288 -626 curveto
+279 -637 266 -642 248 -642 curveto
+234 -642 223 -638 215 -630 curveto
+203 -619 195 -599 190 -570 curveto
+186 -541 184 -441 184 -269 curveto
+184 -175 187 -112 194 -80 curveto
+199 -57 206 -42 215 -34 curveto
+224 -26 236 -22 251 -22 curveto
+267 -22 279 -27 288 -38 curveto
+301 -56 309 -84 311 -122 curveto
+313 -332 311 -122 313 -332 curveto
+closepath
+} bind def
+/s34 {
+414 0 moveto
+24 0 414 0 24 0 curveto
+24 -11 24 0 24 -11 curveto
+144 -153 217 -249 242 -298 curveto
+267 -347 280 -395 280 -442 curveto
+280 -476 269 -504 248 -527 curveto
+227 -550 201 -561 171 -561 curveto
+120 -561 81 -536 54 -486 curveto
+36 -492 54 -486 36 -492 curveto
+53 -555 80 -601 116 -631 curveto
+152 -661 193 -676 240 -676 curveto
+273 -676 304 -668 332 -653 curveto
+359 -637 381 -616 397 -588 curveto
+412 -561 420 -536 420 -512 curveto
+420 -469 408 -425 384 -380 curveto
+351 -320 279 -236 169 -128 curveto
+312 -128 169 -128 312 -128 curveto
+347 -128 370 -129 380 -132 curveto
+391 -135 400 -140 406 -147 curveto
+413 -154 422 -169 433 -191 curveto
+451 -191 433 -191 451 -191 curveto
+414 0 451 -191 414 0 curveto
+closepath
+} bind def
+/s35 {
+148 -332 moveto
+148 -349 148 -332 148 -349 curveto
+185 -360 211 -370 225 -379 curveto
+240 -388 252 -402 262 -422 curveto
+273 -441 278 -460 278 -479 curveto
+278 -506 268 -530 248 -549 curveto
+229 -568 204 -578 175 -578 curveto
+129 -578 90 -554 58 -506 curveto
+40 -512 58 -506 40 -512 curveto
+63 -566 94 -607 130 -635 curveto
+167 -662 208 -676 253 -676 curveto
+299 -676 336 -662 366 -634 curveto
+396 -606 411 -573 411 -536 curveto
+411 -511 404 -488 390 -465 curveto
+377 -442 355 -422 326 -405 curveto
+363 -387 392 -364 412 -337 curveto
+432 -309 442 -275 442 -234 curveto
+442 -165 417 -107 367 -58 curveto
+317 -10 250 14 166 14 curveto
+110 14 70 5 44 -14 curveto
+25 -27 16 -43 16 -64 curveto
+16 -79 21 -92 32 -102 curveto
+43 -113 55 -118 69 -118 curveto
+80 -118 90 -116 100 -111 curveto
+105 -109 123 -94 155 -69 curveto
+187 -43 216 -30 244 -30 curveto
+268 -30 289 -40 306 -59 curveto
+323 -78 332 -102 332 -131 curveto
+332 -176 316 -217 285 -254 curveto
+254 -292 208 -318 148 -332 curveto
+closepath
+} bind def
+/s36 {
+25 -249 moveto
+339 -676 25 -249 339 -676 curveto
+398 -676 339 -676 398 -676 curveto
+398 -249 398 -676 398 -249 curveto
+459 -249 398 -249 459 -249 curveto
+459 -148 459 -249 459 -148 curveto
+398 -148 459 -148 398 -148 curveto
+398 0 398 -148 398 0 curveto
+264 0 398 0 264 0 curveto
+264 -148 264 0 264 -148 curveto
+25 -148 264 -148 25 -148 curveto
+25 -249 25 -148 25 -249 curveto
+closepath
+71 -249 moveto
+264 -249 71 -249 264 -249 curveto
+264 -512 264 -249 264 -512 curveto
+71 -249 264 -512 71 -249 curveto
+closepath
+} bind def
+/s37 {
+152 -663 moveto
+462 -663 152 -663 462 -663 curveto
+413 -537 462 -663 413 -537 curveto
+152 -537 413 -537 152 -537 curveto
+127 -471 152 -537 127 -471 curveto
+239 -467 326 -439 386 -387 curveto
+436 -344 461 -291 461 -227 curveto
+461 -186 450 -146 427 -107 curveto
+404 -68 371 -38 329 -17 curveto
+287 4 241 14 190 14 curveto
+136 14 94 4 65 -16 curveto
+45 -30 35 -47 35 -65 curveto
+35 -79 40 -91 51 -102 curveto
+62 -113 74 -118 88 -118 curveto
+101 -118 114 -115 127 -110 curveto
+140 -105 162 -91 194 -69 curveto
+214 -56 231 -46 245 -41 curveto
+255 -37 267 -35 279 -35 curveto
+306 -35 329 -45 348 -64 curveto
+367 -84 376 -107 376 -135 curveto
+376 -193 347 -239 290 -275 curveto
+232 -311 160 -329 73 -329 curveto
+64 -329 51 -329 33 -329 curveto
+152 -663 33 -329 152 -663 curveto
+closepath
+} bind def
+/s38 {
+470 -676 moveto
+470 -662 470 -676 470 -662 curveto
+411 -647 364 -628 328 -604 curveto
+292 -581 264 -552 244 -518 curveto
+223 -485 207 -443 195 -393 curveto
+210 -403 222 -409 231 -412 curveto
+252 -419 274 -422 295 -422 curveto
+345 -422 386 -404 419 -368 curveto
+452 -332 469 -283 469 -221 curveto
+469 -177 460 -137 442 -100 curveto
+424 -64 399 -36 366 -16 curveto
+333 4 298 14 260 14 curveto
+219 14 182 3 147 -19 curveto
+113 -42 86 -74 66 -117 curveto
+47 -160 37 -207 37 -258 curveto
+37 -332 55 -401 91 -465 curveto
+126 -529 177 -580 243 -618 curveto
+308 -656 384 -675 470 -676 curveto
+closepath
+189 -354 moveto
+186 -309 185 -276 185 -255 curveto
+185 -210 189 -166 198 -124 curveto
+207 -82 219 -52 234 -35 curveto
+244 -23 257 -17 272 -17 curveto
+287 -17 301 -26 312 -43 curveto
+324 -61 330 -96 330 -150 curveto
+330 -240 319 -302 297 -337 curveto
+283 -359 264 -370 240 -370 curveto
+227 -370 210 -365 189 -354 curveto
+closepath
+} bind def
+/s39 {
+177 14 moveto
+357 -534 177 14 357 -534 curveto
+220 -534 357 -534 220 -534 curveto
+167 -534 126 -527 99 -513 curveto
+81 -503 65 -485 53 -458 curveto
+34 -458 53 -458 34 -458 curveto
+82 -663 34 -458 82 -663 curveto
+477 -663 82 -663 477 -663 curveto
+254 14 477 -663 254 14 curveto
+177 14 254 14 177 14 curveto
+closepath
+} bind def
+/s40 {
+365 -17 moveto
+365 0 365 -17 365 0 curveto
+20 0 365 0 20 0 curveto
+20 -17 20 0 20 -17 curveto
+42 -17 20 -17 42 -17 curveto
+61 -17 76 -20 88 -27 curveto
+97 -32 103 -40 108 -51 curveto
+111 -59 113 -80 113 -113 curveto
+113 -550 113 -113 113 -550 curveto
+113 -584 111 -605 108 -614 curveto
+104 -623 97 -630 86 -636 curveto
+75 -643 60 -646 42 -646 curveto
+20 -646 42 -646 20 -646 curveto
+20 -663 20 -646 20 -663 curveto
+365 -663 20 -663 365 -663 curveto
+365 -646 365 -663 365 -646 curveto
+343 -646 365 -646 343 -646 curveto
+324 -646 309 -643 297 -636 curveto
+289 -631 282 -623 277 -612 curveto
+274 -604 272 -583 272 -550 curveto
+272 -113 272 -550 272 -113 curveto
+272 -79 274 -58 278 -49 curveto
+281 -40 289 -33 299 -27 curveto
+310 -20 325 -17 343 -17 curveto
+365 -17 343 -17 365 -17 curveto
+closepath
+} bind def
+/s41 {
+221 -457 moveto
+221 -398 221 -457 221 -398 curveto
+244 -423 267 -441 288 -453 curveto
+310 -464 333 -470 358 -470 curveto
+387 -470 412 -462 431 -445 curveto
+451 -429 464 -408 470 -384 curveto
+475 -365 478 -330 478 -277 curveto
+478 -99 478 -277 478 -99 curveto
+478 -64 481 -42 487 -33 curveto
+494 -25 507 -19 527 -17 curveto
+527 0 527 -17 527 0 curveto
+296 0 527 0 296 0 curveto
+296 -17 296 0 296 -17 curveto
+313 -19 326 -26 333 -38 curveto
+338 -47 341 -67 341 -99 curveto
+341 -302 341 -99 341 -302 curveto
+341 -340 340 -363 337 -373 curveto
+334 -383 329 -391 322 -396 curveto
+315 -401 307 -404 299 -404 curveto
+271 -404 245 -384 221 -345 curveto
+221 -99 221 -345 221 -99 curveto
+221 -65 224 -43 231 -34 curveto
+237 -25 249 -19 266 -17 curveto
+266 0 266 -17 266 0 curveto
+35 0 266 0 35 0 curveto
+35 -17 35 0 35 -17 curveto
+54 -19 68 -25 76 -36 curveto
+81 -43 84 -64 84 -99 curveto
+84 -358 84 -99 84 -358 curveto
+84 -393 81 -415 75 -423 curveto
+68 -432 55 -437 35 -440 curveto
+35 -457 35 -440 35 -457 curveto
+221 -457 35 -457 221 -457 curveto
+closepath
+} bind def
+/s42 {
+215 -625 moveto
+215 -457 215 -625 215 -457 curveto
+323 -457 215 -457 323 -457 curveto
+323 -409 323 -457 323 -409 curveto
+215 -409 323 -409 215 -409 curveto
+215 -127 215 -409 215 -127 curveto
+215 -100 216 -83 219 -76 curveto
+221 -68 225 -62 232 -57 curveto
+238 -52 243 -50 249 -50 curveto
+270 -50 290 -66 308 -98 curveto
+323 -87 308 -98 323 -87 curveto
+297 -25 254 6 195 6 curveto
+166 6 141 -2 121 -18 curveto
+101 -34 88 -52 83 -72 curveto
+80 -83 78 -113 78 -162 curveto
+78 -409 78 -162 78 -409 curveto
+18 -409 78 -409 18 -409 curveto
+18 -426 18 -409 18 -426 curveto
+59 -455 94 -486 123 -518 curveto
+152 -550 177 -585 199 -625 curveto
+215 -625 199 -625 215 -625 curveto
+closepath
+} bind def
+/s43 {
+421 -245 moveto
+170 -245 421 -245 170 -245 curveto
+173 -184 189 -137 218 -102 curveto
+241 -75 268 -61 300 -61 curveto
+319 -61 337 -66 353 -77 curveto
+369 -88 386 -108 404 -136 curveto
+421 -125 404 -136 421 -125 curveto
+396 -75 369 -39 339 -18 curveto
+309 3 274 13 235 13 curveto
+167 13 116 -13 81 -65 curveto
+53 -107 39 -159 39 -221 curveto
+39 -297 60 -358 101 -402 curveto
+142 -448 190 -470 246 -470 curveto
+292 -470 332 -451 366 -413 curveto
+400 -375 418 -319 421 -245 curveto
+closepath
+301 -277 moveto
+301 -329 298 -365 292 -385 curveto
+287 -404 278 -419 266 -429 curveto
+259 -435 250 -438 238 -438 curveto
+221 -438 208 -430 197 -413 curveto
+178 -384 168 -344 168 -294 curveto
+168 -277 168 -294 168 -277 curveto
+301 -277 168 -277 301 -277 curveto
+closepath
+} bind def
+/s44 {
+322 -469 moveto
+329 -313 322 -469 329 -313 curveto
+312 -313 329 -313 312 -313 curveto
+292 -359 272 -391 251 -408 curveto
+230 -425 209 -433 188 -433 curveto
+175 -433 163 -429 154 -420 curveto
+145 -411 140 -400 140 -389 curveto
+140 -380 143 -371 150 -363 curveto
+160 -350 189 -327 237 -295 curveto
+284 -263 315 -235 330 -213 curveto
+345 -190 353 -165 353 -137 curveto
+353 -112 347 -87 334 -62 curveto
+321 -38 304 -19 281 -6 curveto
+258 7 232 13 204 13 curveto
+183 13 154 6 118 -8 curveto
+108 -11 101 -13 98 -13 curveto
+87 -13 78 -5 71 12 curveto
+54 12 71 12 54 12 curveto
+46 -152 54 12 46 -152 curveto
+63 -152 46 -152 63 -152 curveto
+78 -109 98 -77 123 -56 curveto
+148 -35 172 -24 195 -24 curveto
+211 -24 223 -29 233 -38 curveto
+243 -48 248 -60 248 -73 curveto
+248 -89 243 -102 233 -114 curveto
+224 -125 202 -142 168 -165 curveto
+119 -200 87 -226 72 -244 curveto
+51 -271 40 -300 40 -332 curveto
+40 -367 52 -399 76 -427 curveto
+100 -456 135 -470 181 -470 curveto
+206 -470 229 -464 252 -452 curveto
+261 -446 268 -444 274 -444 curveto
+280 -444 284 -445 288 -448 curveto
+292 -450 297 -457 305 -469 curveto
+322 -469 305 -469 322 -469 curveto
+closepath
+} bind def
+/s45 {
+143 -678 moveto
+164 -678 182 -671 197 -656 curveto
+212 -641 219 -623 219 -602 curveto
+219 -581 212 -564 197 -549 curveto
+182 -534 164 -527 143 -527 curveto
+122 -527 105 -534 90 -549 curveto
+75 -564 68 -581 68 -602 curveto
+68 -623 75 -641 90 -656 curveto
+105 -671 122 -678 143 -678 curveto
+closepath
+212 -457 moveto
+212 -95 212 -457 212 -95 curveto
+212 -62 216 -42 223 -33 curveto
+231 -23 246 -18 268 -17 curveto
+268 0 268 -17 268 0 curveto
+19 0 268 0 19 0 curveto
+19 -17 19 0 19 -17 curveto
+40 -18 55 -24 65 -35 curveto
+72 -42 75 -62 75 -95 curveto
+75 -362 75 -95 75 -362 curveto
+75 -395 71 -415 64 -424 curveto
+56 -434 41 -439 19 -440 curveto
+19 -457 19 -440 19 -457 curveto
+212 -457 19 -457 212 -457 curveto
+closepath
+} bind def
+/s46 {
+244 19 moveto
+96 -320 244 19 96 -320 curveto
+74 -372 58 -403 47 -415 curveto
+37 -427 24 -435 9 -440 curveto
+9 -457 9 -440 9 -457 curveto
+252 -457 9 -457 252 -457 curveto
+252 -440 252 -457 252 -440 curveto
+236 -439 225 -436 218 -431 curveto
+212 -425 208 -418 208 -410 curveto
+208 -398 217 -373 233 -336 curveto
+311 -156 233 -336 311 -156 curveto
+364 -295 311 -156 364 -295 curveto
+383 -345 393 -380 393 -399 curveto
+393 -411 389 -421 381 -428 curveto
+373 -435 359 -439 339 -440 curveto
+339 -457 339 -440 339 -457 curveto
+490 -457 339 -457 490 -457 curveto
+490 -440 490 -457 490 -440 curveto
+475 -438 463 -433 454 -422 curveto
+444 -412 429 -378 406 -320 curveto
+277 19 406 -320 277 19 curveto
+244 104 219 156 203 175 curveto
+181 202 153 216 119 216 curveto
+92 216 70 208 53 193 curveto
+37 177 28 159 28 137 curveto
+28 118 34 102 46 90 curveto
+57 77 71 71 88 71 curveto
+105 71 118 76 128 87 curveto
+138 97 143 113 143 135 curveto
+143 148 145 156 147 160 curveto
+150 163 154 165 159 165 curveto
+167 165 175 160 184 151 curveto
+197 137 212 106 229 57 curveto
+244 19 229 57 244 19 curveto
+closepath
+} bind def
+/s47 {
+105 183 moveto
+105 -663 105 183 105 -663 curveto
+301 -663 105 -663 301 -663 curveto
+301 -642 301 -663 301 -642 curveto
+279 -642 301 -642 279 -642 curveto
+258 -642 243 -640 236 -635 curveto
+229 -631 223 -625 220 -616 curveto
+216 -607 214 -587 214 -554 curveto
+214 78 214 -554 214 78 curveto
+214 109 215 127 216 132 curveto
+219 144 224 152 232 158 curveto
+240 163 256 166 279 166 curveto
+301 166 279 166 301 166 curveto
+301 183 301 166 301 183 curveto
+105 183 301 183 105 183 curveto
+closepath
+} bind def
+/s48 {
+286 -68 moveto
+230 -19 180 6 136 6 curveto
+110 6 88 -3 71 -20 curveto
+54 -37 45 -58 45 -84 curveto
+45 -119 60 -150 90 -178 curveto
+120 -206 185 -243 286 -289 curveto
+286 -335 286 -289 286 -335 curveto
+286 -369 284 -391 280 -400 curveto
+277 -409 269 -416 259 -423 curveto
+249 -430 237 -433 224 -433 curveto
+202 -433 185 -428 171 -419 curveto
+163 -413 158 -406 158 -398 curveto
+158 -392 163 -383 172 -373 curveto
+185 -359 191 -346 191 -333 curveto
+191 -317 185 -303 173 -292 curveto
+161 -281 145 -275 126 -275 curveto
+106 -275 89 -281 75 -294 curveto
+61 -306 54 -320 54 -337 curveto
+54 -360 63 -383 82 -404 curveto
+100 -425 126 -442 160 -453 curveto
+193 -464 227 -470 263 -470 curveto
+307 -470 341 -461 366 -442 curveto
+391 -424 408 -404 415 -383 curveto
+420 -369 422 -338 422 -289 curveto
+422 -112 422 -289 422 -112 curveto
+422 -91 423 -78 424 -73 curveto
+426 -67 429 -63 432 -61 curveto
+435 -58 439 -57 443 -57 curveto
+452 -57 460 -63 469 -75 curveto
+484 -63 469 -75 484 -63 curveto
+468 -39 451 -21 433 -10 curveto
+416 1 396 6 374 6 curveto
+348 6 328 -0 313 -12 curveto
+298 -25 289 -43 286 -68 curveto
+closepath
+286 -104 moveto
+286 -256 286 -104 286 -256 curveto
+247 -233 217 -208 198 -182 curveto
+185 -164 179 -147 179 -129 curveto
+179 -114 184 -101 195 -89 curveto
+203 -80 215 -76 229 -76 curveto
+246 -76 264 -85 286 -104 curveto
+closepath
+} bind def
+/s49 {
+125 -150 moveto
+148 -150 167 -142 183 -126 curveto
+199 -110 207 -91 207 -68 curveto
+207 -46 199 -27 183 -11 curveto
+167 5 148 13 125 13 curveto
+103 13 84 5 68 -11 curveto
+52 -27 44 -46 44 -68 curveto
+44 -91 52 -110 68 -126 curveto
+84 -142 103 -150 125 -150 curveto
+closepath
+} bind def
+/s50 {
+475 -457 moveto
+475 -99 475 -457 475 -99 curveto
+475 -64 478 -42 485 -33 curveto
+491 -25 504 -19 524 -17 curveto
+524 0 524 -17 524 0 curveto
+338 0 524 0 338 0 curveto
+338 -61 338 0 338 -61 curveto
+316 -35 294 -16 273 -4 curveto
+251 7 226 13 199 13 curveto
+173 13 151 5 131 -11 curveto
+111 -26 97 -45 90 -66 curveto
+83 -87 80 -124 80 -177 curveto
+80 -358 80 -177 80 -358 curveto
+80 -393 77 -415 71 -423 curveto
+64 -432 51 -437 31 -440 curveto
+31 -457 31 -440 31 -457 curveto
+217 -457 31 -457 217 -457 curveto
+217 -145 217 -457 217 -145 curveto
+217 -112 219 -91 222 -82 curveto
+225 -72 230 -65 236 -60 curveto
+243 -55 251 -53 259 -53 curveto
+271 -53 282 -56 291 -62 curveto
+304 -71 320 -88 338 -114 curveto
+338 -358 338 -114 338 -358 curveto
+338 -393 335 -415 329 -423 curveto
+322 -432 309 -437 289 -440 curveto
+289 -457 289 -440 289 -457 curveto
+475 -457 289 -457 475 -457 curveto
+closepath
+} bind def
+/s51 {
+229 -663 moveto
+229 183 229 -663 229 183 curveto
+33 183 229 183 33 183 curveto
+33 164 33 183 33 164 curveto
+55 164 33 164 55 164 curveto
+76 164 91 162 98 158 curveto
+105 154 111 147 114 138 curveto
+118 130 120 109 120 77 curveto
+120 -556 120 77 120 -556 curveto
+120 -587 119 -605 118 -609 curveto
+115 -620 110 -629 102 -635 curveto
+94 -640 78 -643 55 -643 curveto
+33 -643 55 -643 33 -643 curveto
+33 -663 33 -643 33 -663 curveto
+229 -663 33 -663 229 -663 curveto
+closepath
+} bind def
+/s52 {
+31 14 moveto
+31 0 31 14 31 0 curveto
+85 -12 131 -31 168 -55 curveto
+206 -79 236 -109 258 -144 curveto
+280 -180 295 -221 304 -267 curveto
+283 -257 266 -250 252 -246 curveto
+238 -242 223 -240 207 -240 curveto
+157 -240 115 -258 82 -294 curveto
+49 -330 32 -379 32 -442 curveto
+32 -486 41 -526 59 -562 curveto
+77 -598 103 -626 136 -646 curveto
+170 -666 204 -676 240 -676 curveto
+279 -676 316 -665 350 -643 curveto
+384 -621 412 -589 432 -547 curveto
+453 -504 463 -457 463 -403 curveto
+463 -333 446 -266 413 -202 curveto
+380 -139 330 -87 265 -49 curveto
+199 -10 121 11 31 14 curveto
+closepath
+311 -308 moveto
+314 -344 315 -376 315 -404 curveto
+315 -463 308 -519 295 -570 curveto
+287 -598 275 -619 260 -632 curveto
+252 -639 242 -643 229 -643 curveto
+213 -643 200 -636 191 -622 curveto
+178 -603 172 -566 172 -512 curveto
+172 -422 183 -359 204 -325 curveto
+218 -303 237 -292 261 -292 curveto
+273 -292 290 -297 311 -308 curveto
+closepath
+} bind def
+/s53 {
+340 -374 moveto
+387 -340 420 -308 438 -278 curveto
+456 -249 465 -215 465 -177 curveto
+465 -124 445 -78 405 -41 curveto
+364 -4 310 14 241 14 curveto
+175 14 125 -2 89 -34 curveto
+53 -67 35 -106 35 -153 curveto
+35 -188 45 -220 66 -246 curveto
+87 -273 121 -298 169 -320 curveto
+117 -359 83 -392 68 -417 curveto
+53 -443 46 -472 46 -506 curveto
+46 -550 65 -589 102 -622 curveto
+140 -656 192 -673 257 -673 curveto
+320 -673 369 -658 403 -628 curveto
+437 -599 454 -563 454 -521 curveto
+454 -490 445 -462 426 -438 curveto
+408 -414 379 -393 340 -374 curveto
+closepath
+303 -398 moveto
+315 -415 324 -433 330 -453 curveto
+336 -473 339 -495 339 -519 curveto
+339 -561 330 -594 312 -616 curveto
+298 -633 279 -642 255 -642 curveto
+233 -642 214 -634 199 -618 curveto
+184 -603 176 -583 176 -560 curveto
+176 -536 185 -512 202 -486 curveto
+219 -461 253 -431 303 -398 curveto
+closepath
+206 -297 moveto
+196 -288 189 -279 185 -272 curveto
+178 -260 172 -244 167 -222 curveto
+162 -200 159 -177 159 -153 curveto
+159 -122 163 -96 171 -76 curveto
+178 -55 190 -40 204 -31 curveto
+219 -22 233 -17 249 -17 curveto
+272 -17 292 -26 309 -43 curveto
+325 -61 333 -85 333 -115 curveto
+334 -179 291 -239 206 -297 curveto
+closepath
+} bind def
+/s54 {
+198 -676 moveto
+226 -676 254 -669 281 -654 curveto
+308 -640 329 -619 344 -592 curveto
+359 -565 367 -536 367 -507 curveto
+367 -460 350 -421 317 -388 curveto
+284 -355 245 -338 198 -338 curveto
+151 -338 112 -355 79 -388 curveto
+46 -421 29 -460 29 -507 curveto
+29 -536 37 -565 52 -592 curveto
+67 -619 88 -640 115 -654 curveto
+142 -669 170 -676 198 -676 curveto
+closepath
+198 -613 moveto
+168 -613 143 -603 123 -582 curveto
+102 -561 92 -537 92 -508 curveto
+92 -478 102 -454 123 -433 curveto
+144 -412 169 -402 198 -402 curveto
+227 -402 252 -412 273 -433 curveto
+294 -454 304 -478 304 -508 curveto
+304 -537 294 -561 273 -582 curveto
+252 -603 227 -613 198 -613 curveto
+closepath
+} bind def
+end
+/BuildGlyph { exch begin dup Metrics exch get 0 2 index BoundingBoxes exch get aload pop setcachedevice CharProcs exch 2 copy known not{pop/.notdef}if get exec fill end } def
+/BuildChar { 1 index /Encoding get exch get 1 index /BuildGlyph get exec } bind def
+currentdict end /OF0 exch definefont pop
+%%EndFont
+%%BeginFont: /OF1
+11 dict begin
+/FontName /OF1 def
+% TT Name: Symbol
+/FontType 3 def
+/FontMatrix [0.001 0 0 -0.001 0 0] def
+/FontBBox [0 -700 490 212] def
+/Encoding 256 array def 0 1 255{Encoding exch/.notdef put}for
+Encoding 103 /s103 put
+Encoding 113 /s113 put
+/BoundingBoxes 2 dict def
+BoundingBoxes begin
+/s103 [0 -466 423 212] def
+/s113 [43 -700 490 15] def
+end
+/Metrics 2 dict def
+ Metrics begin
+/s103 412 def
+/s113 522 def
+end
+/CharProcs 2 dict def
+ CharProcs begin
+/.notdef {} def
+/s103 {
+325 -458 moveto
+423 -458 325 -458 423 -458 curveto
+417 -438 391 -379 343 -281 curveto
+324 -241 310 -211 302 -191 curveto
+297 -180 293 -170 288 -159 curveto
+234 -44 288 -159 234 -44 curveto
+236 -26 237 -7 238 12 curveto
+239 30 240 46 240 58 curveto
+240 102 237 136 230 161 curveto
+225 180 218 193 209 200 curveto
+200 208 190 212 179 212 curveto
+166 212 154 207 144 196 curveto
+134 185 129 171 129 154 curveto
+129 128 134 99 144 67 curveto
+154 34 168 -2 187 -40 curveto
+164 -202 146 -298 133 -330 curveto
+120 -361 104 -377 84 -377 curveto
+72 -377 62 -373 55 -366 curveto
+49 -359 43 -337 38 -301 curveto
+0 -301 38 -301 0 -301 curveto
+0 -317 0 -328 0 -333 curveto
+0 -378 9 -413 28 -438 curveto
+43 -457 63 -466 88 -466 curveto
+110 -466 127 -461 138 -450 curveto
+159 -429 176 -391 189 -335 curveto
+206 -264 217 -190 223 -112 curveto
+250 -247 223 -112 250 -247 curveto
+269 -311 294 -382 325 -458 curveto
+closepath
+} bind def
+/s113 {
+43 -324 moveto
+43 -451 69 -550 121 -620 curveto
+162 -673 211 -700 268 -700 curveto
+324 -700 372 -674 410 -623 curveto
+463 -552 490 -457 490 -337 curveto
+490 -222 464 -131 412 -64 curveto
+370 -11 321 15 264 15 curveto
+233 15 205 8 180 -7 curveto
+154 -22 132 -43 113 -71 curveto
+94 -98 79 -127 69 -158 curveto
+52 -210 43 -265 43 -324 curveto
+closepath
+378 -367 moveto
+378 -442 370 -505 354 -554 curveto
+343 -591 328 -617 309 -632 curveto
+296 -643 281 -648 265 -648 curveto
+245 -648 228 -640 211 -625 curveto
+194 -610 181 -583 172 -545 curveto
+163 -507 157 -447 154 -367 curveto
+378 -367 154 -367 378 -367 curveto
+closepath
+154 -316 moveto
+155 -267 159 -220 167 -174 curveto
+172 -140 181 -111 194 -87 curveto
+201 -73 212 -61 226 -51 curveto
+240 -42 254 -37 270 -37 curveto
+287 -37 304 -46 321 -63 curveto
+338 -81 351 -110 360 -152 curveto
+370 -193 375 -248 377 -316 curveto
+154 -316 377 -316 154 -316 curveto
+closepath
+} bind def
+end
+/BuildGlyph { exch begin dup Metrics exch get 0 2 index BoundingBoxes exch get aload pop setcachedevice CharProcs exch 2 copy known not{pop/.notdef}if get exec fill end } def
+/BuildChar { 1 index /Encoding get exch get 1 index /BuildGlyph get exec } bind def
+currentdict end /OF1 exch definefont pop
+%%EndFont
+0 286 translate  1 -1 scale
+/AnObj save def
+1 1 1 SetBack   0 0 0 SetFore  UseFore
+0 0 translate
+0.000 0.000 0.000 setrgbcolor
+gsave 1.75 ps [ ] sd newpath 69.25 16.00 M 69.25 235.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 310.12 16.00 M 310.12 235.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 311.00 232.00 M 300.88 232.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 68.38 232.00 M 78.50 232.00 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 43.25 221.25] concat
+14.00 (OF0) 1 F
+( !) 0.00 18.38 14.00 WS
+9.75 (OF0) 1 F
+(") 14.00 8.88 4.88 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 311.00 190.12 M 300.88 190.12 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 68.38 190.12 M 78.50 190.12 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 43.25 179.38] concat
+14.00 (OF0) 1 F
+( !) 0.00 18.38 14.00 WS
+9.75 (OF0) 1 F
+(#) 14.00 8.88 4.88 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 311.00 148.25 M 300.88 148.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 68.38 148.25 M 78.50 148.25 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 43.25 137.50] concat
+14.00 (OF0) 1 F
+( !) 0.00 18.38 14.00 WS
+9.75 (OF0) 1 F
+($) 14.00 8.88 4.88 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 311.00 106.25 M 300.88 106.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 68.38 106.25 M 78.50 106.25 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 43.25 95.50] concat
+14.00 (OF0) 1 F
+( !) 0.00 18.38 14.00 WS
+9.75 (OF0) 1 F
+(%) 14.00 8.88 4.88 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 311.00 64.38 M 300.88 64.38 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 68.38 64.38 M 78.50 64.38 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 43.25 53.62] concat
+14.00 (OF0) 1 F
+( !) 0.00 18.38 14.00 WS
+9.75 (OF0) 1 F
+(&) 14.00 8.88 4.88 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 311.00 22.50 M 300.88 22.50 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 68.38 22.50 M 78.50 22.50 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 43.25 11.75] concat
+14.00 (OF0) 1 F
+( !) 0.00 18.38 14.00 WS
+9.75 (OF0) 1 F
+(') 14.00 8.88 4.88 WS
+grestore
+gsave
+[0.00 -1.00 1.00 0.00 7.00 169.50] concat
+14.00 (OF0) 1 F
+(\(\)*+\),-*./01213) 0.00 12.88 84.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 69.25 235.00 M 310.12 235.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 69.25 16.00 M 310.12 16.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 310.12 15.12 M 310.12 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 310.12 235.88 M 310.12 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 303.12 240.88] concat
+14.00 (OF0) 1 F
+(4!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 295.12 15.12 M 295.12 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 295.12 235.88 M 295.12 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 280.00 15.12 M 280.00 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 280.00 235.88 M 280.00 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 273.00 240.88] concat
+14.00 (OF0) 1 F
+(5!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 265.00 15.12 M 265.00 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 265.00 235.88 M 265.00 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 249.88 15.12 M 249.88 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 249.88 235.88 M 249.88 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 242.88 240.88] concat
+14.00 (OF0) 1 F
+('!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 234.88 15.12 M 234.88 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 234.88 235.88 M 234.88 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 219.75 15.12 M 219.75 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 219.75 235.88 M 219.75 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 212.75 240.88] concat
+14.00 (OF0) 1 F
+(&!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 204.75 15.12 M 204.75 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 204.75 235.88 M 204.75 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 189.75 15.12 M 189.75 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 189.75 235.88 M 189.75 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 182.75 240.88] concat
+14.00 (OF0) 1 F
+(%!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 174.62 15.12 M 174.62 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 174.62 235.88 M 174.62 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 159.62 15.12 M 159.62 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 159.62 235.88 M 159.62 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 152.62 240.88] concat
+14.00 (OF0) 1 F
+($!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 144.50 15.12 M 144.50 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 144.50 235.88 M 144.50 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 129.50 15.12 M 129.50 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 129.50 235.88 M 129.50 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 122.50 240.88] concat
+14.00 (OF0) 1 F
+(#!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 114.38 15.12 M 114.38 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 114.38 235.88 M 114.38 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 99.38 15.12 M 99.38 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 99.38 235.88 M 99.38 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 92.38 240.88] concat
+14.00 (OF0) 1 F
+("!) 0.00 12.88 14.00 WS
+grestore
+gsave 1.75 ps [ ] sd newpath 84.25 15.12 M 84.25 21.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 84.25 235.88 M 84.25 230.00 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 69.25 15.12 M 69.25 25.25 L mstroke grestore
+gsave 1.75 ps [ ] sd newpath 69.25 235.88 M 69.25 225.75 L mstroke grestore
+gsave
+[1.00 0.00 0.00 1.00 62.25 240.88] concat
+14.00 (OF0) 1 F
+( !) 0.00 12.88 14.00 WS
+grestore
+gsave
+[1.00 0.00 0.00 1.00 182.00 262.75] concat
+14.00 (OF0) 1 F
+(") 0.00 14.12 7.00 WS
+14.00 (OF1) 1 F
+(q) 7.00 14.12 7.38 WS
+14.00 (OF0) 1 F
+(/63) 14.38 14.12 14.88 WS
+grestore
+gsave
+[ ] sd
+newpath 69.25 223.88 M
+69.25 222.38 L
+69.38 225.00 L
+69.38 223.12 L
+69.38 226.25 L
+69.50 226.38 L
+69.50 221.88 L
+69.50 223.75 L
+69.62 224.25 L
+69.62 225.00 L
+69.62 223.25 L
+69.75 227.62 L
+69.75 223.75 L
+69.75 226.38 L
+69.88 224.38 L
+69.88 226.25 L
+69.88 222.38 L
+69.88 224.75 L
+70.00 226.25 L
+70.00 226.62 L
+70.00 223.12 L
+70.12 222.62 L
+70.12 222.00 L
+70.12 226.62 L
+70.25 225.12 L
+70.25 221.25 L
+70.25 228.00 L
+70.38 225.62 L
+70.38 220.38 L
+70.38 223.38 L
+70.50 223.75 L
+70.50 224.00 L
+70.50 222.00 L
+70.62 220.38 L
+70.62 219.12 L
+70.62 221.88 L
+70.75 221.50 L
+70.75 217.50 L
+70.75 218.75 L
+70.88 217.38 L
+70.88 216.12 L
+71.00 214.00 L
+71.00 214.88 L
+71.00 212.00 L
+71.12 213.25 L
+71.12 211.50 L
+71.25 210.00 L
+71.25 210.50 L
+71.25 208.25 L
+71.38 208.88 L
+71.38 210.25 L
+71.38 207.88 L
+71.50 207.38 L
+71.50 208.88 L
+71.62 207.50 L
+71.62 210.38 L
+71.62 208.62 L
+71.75 209.12 L
+71.75 208.75 L
+71.75 209.75 L
+71.88 209.12 L
+71.88 212.00 L
+71.88 210.25 L
+72.00 211.88 L
+72.00 211.75 L
+72.00 215.00 L
+72.12 215.75 L
+72.12 218.25 L
+72.12 215.00 L
+72.12 217.00 L
+72.25 220.25 L
+72.25 218.88 L
+72.25 221.75 L
+72.38 220.25 L
+72.38 223.12 L
+72.50 223.88 L
+72.50 226.00 L
+72.50 223.75 L
+72.62 227.88 L
+72.62 229.38 L
+72.62 224.50 L
+72.75 223.50 L
+72.75 228.75 L
+72.75 225.25 L
+72.88 224.75 L
+72.88 226.38 L
+72.88 224.25 L
+73.00 225.75 L
+73.00 225.25 L
+73.00 226.38 L
+73.12 226.25 L
+73.12 229.00 L
+73.12 226.00 L
+73.25 225.50 L
+73.25 223.50 L
+73.25 224.38 L
+73.38 226.12 L
+73.38 227.25 L
+73.38 225.62 L
+73.50 227.12 L
+73.50 227.38 L
+73.50 224.00 L
+73.62 223.75 L
+73.62 227.12 L
+73.75 223.38 L
+73.75 230.25 L
+73.75 227.75 L
+73.88 226.62 L
+73.88 227.38 L
+73.88 225.75 L
+74.00 223.50 L
+74.00 228.25 L
+74.00 226.50 L
+74.12 225.00 L
+74.12 224.75 L
+74.12 228.00 L
+74.25 225.12 L
+74.25 227.62 L
+74.25 226.88 L
+74.38 229.00 L
+74.38 225.00 L
+74.50 228.62 L
+74.50 230.75 L
+74.50 225.50 L
+74.62 225.62 L
+74.62 228.88 L
+74.62 223.75 L
+74.62 227.75 L
+74.75 225.38 L
+74.75 230.88 L
+74.75 228.88 L
+74.88 227.25 L
+74.88 231.00 L
+74.88 225.75 L
+75.00 225.62 L
+75.00 225.12 L
+75.00 229.25 L
+75.12 226.38 L
+75.12 226.62 L
+75.12 228.00 L
+75.12 224.12 L
+75.25 222.62 L
+75.25 229.12 L
+75.25 225.88 L
+75.38 229.38 L
+75.38 225.75 L
+75.38 230.50 L
+75.50 227.12 L
+75.50 228.88 L
+75.62 228.00 L
+75.62 229.88 L
+75.62 226.50 L
+75.75 227.38 L
+75.75 228.38 L
+75.75 226.12 L
+75.88 226.88 L
+75.88 228.75 L
+75.88 225.38 L
+75.88 227.50 L
+76.00 229.88 L
+76.00 227.38 L
+76.12 228.62 L
+76.12 227.00 L
+76.12 229.50 L
+76.25 225.50 L
+76.25 226.50 L
+76.25 224.88 L
+76.38 226.62 L
+76.38 226.00 L
+76.38 227.88 L
+76.50 224.12 L
+76.50 227.75 L
+76.50 226.00 L
+76.62 227.38 L
+76.62 230.25 L
+76.62 227.12 L
+76.62 227.38 L
+76.75 230.12 L
+76.75 228.38 L
+76.88 228.75 L
+76.88 229.75 L
+77.00 228.25 L
+77.00 229.75 L
+77.00 227.38 L
+77.00 228.50 L
+77.12 228.38 L
+77.12 225.62 L
+77.12 228.25 L
+77.25 229.50 L
+77.25 225.62 L
+77.25 230.50 L
+77.38 228.50 L
+77.38 226.25 L
+77.38 229.75 L
+77.50 225.25 L
+77.50 228.00 L
+77.62 231.00 L
+77.62 226.75 L
+77.62 231.00 L
+77.75 228.00 L
+77.75 227.25 L
+77.75 229.50 L
+77.88 228.12 L
+77.88 225.38 L
+77.88 230.25 L
+78.00 228.88 L
+78.00 226.62 L
+78.12 229.50 L
+78.12 226.50 L
+78.12 227.62 L
+78.25 228.88 L
+78.25 230.25 L
+78.25 228.50 L
+78.38 228.62 L
+78.38 230.12 L
+78.38 227.75 L
+78.50 226.50 L
+78.50 228.75 L
+78.50 228.38 L
+78.62 227.00 L
+78.62 232.00 L
+78.62 229.88 L
+78.75 227.88 L
+78.75 226.62 L
+78.75 227.50 L
+78.88 229.00 L
+78.88 225.88 L
+78.88 227.88 L
+79.00 224.00 L
+79.00 232.25 L
+79.12 230.25 L
+79.12 230.62 L
+79.12 227.00 L
+79.25 230.50 L
+79.25 227.25 L
+79.25 229.50 L
+79.38 229.12 L
+79.38 226.62 L
+79.50 229.50 L
+79.50 227.75 L
+79.50 228.88 L
+79.62 227.38 L
+79.62 226.88 L
+79.62 231.50 L
+79.75 226.88 L
+79.75 234.50 L
+79.88 228.50 L
+79.88 225.62 L
+79.88 227.88 L
+80.00 227.62 L
+80.00 229.50 L
+80.00 226.00 L
+80.00 228.62 L
+80.12 229.00 L
+80.12 229.88 L
+80.12 226.38 L
+80.25 228.00 L
+80.25 229.38 L
+80.25 228.75 L
+80.38 230.00 L
+80.38 231.12 L
+80.38 228.00 L
+80.50 226.88 L
+80.50 231.75 L
+80.62 229.75 L
+80.62 225.50 L
+80.62 229.25 L
+80.75 226.38 L
+80.75 224.12 L
+80.75 232.38 L
+80.88 228.62 L
+80.88 227.12 L
+80.88 231.62 L
+81.00 225.88 L
+81.00 226.75 L
+81.00 229.50 L
+81.12 230.50 L
+81.12 228.00 L
+81.12 228.88 L
+81.25 228.12 L
+81.25 235.00 L
+81.25 229.38 L
+81.38 229.00 L
+81.38 226.12 L
+81.50 226.75 L
+81.50 229.25 L
+81.50 227.75 L
+81.62 227.75 L
+81.62 227.38 L
+81.62 230.50 L
+81.75 229.12 L
+81.75 226.75 L
+81.75 230.88 L
+81.88 228.75 L
+81.88 225.50 L
+81.88 229.62 L
+82.00 226.50 L
+82.00 230.00 L
+82.00 227.75 L
+82.12 226.62 L
+82.12 233.25 L
+82.25 229.25 L
+82.25 228.62 L
+82.25 231.25 L
+82.38 230.00 L
+82.38 229.38 L
+82.38 230.62 L
+82.50 226.62 L
+82.50 230.62 L
+82.50 226.38 L
+82.50 227.38 L
+82.62 226.50 L
+82.62 230.88 L
+82.75 232.12 L
+82.75 227.50 L
+82.75 227.62 L
+82.88 229.88 L
+82.88 226.88 L
+82.88 228.00 L
+83.00 229.75 L
+83.00 225.62 L
+83.00 230.12 L
+83.12 228.12 L
+83.12 224.75 L
+83.25 228.00 L
+83.25 226.12 L
+83.25 226.38 L
+83.38 228.25 L
+83.38 229.12 L
+83.38 227.00 L
+83.38 227.12 L
+83.50 227.38 L
+83.50 230.75 L
+83.50 225.75 L
+83.50 227.62 L
+83.62 227.00 L
+83.62 225.62 L
+83.62 225.75 L
+83.75 224.50 L
+83.75 231.38 L
+83.75 228.38 L
+83.88 227.25 L
+83.88 229.38 L
+83.88 228.25 L
+84.00 225.75 L
+84.00 226.88 L
+84.00 224.50 L
+84.00 225.75 L
+84.12 227.50 L
+84.12 229.25 L
+84.12 224.88 L
+84.12 228.12 L
+84.25 227.25 L
+84.25 230.25 L
+84.25 226.88 L
+84.38 226.62 L
+84.38 224.00 L
+84.38 226.75 L
+84.50 233.25 L
+84.50 226.12 L
+84.50 227.12 L
+84.62 224.88 L
+84.62 224.00 L
+84.62 227.75 L
+84.75 226.75 L
+84.75 225.62 L
+84.75 227.62 L
+84.88 226.38 L
+84.88 224.62 L
+84.88 227.12 L
+85.00 225.12 L
+85.00 221.50 L
+85.12 222.25 L
+85.12 223.00 L
+85.12 221.50 L
+85.12 222.50 L
+85.25 222.12 L
+85.25 224.00 L
+85.25 220.75 L
+85.25 221.12 L
+85.38 220.00 L
+85.38 222.88 L
+85.38 218.62 L
+85.50 219.12 L
+85.50 220.25 L
+85.50 216.62 L
+85.62 215.50 L
+85.62 211.62 L
+85.75 212.38 L
+85.75 207.75 L
+85.88 206.88 L
+85.88 204.12 L
+86.00 202.25 L
+86.00 196.50 L
+86.12 199.00 L
+86.12 194.88 L
+86.25 194.12 L
+86.25 188.50 L
+86.38 189.38 L
+86.38 185.25 L
+86.50 183.75 L
+86.50 181.50 L
+86.62 180.25 L
+86.62 176.25 L
+86.75 174.88 L
+86.75 172.38 L
+86.88 172.00 L
+86.88 171.25 L
+86.88 168.75 L
+87.00 168.12 L
+87.00 168.25 L
+87.00 166.38 L
+87.12 165.62 L
+87.12 164.62 L
+87.12 164.75 L
+87.25 164.00 L
+87.25 162.88 L
+87.38 162.75 L
+87.38 161.75 L
+87.38 162.12 L
+87.50 161.50 L
+87.50 161.12 L
+87.50 161.75 L
+87.62 161.25 L
+87.62 162.38 L
+87.75 162.12 L
+87.75 163.75 L
+87.88 163.62 L
+87.88 165.38 L
+88.00 165.50 L
+88.00 168.38 L
+88.12 168.62 L
+88.12 171.50 L
+88.25 172.62 L
+88.25 176.88 L
+88.25 176.62 L
+88.38 179.00 L
+88.38 182.50 L
+88.50 183.25 L
+88.50 188.88 L
+88.62 190.38 L
+88.62 195.50 L
+88.75 196.88 L
+88.75 200.00 L
+88.88 203.25 L
+88.88 207.12 L
+89.00 207.50 L
+89.00 211.62 L
+89.00 211.00 L
+89.12 210.12 L
+89.12 215.38 L
+89.12 214.25 L
+89.25 216.00 L
+89.25 217.62 L
+89.25 216.25 L
+89.38 217.38 L
+89.38 216.12 L
+89.50 218.62 L
+89.50 217.62 L
+89.50 218.00 L
+89.62 217.75 L
+89.62 218.75 L
+89.62 217.25 L
+89.75 217.50 L
+89.75 221.00 L
+89.88 218.25 L
+89.88 217.12 L
+89.88 221.12 L
+90.00 218.12 L
+90.00 221.50 L
+90.12 221.12 L
+90.12 221.00 L
+90.12 223.00 L
+90.25 221.50 L
+90.25 223.75 L
+90.25 222.88 L
+90.38 221.62 L
+90.38 222.50 L
+90.38 221.12 L
+90.38 221.88 L
+90.50 219.88 L
+90.50 223.00 L
+90.50 222.00 L
+90.62 222.88 L
+90.62 223.50 L
+90.62 221.00 L
+90.75 221.88 L
+90.75 223.25 L
+90.75 220.75 L
+90.75 222.38 L
+90.88 222.00 L
+90.88 219.38 L
+90.88 223.50 L
+91.00 221.62 L
+91.00 223.88 L
+91.00 222.62 L
+91.12 221.75 L
+91.12 224.50 L
+91.25 221.75 L
+91.25 221.00 L
+91.25 224.75 L
+91.38 223.50 L
+91.38 229.25 L
+91.38 221.50 L
+91.50 226.50 L
+91.50 223.00 L
+91.62 223.38 L
+91.62 225.62 L
+91.62 220.38 L
+91.62 223.12 L
+91.75 223.88 L
+91.75 228.75 L
+91.75 222.88 L
+91.88 223.38 L
+91.88 224.50 L
+91.88 223.88 L
+92.00 224.12 L
+92.00 224.75 L
+92.00 221.62 L
+92.00 222.62 L
+92.12 222.25 L
+92.12 220.50 L
+92.12 228.88 L
+92.25 223.12 L
+92.25 224.62 L
+92.25 221.12 L
+92.25 224.38 L
+92.38 225.25 L
+92.38 226.88 L
+92.38 223.25 L
+92.50 222.75 L
+92.50 226.25 L
+92.50 220.75 L
+92.50 225.75 L
+92.62 224.25 L
+92.62 226.25 L
+92.62 223.12 L
+92.62 224.88 L
+92.75 227.75 L
+92.75 224.25 L
+92.75 226.38 L
+92.75 225.88 L
+92.88 227.12 L
+92.88 224.00 L
+92.88 229.75 L
+93.00 227.00 L
+93.00 225.38 L
+93.00 227.25 L
+93.12 228.00 L
+93.12 228.12 L
+93.12 223.12 L
+93.25 224.25 L
+93.25 228.12 L
+93.25 224.88 L
+93.38 227.75 L
+93.38 228.25 L
+93.38 225.38 L
+93.38 225.75 L
+93.50 227.12 L
+93.50 230.50 L
+93.50 226.00 L
+93.62 229.25 L
+93.62 225.75 L
+93.75 226.62 L
+93.75 228.50 L
+93.75 225.88 L
+93.88 228.50 L
+93.88 226.12 L
+94.00 226.25 L
+94.00 230.25 L
+94.00 225.88 L
+94.00 230.12 L
+94.12 227.88 L
+94.12 225.38 L
+94.25 225.88 L
+94.25 228.88 L
+94.38 229.75 L
+94.38 224.88 L
+94.38 225.50 L
+94.50 224.62 L
+94.50 228.50 L
+94.50 225.38 L
+94.62 227.50 L
+94.62 226.62 L
+94.62 231.25 L
+94.75 227.38 L
+94.75 230.50 L
+94.75 222.38 L
+94.88 226.38 L
+94.88 229.75 L
+94.88 225.25 L
+94.88 229.62 L
+95.00 224.38 L
+95.00 228.75 L
+95.00 227.50 L
+95.12 228.12 L
+95.12 225.12 L
+95.12 226.50 L
+95.25 225.62 L
+95.25 232.25 L
+95.25 225.00 L
+95.38 226.12 L
+95.38 228.88 L
+95.50 229.00 L
+95.50 225.75 L
+95.62 224.75 L
+95.62 227.75 L
+95.62 224.25 L
+95.75 228.75 L
+95.75 229.12 L
+95.75 227.50 L
+95.75 228.12 L
+95.88 229.25 L
+95.88 227.62 L
+95.88 230.38 L
+96.00 227.38 L
+96.00 231.25 L
+96.00 227.00 L
+96.12 225.88 L
+96.12 229.50 L
+96.25 229.12 L
+96.25 231.38 L
+96.25 228.62 L
+96.25 230.88 L
+96.38 231.00 L
+96.38 227.25 L
+96.38 230.62 L
+96.50 227.62 L
+96.50 229.75 L
+96.50 225.75 L
+96.50 228.75 L
+96.62 227.75 L
+96.62 230.50 L
+96.62 227.25 L
+96.62 227.50 L
+96.75 230.88 L
+96.75 231.12 L
+96.75 228.38 L
+96.75 229.12 L
+96.88 230.88 L
+96.88 225.75 L
+96.88 228.25 L
+97.00 228.75 L
+97.00 228.12 L
+97.12 228.38 L
+97.12 230.00 L
+97.12 225.12 L
+97.12 227.00 L
+97.25 227.75 L
+97.25 230.12 L
+97.25 227.88 L
+97.38 227.50 L
+97.38 233.12 L
+97.38 229.38 L
+97.50 229.88 L
+97.50 226.62 L
+97.50 230.00 L
+97.62 224.25 L
+97.62 231.12 L
+97.75 227.12 L
+97.75 231.50 L
+97.75 227.88 L
+97.88 230.25 L
+97.88 226.12 L
+97.88 227.25 L
+98.00 230.12 L
+98.00 226.75 L
+98.00 229.75 L
+98.12 230.00 L
+98.12 232.75 L
+98.12 227.38 L
+98.25 230.75 L
+98.25 226.00 L
+98.25 227.88 L
+98.38 228.88 L
+98.38 232.88 L
+98.38 226.50 L
+98.38 227.38 L
+98.50 226.25 L
+98.50 229.75 L
+98.62 230.62 L
+98.62 229.38 L
+98.62 229.75 L
+98.62 227.88 L
+98.75 231.62 L
+98.75 226.75 L
+98.75 228.88 L
+98.88 228.88 L
+98.88 228.12 L
+98.88 230.75 L
+99.00 228.00 L
+99.00 227.88 L
+99.00 232.25 L
+99.12 227.50 L
+99.12 226.88 L
+99.12 231.00 L
+99.25 230.12 L
+99.25 227.62 L
+99.25 228.88 L
+99.38 227.75 L
+99.38 229.50 L
+99.38 226.88 L
+99.38 227.00 L
+99.50 227.25 L
+99.50 229.00 L
+99.50 226.00 L
+99.62 229.12 L
+99.62 229.50 L
+99.62 227.38 L
+99.62 228.88 L
+99.75 229.88 L
+99.75 231.62 L
+99.75 225.38 L
+99.88 230.62 L
+99.88 226.88 L
+99.88 228.62 L
+100.00 227.00 L
+100.00 231.75 L
+100.00 227.88 L
+100.12 226.88 L
+100.12 232.25 L
+100.12 227.50 L
+100.25 229.25 L
+100.25 227.38 L
+100.25 229.88 L
+100.38 229.00 L
+100.38 227.38 L
+100.50 226.75 L
+100.50 232.00 L
+100.50 228.62 L
+100.62 226.75 L
+100.62 228.75 L
+100.62 228.12 L
+100.75 232.75 L
+100.75 229.00 L
+100.75 231.25 L
+100.88 230.62 L
+100.88 228.12 L
+100.88 230.62 L
+101.00 226.50 L
+101.00 230.88 L
+101.00 229.75 L
+101.12 228.62 L
+101.12 230.50 L
+101.12 229.75 L
+101.25 228.38 L
+101.25 232.12 L
+101.25 227.75 L
+101.25 231.00 L
+101.38 228.88 L
+101.38 230.38 L
+101.38 226.88 L
+101.38 227.25 L
+101.50 227.88 L
+101.50 229.50 L
+101.50 228.25 L
+101.62 226.62 L
+101.62 231.88 L
+101.75 227.50 L
+101.75 230.00 L
+101.88 228.50 L
+101.88 232.12 L
+101.88 228.00 L
+101.88 230.75 L
+102.00 228.50 L
+102.00 230.88 L
+102.12 230.50 L
+102.12 230.75 L
+102.12 227.38 L
+102.12 228.00 L
+102.25 226.50 L
+102.25 229.50 L
+102.38 229.25 L
+102.38 227.38 L
+102.38 227.62 L
+102.50 229.62 L
+102.50 228.50 L
+102.62 226.62 L
+102.62 230.75 L
+102.62 228.38 L
+102.75 230.50 L
+102.75 225.50 L
+102.88 229.12 L
+102.88 229.50 L
+102.88 227.12 L
+102.88 228.12 L
+103.00 227.25 L
+103.00 229.75 L
+103.00 226.12 L
+103.00 229.00 L
+103.12 224.12 L
+103.12 229.38 L
+103.12 225.75 L
+103.25 227.75 L
+103.25 229.50 L
+103.25 227.62 L
+103.38 224.88 L
+103.38 226.62 L
+103.50 227.12 L
+103.50 228.88 L
+103.50 225.38 L
+103.62 226.00 L
+103.62 228.00 L
+103.62 224.25 L
+103.62 227.50 L
+103.75 229.12 L
+103.75 222.62 L
+103.75 222.75 L
+103.88 224.88 L
+103.88 222.75 L
+103.88 226.00 L
+104.00 225.00 L
+104.00 223.38 L
+104.00 226.88 L
+104.12 226.00 L
+104.12 225.75 L
+104.12 226.75 L
+104.25 224.50 L
+104.25 227.00 L
+104.25 225.75 L
+104.38 225.75 L
+104.38 226.12 L
+104.38 223.38 L
+104.38 225.62 L
+104.50 224.00 L
+104.50 225.25 L
+104.50 224.62 L
+104.50 225.00 L
+104.62 225.50 L
+104.62 228.00 L
+104.62 226.00 L
+104.75 227.50 L
+104.75 226.12 L
+104.75 227.50 L
+104.88 226.00 L
+104.88 227.00 L
+104.88 225.25 L
+104.88 226.50 L
+105.00 225.50 L
+105.00 226.62 L
+105.00 224.50 L
+105.00 225.62 L
+105.12 225.25 L
+105.12 227.38 L
+105.12 224.62 L
+105.12 225.50 L
+105.25 225.62 L
+105.25 228.50 L
+105.25 226.00 L
+105.38 226.62 L
+105.38 228.75 L
+105.38 226.50 L
+105.38 227.12 L
+105.50 230.50 L
+105.50 227.88 L
+105.50 229.50 L
+105.62 228.38 L
+105.62 229.50 L
+105.62 227.88 L
+105.75 231.62 L
+105.75 227.75 L
+105.75 230.50 L
+105.88 229.88 L
+105.88 233.50 L
+105.88 227.50 L
+106.00 228.50 L
+106.00 229.75 L
+106.00 226.75 L
+106.00 228.88 L
+106.12 227.62 L
+106.12 229.88 L
+106.12 228.50 L
+106.25 231.50 L
+106.25 226.62 L
+106.25 231.00 L
+106.38 228.38 L
+106.38 229.50 L
+106.38 226.25 L
+106.50 229.62 L
+106.50 227.12 L
+106.62 227.50 L
+106.62 226.62 L
+106.62 229.25 L
+106.75 225.25 L
+106.75 228.12 L
+106.75 225.00 L
+106.75 227.50 L
+106.88 228.25 L
+106.88 226.38 L
+106.88 227.38 L
+107.00 231.00 L
+107.00 225.75 L
+107.00 228.12 L
+107.12 230.25 L
+107.12 227.75 L
+107.25 225.75 L
+107.25 227.62 L
+107.25 227.12 L
+107.38 231.88 L
+107.38 226.25 L
+107.38 227.38 L
+107.50 228.00 L
+107.50 226.50 L
+107.62 225.88 L
+107.62 229.75 L
+107.62 229.50 L
+107.75 227.75 L
+107.75 226.50 L
+107.75 231.50 L
+107.88 226.50 L
+107.88 227.50 L
+107.88 226.12 L
+108.00 228.25 L
+108.00 226.62 L
+108.00 230.25 L
+108.12 226.25 L
+108.12 228.25 L
+108.12 227.25 L
+108.25 227.88 L
+108.25 230.25 L
+108.25 227.38 L
+108.38 226.62 L
+108.38 230.88 L
+108.38 226.38 L
+108.50 227.00 L
+108.50 226.00 L
+108.50 229.12 L
+108.62 229.12 L
+108.62 230.00 L
+108.62 226.00 L
+108.62 227.50 L
+108.75 227.88 L
+108.75 229.62 L
+108.75 227.50 L
+108.75 228.12 L
+108.88 231.25 L
+108.88 225.38 L
+108.88 227.50 L
+109.00 225.88 L
+109.00 229.62 L
+109.12 225.75 L
+109.12 225.50 L
+109.12 231.12 L
+109.25 225.88 L
+109.25 231.12 L
+109.25 229.00 L
+109.38 226.38 L
+109.38 229.00 L
+109.38 226.50 L
+109.50 226.38 L
+109.50 230.88 L
+109.50 226.50 L
+109.62 228.38 L
+109.62 228.50 L
+109.62 227.12 L
+109.75 227.88 L
+109.75 230.50 L
+109.75 227.25 L
+109.75 227.88 L
+109.88 227.88 L
+109.88 229.25 L
+109.88 228.00 L
+110.00 228.25 L
+110.00 226.38 L
+110.00 227.00 L
+110.12 227.88 L
+110.12 228.25 L
+110.12 226.62 L
+110.25 226.12 L
+110.25 232.88 L
+110.25 225.50 L
+110.25 228.50 L
+110.38 232.12 L
+110.38 226.62 L
+110.38 227.38 L
+110.50 226.62 L
+110.50 230.38 L
+110.50 226.00 L
+110.50 226.62 L
+110.62 227.75 L
+110.62 225.75 L
+110.62 227.00 L
+110.75 226.75 L
+110.75 228.00 L
+110.75 226.38 L
+110.88 227.25 L
+110.88 229.38 L
+110.88 228.25 L
+111.00 227.12 L
+111.00 228.62 L
+111.00 226.38 L
+111.12 228.88 L
+111.12 230.75 L
+111.12 226.50 L
+111.25 231.12 L
+111.25 224.00 L
+111.25 226.38 L
+111.38 226.12 L
+111.38 228.50 L
+111.38 225.75 L
+1.000 0.000 0.000 setrgbcolor
+1.75 ps
+2 setlinejoin
+gsave 1.00 ps mstroke grestore
+[ ] sd
+newpath 111.38 225.75 M
+111.38 226.38 L
+111.50 226.75 L
+111.50 225.38 L
+111.50 226.62 L
+111.62 229.75 L
+111.62 224.25 L
+111.62 228.12 L
+111.75 227.00 L
+111.75 226.25 L
+111.75 227.75 L
+111.88 229.75 L
+111.88 226.50 L
+111.88 227.00 L
+112.00 228.12 L
+112.00 227.50 L
+112.00 229.00 L
+112.12 228.12 L
+112.12 226.25 L
+112.12 226.50 L
+112.25 224.62 L
+112.25 228.38 L
+112.38 225.25 L
+112.38 224.88 L
+112.38 226.25 L
+112.50 226.38 L
+112.50 228.38 L
+112.50 225.50 L
+112.62 229.50 L
+112.62 225.88 L
+112.62 228.00 L
+112.75 225.62 L
+112.75 225.38 L
+112.75 227.50 L
+112.88 224.00 L
+112.88 230.62 L
+112.88 225.00 L
+113.00 225.00 L
+113.00 224.75 L
+113.00 227.00 L
+113.12 226.62 L
+113.12 228.75 L
+113.12 224.25 L
+113.12 225.50 L
+113.25 224.75 L
+113.25 226.50 L
+113.25 223.75 L
+113.38 227.00 L
+113.38 228.00 L
+113.38 224.75 L
+113.50 224.88 L
+113.50 227.50 L
+113.50 222.38 L
+113.62 229.00 L
+113.62 224.25 L
+113.62 225.75 L
+113.75 227.25 L
+113.75 225.00 L
+113.75 228.00 L
+113.88 230.88 L
+113.88 223.88 L
+113.88 225.12 L
+114.00 225.00 L
+114.00 227.75 L
+114.00 225.25 L
+114.12 226.75 L
+114.12 228.00 L
+114.12 222.38 L
+114.12 226.75 L
+114.25 226.25 L
+114.25 227.12 L
+114.25 224.62 L
+114.38 230.00 L
+114.38 225.12 L
+114.38 226.62 L
+114.50 225.12 L
+114.50 224.62 L
+114.50 225.38 L
+114.62 226.88 L
+114.62 223.75 L
+114.62 224.12 L
+114.75 224.50 L
+114.75 224.38 L
+114.75 225.88 L
+114.88 226.38 L
+114.88 224.25 L
+114.88 225.88 L
+115.00 225.25 L
+115.00 226.00 L
+115.00 224.88 L
+115.12 222.75 L
+115.12 223.75 L
+115.25 225.00 L
+115.25 223.25 L
+115.25 225.38 L
+115.38 223.50 L
+115.38 224.00 L
+115.38 222.50 L
+115.50 224.00 L
+115.50 219.25 L
+115.50 224.00 L
+115.62 222.38 L
+115.62 222.62 L
+115.62 221.12 L
+115.62 222.12 L
+115.75 222.12 L
+115.75 219.88 L
+115.88 219.50 L
+115.88 222.50 L
+116.00 221.00 L
+116.00 222.25 L
+116.00 218.88 L
+116.00 219.75 L
+116.12 222.25 L
+116.12 219.50 L
+116.12 223.25 L
+116.25 218.88 L
+116.25 221.00 L
+116.25 224.38 L
+116.25 220.12 L
+116.38 221.88 L
+116.38 220.00 L
+116.38 222.38 L
+116.50 219.75 L
+116.50 222.50 L
+116.50 221.12 L
+116.62 222.88 L
+116.62 225.75 L
+116.62 218.75 L
+116.75 218.25 L
+116.75 222.12 L
+116.88 219.38 L
+116.88 221.50 L
+116.88 220.50 L
+117.00 223.38 L
+117.00 217.38 L
+117.12 218.12 L
+117.12 223.12 L
+117.12 221.25 L
+117.25 218.88 L
+117.25 218.75 L
+117.25 220.00 L
+117.38 219.38 L
+117.38 219.25 L
+117.38 222.25 L
+117.50 220.50 L
+117.50 219.62 L
+117.50 220.00 L
+117.62 220.12 L
+117.62 216.62 L
+117.62 218.00 L
+117.75 217.62 L
+117.75 215.50 L
+117.75 218.88 L
+117.88 215.12 L
+117.88 217.25 L
+117.88 216.25 L
+118.00 216.50 L
+118.00 213.25 L
+118.12 212.75 L
+118.12 213.62 L
+118.12 213.00 L
+118.25 213.62 L
+118.25 213.88 L
+118.25 212.00 L
+118.38 214.25 L
+118.38 212.50 L
+118.38 213.38 L
+118.50 212.62 L
+118.50 211.38 L
+118.50 213.50 L
+118.62 217.38 L
+118.62 215.25 L
+118.62 215.50 L
+118.75 215.88 L
+118.75 214.75 L
+118.75 219.88 L
+118.88 217.62 L
+118.88 220.25 L
+119.00 217.50 L
+119.00 219.62 L
+119.00 218.62 L
+119.12 218.00 L
+119.12 217.00 L
+119.12 218.75 L
+119.25 217.00 L
+119.25 215.00 L
+119.25 217.88 L
+119.38 218.12 L
+119.38 214.25 L
+119.50 216.75 L
+119.50 217.50 L
+119.50 215.88 L
+119.62 218.88 L
+119.62 215.62 L
+119.62 217.25 L
+119.75 216.00 L
+119.75 217.75 L
+119.88 216.62 L
+119.88 215.38 L
+119.88 216.50 L
+120.00 214.75 L
+120.00 220.25 L
+120.12 217.12 L
+120.12 217.25 L
+120.12 215.12 L
+120.25 215.25 L
+120.25 215.00 L
+120.25 217.62 L
+120.38 215.62 L
+120.38 217.12 L
+120.38 213.62 L
+120.38 214.62 L
+120.50 215.88 L
+120.50 214.50 L
+120.50 216.38 L
+120.62 215.00 L
+120.62 213.38 L
+120.62 213.62 L
+120.75 213.75 L
+120.75 214.88 L
+120.75 213.12 L
+120.75 213.88 L
+120.88 215.00 L
+120.88 215.50 L
+120.88 212.50 L
+121.00 212.25 L
+121.00 215.38 L
+121.00 213.50 L
+121.12 211.88 L
+121.12 214.25 L
+121.12 212.38 L
+121.25 213.25 L
+121.25 211.62 L
+121.25 213.12 L
+121.38 211.12 L
+121.38 213.25 L
+121.38 211.12 L
+121.50 213.00 L
+121.50 211.38 L
+121.50 212.75 L
+121.62 210.62 L
+121.62 211.75 L
+121.62 210.38 L
+121.75 212.12 L
+121.75 210.38 L
+121.88 213.12 L
+121.88 210.50 L
+121.88 210.75 L
+122.00 212.25 L
+122.00 210.75 L
+122.00 211.50 L
+122.12 211.38 L
+122.12 211.62 L
+122.12 209.75 L
+122.25 210.12 L
+122.25 211.00 L
+122.25 209.75 L
+122.38 211.25 L
+122.38 211.88 L
+122.38 209.25 L
+122.38 210.88 L
+122.50 210.50 L
+122.50 209.25 L
+122.50 211.00 L
+122.62 209.00 L
+122.62 210.88 L
+122.62 209.88 L
+122.75 209.00 L
+122.75 210.00 L
+122.75 208.12 L
+122.75 208.88 L
+122.88 209.62 L
+122.88 210.00 L
+122.88 208.88 L
+123.00 210.25 L
+123.00 208.25 L
+123.00 209.00 L
+123.12 209.62 L
+123.12 206.12 L
+123.12 207.62 L
+123.25 208.38 L
+123.25 206.50 L
+123.38 207.25 L
+123.38 208.00 L
+123.38 206.00 L
+123.38 207.50 L
+123.50 206.62 L
+123.50 208.25 L
+123.50 205.25 L
+123.62 204.62 L
+123.62 206.25 L
+123.62 204.62 L
+123.75 204.38 L
+123.75 205.38 L
+123.75 202.12 L
+123.88 201.00 L
+123.88 197.50 L
+123.88 199.50 L
+124.00 197.38 L
+124.00 193.12 L
+124.12 191.25 L
+124.12 187.88 L
+124.25 186.75 L
+124.25 182.12 L
+124.38 180.88 L
+124.38 174.12 L
+124.50 171.12 L
+124.50 159.88 L
+124.62 157.50 L
+124.62 147.25 L
+124.75 144.38 L
+124.75 135.88 L
+124.88 133.50 L
+124.88 126.75 L
+125.00 124.62 L
+125.00 119.12 L
+125.12 118.12 L
+125.12 115.75 L
+125.25 115.38 L
+125.25 114.38 L
+125.38 114.38 L
+125.38 116.75 L
+125.50 118.00 L
+125.50 124.12 L
+125.62 127.62 L
+125.62 141.25 L
+125.75 146.12 L
+125.75 157.12 L
+125.88 159.00 L
+125.88 162.25 L
+126.00 162.62 L
+126.00 163.88 L
+126.12 164.25 L
+126.12 165.62 L
+126.12 165.00 L
+126.25 165.25 L
+126.25 165.62 L
+126.25 165.25 L
+126.38 166.12 L
+126.38 164.75 L
+126.38 165.62 L
+126.50 165.62 L
+126.50 165.25 L
+126.50 166.00 L
+126.62 165.50 L
+126.62 164.88 L
+126.75 165.00 L
+126.75 164.38 L
+126.75 164.75 L
+126.88 164.50 L
+126.88 165.00 L
+126.88 164.38 L
+127.00 164.38 L
+127.00 164.25 L
+127.12 164.12 L
+127.12 163.75 L
+127.12 163.88 L
+127.25 163.62 L
+127.25 163.12 L
+127.38 163.62 L
+127.38 163.00 L
+127.38 163.25 L
+127.50 162.50 L
+127.50 162.88 L
+127.50 162.75 L
+127.62 162.75 L
+127.62 162.12 L
+127.75 162.12 L
+127.75 161.62 L
+127.88 161.50 L
+127.88 160.12 L
+127.88 160.38 L
+128.00 160.62 L
+128.00 159.50 L
+128.12 159.50 L
+128.12 158.38 L
+128.25 158.12 L
+128.25 157.75 L
+128.25 158.00 L
+128.38 157.50 L
+128.38 156.75 L
+128.50 156.38 L
+128.50 155.38 L
+128.62 155.38 L
+128.62 154.25 L
+128.75 153.88 L
+128.75 152.75 L
+128.88 153.00 L
+128.88 151.62 L
+129.00 151.38 L
+129.00 150.50 L
+129.12 149.88 L
+129.12 148.88 L
+129.25 148.50 L
+129.25 147.62 L
+129.38 146.88 L
+129.38 147.12 L
+129.38 146.25 L
+129.50 145.62 L
+129.50 144.00 L
+129.62 143.75 L
+129.62 142.12 L
+129.75 142.12 L
+129.75 140.62 L
+129.88 140.25 L
+129.88 138.62 L
+130.00 138.12 L
+130.00 135.50 L
+130.12 134.25 L
+130.12 131.25 L
+130.25 130.38 L
+130.25 126.12 L
+130.38 125.00 L
+130.38 122.50 L
+130.50 121.75 L
+130.50 120.62 L
+130.62 120.38 L
+130.62 119.75 L
+130.62 120.00 L
+130.75 120.00 L
+130.75 119.88 L
+130.75 120.62 L
+130.88 120.88 L
+130.88 122.25 L
+131.00 122.88 L
+131.00 123.62 L
+131.12 123.25 L
+131.12 122.38 L
+131.25 122.25 L
+131.25 121.50 L
+131.38 121.38 L
+131.38 120.88 L
+131.50 120.62 L
+131.50 120.00 L
+131.62 120.00 L
+131.62 119.62 L
+131.75 119.50 L
+131.75 119.00 L
+131.88 118.75 L
+131.88 118.12 L
+132.00 117.88 L
+132.00 117.00 L
+132.12 116.88 L
+132.12 116.25 L
+132.25 116.25 L
+132.25 115.62 L
+132.25 115.75 L
+132.38 115.50 L
+132.38 115.00 L
+132.50 114.88 L
+132.50 114.12 L
+132.62 114.00 L
+132.62 113.38 L
+132.75 113.25 L
+132.75 112.50 L
+132.88 112.38 L
+132.88 111.75 L
+133.00 111.75 L
+133.00 110.88 L
+133.12 110.62 L
+133.12 109.88 L
+133.25 109.88 L
+133.25 108.75 L
+133.38 108.50 L
+133.38 107.25 L
+133.50 106.88 L
+133.50 105.25 L
+133.62 104.62 L
+133.62 100.62 L
+133.75 99.12 L
+133.75 95.00 L
+133.88 93.38 L
+133.88 88.00 L
+134.00 85.62 L
+134.00 71.62 L
+134.12 64.50 L
+134.12 48.50 L
+134.25 44.88 L
+134.25 36.25 L
+134.38 33.62 L
+134.38 24.25 L
+134.50 22.62 L
+134.50 19.25 L
+134.62 18.25 L
+134.62 16.12 L
+134.75 16.00 L
+134.75 16.62 L
+134.88 17.25 L
+134.88 20.62 L
+135.00 22.50 L
+135.00 29.88 L
+135.12 32.75 L
+135.12 42.12 L
+135.25 45.38 L
+135.25 65.88 L
+135.38 72.75 L
+135.38 92.50 L
+135.50 96.25 L
+135.50 103.25 L
+135.62 105.12 L
+135.62 109.75 L
+135.75 110.88 L
+135.75 114.50 L
+135.88 115.62 L
+135.88 118.75 L
+136.00 119.50 L
+136.00 122.38 L
+136.12 123.00 L
+136.12 126.50 L
+136.25 127.50 L
+136.25 129.75 L
+136.38 130.88 L
+136.38 133.12 L
+136.50 133.88 L
+136.50 136.12 L
+136.62 136.75 L
+136.62 138.75 L
+136.75 139.50 L
+136.75 141.38 L
+136.88 142.50 L
+136.88 144.75 L
+137.00 145.25 L
+137.00 147.25 L
+137.12 147.75 L
+137.12 149.12 L
+137.25 149.50 L
+137.25 151.50 L
+137.38 151.75 L
+137.38 153.25 L
+137.38 152.88 L
+137.50 153.75 L
+137.50 154.62 L
+137.62 155.12 L
+137.62 156.62 L
+137.75 156.75 L
+137.75 158.62 L
+137.88 158.38 L
+137.88 159.75 L
+138.00 159.75 L
+138.00 160.75 L
+138.12 161.00 L
+138.12 162.38 L
+138.25 162.62 L
+138.25 163.25 L
+138.38 163.38 L
+138.38 164.88 L
+138.50 164.62 L
+138.50 165.62 L
+138.62 165.88 L
+138.62 166.88 L
+138.75 167.00 L
+138.75 167.75 L
+138.88 168.38 L
+138.88 168.12 L
+138.88 168.62 L
+139.00 168.75 L
+139.00 169.50 L
+139.00 169.25 L
+139.12 169.75 L
+139.12 170.38 L
+139.25 171.38 L
+139.25 172.25 L
+139.25 170.50 L
+139.25 172.12 L
+139.38 172.12 L
+139.38 172.25 L
+139.38 171.62 L
+139.38 171.75 L
+139.50 173.00 L
+139.50 174.12 L
+139.50 172.88 L
+139.50 173.62 L
+139.62 173.75 L
+139.62 174.38 L
+139.62 173.50 L
+139.62 174.25 L
+139.75 174.50 L
+139.75 175.12 L
+139.88 175.12 L
+139.88 176.62 L
+140.00 176.25 L
+140.00 177.50 L
+140.00 176.88 L
+140.12 177.00 L
+140.12 177.75 L
+140.12 177.50 L
+140.25 178.12 L
+140.25 179.38 L
+140.38 179.00 L
+140.38 180.00 L
+140.50 179.88 L
+140.50 179.50 L
+140.50 180.75 L
+140.62 180.62 L
+140.62 181.12 L
+140.75 180.75 L
+140.75 181.88 L
+140.75 181.62 L
+140.88 181.50 L
+140.88 183.00 L
+141.00 182.38 L
+141.00 182.12 L
+141.00 183.50 L
+141.12 183.25 L
+141.12 183.88 L
+141.25 183.50 L
+141.25 185.12 L
+141.38 183.75 L
+141.38 185.00 L
+141.50 185.00 L
+141.50 186.00 L
+141.50 185.25 L
+141.62 185.75 L
+141.62 185.25 L
+141.75 186.50 L
+141.75 185.38 L
+141.88 185.12 L
+141.88 185.00 L
+141.88 186.00 L
+142.00 185.25 L
+142.00 184.25 L
+142.12 184.12 L
+142.12 186.00 L
+142.25 184.62 L
+142.25 184.25 L
+142.38 184.88 L
+142.38 184.25 L
+142.38 184.38 L
+142.50 184.62 L
+142.50 186.50 L
+142.62 186.88 L
+142.62 186.62 L
+142.62 187.75 L
+142.75 188.25 L
+142.75 189.00 L
+142.75 188.12 L
+142.75 188.50 L
+142.88 189.62 L
+142.88 189.88 L
+143.00 190.88 L
+143.00 190.00 L
+143.00 191.50 L
+143.12 191.00 L
+143.12 189.75 L
+143.12 190.75 L
+143.25 191.75 L
+143.25 191.12 L
+143.25 191.88 L
+143.38 191.25 L
+143.38 191.75 L
+143.38 190.75 L
+143.38 191.38 L
+143.50 191.00 L
+143.50 192.25 L
+143.62 191.75 L
+143.62 192.50 L
+143.62 192.00 L
+143.75 192.00 L
+143.75 194.00 L
+143.75 193.50 L
+143.88 193.75 L
+143.88 193.12 L
+143.88 193.75 L
+144.00 194.88 L
+144.00 193.00 L
+144.00 194.50 L
+144.12 193.50 L
+144.12 194.25 L
+144.12 193.38 L
+144.12 194.00 L
+144.25 194.25 L
+144.25 195.62 L
+144.25 195.50 L
+144.38 194.25 L
+144.38 196.75 L
+144.50 195.12 L
+144.50 194.38 L
+144.50 196.88 L
+144.62 196.12 L
+144.62 197.00 L
+144.62 196.25 L
+144.75 196.62 L
+144.75 197.00 L
+144.75 196.38 L
+144.75 196.75 L
+144.88 197.88 L
+144.88 198.12 L
+144.88 196.75 L
+145.00 198.12 L
+145.00 197.38 L
+145.00 199.00 L
+145.12 197.62 L
+145.12 198.62 L
+145.12 196.88 L
+145.25 198.12 L
+145.25 198.88 L
+145.25 197.88 L
+145.38 200.62 L
+145.38 198.75 L
+145.38 199.50 L
+145.50 199.50 L
+145.50 200.38 L
+145.50 199.12 L
+145.50 199.38 L
+145.62 200.38 L
+145.62 199.50 L
+145.75 199.75 L
+145.75 201.75 L
+145.75 201.00 L
+145.88 199.12 L
+145.88 200.38 L
+145.88 200.00 L
+146.00 200.12 L
+146.00 201.25 L
+146.00 200.00 L
+146.00 200.25 L
+146.12 199.38 L
+146.12 201.38 L
+146.12 200.25 L
+146.25 201.75 L
+146.25 202.12 L
+146.25 201.50 L
+146.38 201.62 L
+146.38 201.88 L
+146.38 201.75 L
+146.50 201.62 L
+146.50 203.38 L
+146.62 202.88 L
+146.62 201.12 L
+146.62 203.62 L
+146.75 203.88 L
+146.75 202.25 L
+146.75 202.50 L
+146.88 203.50 L
+146.88 201.62 L
+146.88 202.50 L
+147.00 204.62 L
+147.00 203.25 L
+147.00 203.38 L
+147.12 203.62 L
+147.12 204.38 L
+147.12 204.25 L
+147.25 204.75 L
+147.25 205.62 L
+147.25 204.38 L
+147.25 204.88 L
+147.38 204.62 L
+147.38 205.50 L
+147.38 204.25 L
+147.38 204.62 L
+147.50 204.38 L
+147.50 203.75 L
+147.50 204.25 L
+147.62 205.12 L
+147.62 205.50 L
+147.62 204.12 L
+147.75 204.88 L
+147.75 204.62 L
+147.75 205.38 L
+147.88 204.38 L
+147.88 205.25 L
+147.88 203.88 L
+148.00 206.00 L
+148.00 204.12 L
+148.12 206.12 L
+148.12 207.12 L
+148.12 204.38 L
+148.12 206.38 L
+148.25 206.25 L
+148.25 205.00 L
+148.25 207.12 L
+148.38 204.75 L
+148.38 207.75 L
+148.50 206.75 L
+148.50 205.50 L
+148.50 206.12 L
+148.62 206.88 L
+148.62 207.62 L
+148.62 206.50 L
+148.75 206.38 L
+148.75 205.38 L
+148.75 207.50 L
+148.88 206.00 L
+148.88 207.00 L
+148.88 206.50 L
+149.00 205.75 L
+149.00 208.25 L
+149.00 207.62 L
+149.12 206.00 L
+149.12 205.38 L
+149.12 207.50 L
+149.25 209.12 L
+149.25 206.38 L
+149.25 207.75 L
+149.38 206.38 L
+149.38 208.12 L
+149.50 207.12 L
+149.50 206.62 L
+149.62 208.38 L
+149.62 207.38 L
+149.62 209.12 L
+149.75 209.00 L
+149.75 206.62 L
+149.75 208.50 L
+149.88 207.88 L
+149.88 209.75 L
+149.88 207.50 L
+150.00 206.75 L
+150.00 208.88 L
+150.12 209.50 L
+150.12 207.88 L
+150.12 208.62 L
+150.25 209.00 L
+150.25 207.00 L
+150.25 207.25 L
+150.38 207.88 L
+150.38 207.12 L
+150.38 208.75 L
+150.50 206.50 L
+150.50 208.50 L
+150.50 207.88 L
+150.62 210.25 L
+150.62 208.62 L
+150.62 210.12 L
+150.75 208.62 L
+150.75 206.62 L
+150.75 208.12 L
+150.88 208.38 L
+150.88 207.50 L
+150.88 207.62 L
+151.00 207.75 L
+151.00 210.00 L
+151.00 208.62 L
+151.12 208.12 L
+151.12 207.62 L
+151.12 209.62 L
+151.25 209.38 L
+151.25 209.88 L
+151.25 207.50 L
+151.38 209.00 L
+151.38 209.12 L
+151.38 207.50 L
+151.38 208.38 L
+151.50 209.38 L
+151.50 208.88 L
+151.50 209.25 L
+151.62 208.38 L
+151.62 210.50 L
+151.62 208.12 L
+151.75 209.75 L
+151.75 211.50 L
+151.75 209.00 L
+151.88 207.50 L
+151.88 210.38 L
+152.00 210.38 L
+152.00 209.12 L
+152.00 210.00 L
+152.12 210.50 L
+152.12 210.75 L
+152.12 206.88 L
+152.25 208.88 L
+152.25 210.50 L
+152.25 209.25 L
+152.38 210.88 L
+152.38 211.62 L
+152.50 210.12 L
+152.50 212.38 L
+152.50 211.25 L
+152.62 208.88 L
+152.62 211.00 L
+152.62 209.88 L
+152.75 210.75 L
+152.75 213.00 L
+152.75 210.50 L
+152.75 211.00 L
+152.88 210.88 L
+152.88 209.50 L
+152.88 212.00 L
+153.00 211.12 L
+153.00 209.62 L
+153.00 211.50 L
+153.12 211.12 L
+153.12 209.88 L
+153.12 212.12 L
+153.25 208.50 L
+153.25 213.50 L
+153.25 211.50 L
+153.38 212.25 L
+153.38 211.50 L
+153.38 213.62 L
+153.50 212.62 L
+153.50 213.88 L
+153.50 212.25 L
+153.50 212.38 L
+153.62 213.00 L
+153.62 211.50 L
+153.62 215.00 L
+153.75 211.38 L
+153.75 213.62 L
+153.75 210.62 L
+153.88 213.12 L
+153.88 212.25 L
+153.88 213.38 L
+154.00 213.62 L
+154.00 212.75 L
+154.00 213.50 L
+154.12 214.75 L
+154.12 212.12 L
+154.25 213.00 L
+154.25 216.25 L
+154.25 213.62 L
+154.38 214.62 L
+154.38 214.00 L
+154.50 214.00 L
+154.50 213.50 L
+154.50 214.88 L
+154.62 214.25 L
+154.62 214.12 L
+154.62 214.62 L
+154.75 212.75 L
+154.75 216.88 L
+154.75 214.88 L
+154.88 214.00 L
+154.88 215.62 L
+155.00 214.88 L
+155.00 216.88 L
+155.00 214.88 L
+155.12 216.88 L
+155.12 214.62 L
+155.12 216.62 L
+155.25 216.25 L
+155.25 213.50 L
+155.25 216.25 L
+155.38 216.38 L
+155.38 214.38 L
+155.38 215.38 L
+155.50 217.25 L
+155.50 214.75 L
+155.50 215.25 L
+155.62 216.62 L
+155.62 216.12 L
+155.62 216.25 L
+155.75 216.50 L
+155.75 215.75 L
+155.75 217.12 L
+155.88 216.25 L
+155.88 217.00 L
+155.88 214.38 L
+155.88 216.88 L
+156.00 216.38 L
+156.00 215.75 L
+156.00 217.62 L
+156.12 217.00 L
+156.12 218.00 L
+156.12 216.25 L
+156.25 214.50 L
+156.25 217.00 L
+156.25 215.50 L
+156.38 218.88 L
+156.38 217.00 L
+156.38 218.00 L
+156.50 217.00 L
+156.50 214.50 L
+156.50 219.12 L
+156.62 218.00 L
+156.62 217.00 L
+156.62 217.88 L
+156.75 218.00 L
+156.75 216.00 L
+156.75 219.38 L
+156.88 214.88 L
+156.88 218.12 L
+156.88 217.12 L
+157.00 219.00 L
+157.00 216.12 L
+157.00 219.00 L
+157.12 219.25 L
+157.12 218.00 L
+157.12 218.12 L
+157.25 215.50 L
+157.25 218.25 L
+157.25 216.50 L
+157.38 217.12 L
+157.38 219.75 L
+157.50 219.50 L
+157.50 220.25 L
+157.50 217.00 L
+157.50 218.00 L
+157.62 218.50 L
+157.62 220.88 L
+157.75 216.75 L
+157.75 216.50 L
+157.75 218.88 L
+157.88 217.62 L
+157.88 220.38 L
+157.88 219.25 L
+158.00 220.88 L
+158.00 221.50 L
+158.00 218.50 L
+gsave 1.00 ps mstroke grestore
+[ ] sd
+newpath 158.00 218.50 M
+158.00 219.62 L
+158.12 219.50 L
+158.12 221.00 L
+158.12 218.62 L
+158.12 219.62 L
+158.25 218.50 L
+158.25 217.00 L
+158.25 220.88 L
+158.38 219.25 L
+158.38 221.75 L
+158.38 218.00 L
+158.50 221.00 L
+158.50 219.88 L
+158.50 220.50 L
+158.62 219.62 L
+158.62 220.25 L
+158.62 219.00 L
+158.62 220.00 L
+158.75 218.88 L
+158.75 220.75 L
+158.75 219.50 L
+158.88 218.38 L
+158.88 222.12 L
+158.88 221.25 L
+159.00 221.50 L
+159.00 222.00 L
+159.00 220.12 L
+159.12 219.50 L
+159.12 217.50 L
+159.12 220.62 L
+159.25 218.25 L
+159.25 217.75 L
+159.25 219.88 L
+159.38 220.00 L
+159.38 222.38 L
+159.50 222.88 L
+159.50 219.38 L
+159.50 221.88 L
+159.62 221.38 L
+159.62 218.62 L
+159.75 220.00 L
+159.75 221.00 L
+159.75 219.00 L
+159.88 219.62 L
+159.88 221.75 L
+160.00 221.88 L
+160.00 222.12 L
+160.00 220.50 L
+160.00 220.88 L
+160.12 220.00 L
+160.12 220.62 L
+160.12 218.75 L
+160.12 219.12 L
+160.25 225.12 L
+160.25 220.12 L
+160.25 220.88 L
+160.38 220.50 L
+160.38 219.50 L
+160.38 223.12 L
+160.50 222.62 L
+160.50 219.62 L
+160.50 220.75 L
+160.62 224.25 L
+160.62 220.38 L
+160.75 222.12 L
+160.75 220.50 L
+160.75 222.25 L
+160.88 221.62 L
+160.88 224.75 L
+160.88 221.88 L
+161.00 223.50 L
+161.00 224.75 L
+161.00 221.88 L
+161.12 222.25 L
+161.12 223.25 L
+161.12 222.88 L
+161.25 219.88 L
+161.25 224.25 L
+161.25 221.25 L
+161.38 222.62 L
+161.38 223.25 L
+161.38 220.88 L
+161.38 222.88 L
+161.50 223.88 L
+161.50 220.62 L
+161.50 221.25 L
+161.62 224.62 L
+161.62 221.38 L
+161.75 221.62 L
+161.75 223.62 L
+161.75 222.00 L
+161.88 220.12 L
+161.88 224.50 L
+161.88 222.50 L
+162.00 223.12 L
+162.00 221.88 L
+162.00 222.75 L
+162.12 224.62 L
+162.12 222.00 L
+162.12 224.00 L
+162.25 222.25 L
+162.25 222.00 L
+162.25 223.25 L
+162.38 224.12 L
+162.38 221.50 L
+162.38 225.25 L
+162.50 221.38 L
+162.50 224.50 L
+162.50 222.38 L
+162.62 225.00 L
+162.62 220.88 L
+162.62 222.62 L
+162.75 222.38 L
+162.75 225.50 L
+162.75 223.00 L
+162.88 219.75 L
+162.88 223.00 L
+163.00 223.38 L
+163.00 224.25 L
+163.00 223.00 L
+163.00 223.38 L
+163.12 223.75 L
+163.12 225.12 L
+163.12 223.50 L
+163.25 224.50 L
+163.25 226.12 L
+163.25 223.25 L
+163.25 224.25 L
+163.38 222.88 L
+163.38 222.12 L
+163.38 224.88 L
+163.50 221.62 L
+163.50 224.50 L
+163.62 226.00 L
+163.62 220.88 L
+163.62 225.25 L
+163.75 225.88 L
+163.75 222.38 L
+163.75 223.50 L
+163.88 221.62 L
+163.88 221.38 L
+163.88 223.88 L
+164.00 222.62 L
+164.00 226.00 L
+164.00 223.00 L
+164.12 223.38 L
+164.12 225.62 L
+164.12 222.25 L
+164.25 225.75 L
+164.25 226.88 L
+164.25 223.88 L
+164.25 226.25 L
+164.38 224.62 L
+164.38 221.88 L
+164.38 223.50 L
+164.50 224.12 L
+164.50 226.75 L
+164.50 224.62 L
+164.62 224.12 L
+164.62 224.00 L
+164.62 226.00 L
+164.75 223.00 L
+164.75 227.38 L
+164.75 225.62 L
+164.88 226.25 L
+164.88 226.38 L
+164.88 222.25 L
+165.00 226.75 L
+165.00 225.00 L
+165.00 225.12 L
+165.12 223.62 L
+165.12 225.75 L
+165.12 223.25 L
+165.25 224.25 L
+165.25 226.75 L
+165.25 223.62 L
+165.25 224.25 L
+165.38 225.62 L
+165.38 227.88 L
+165.38 222.38 L
+165.38 225.75 L
+165.50 225.12 L
+165.50 226.25 L
+165.50 225.75 L
+165.62 224.38 L
+165.62 226.00 L
+165.62 224.62 L
+165.75 226.38 L
+165.75 227.75 L
+165.75 225.12 L
+165.75 225.38 L
+165.88 222.75 L
+165.88 227.50 L
+165.88 224.12 L
+166.00 225.38 L
+166.00 227.62 L
+166.00 225.00 L
+166.00 225.38 L
+166.12 225.25 L
+166.12 224.12 L
+166.12 227.75 L
+166.25 224.00 L
+166.25 227.00 L
+166.25 223.88 L
+166.25 225.12 L
+166.38 226.12 L
+166.38 226.38 L
+166.38 224.50 L
+166.38 225.38 L
+166.50 227.00 L
+166.50 224.12 L
+166.62 224.88 L
+166.62 225.38 L
+166.62 222.38 L
+166.62 223.62 L
+166.75 227.62 L
+166.75 223.75 L
+166.88 225.50 L
+166.88 228.12 L
+166.88 224.25 L
+166.88 225.88 L
+167.00 224.12 L
+167.00 226.50 L
+167.12 224.75 L
+167.12 224.50 L
+167.12 229.12 L
+167.25 224.75 L
+167.25 223.75 L
+167.25 226.88 L
+167.38 227.62 L
+167.38 228.50 L
+167.38 225.50 L
+167.38 227.12 L
+167.50 224.75 L
+167.50 223.75 L
+167.50 227.50 L
+167.62 224.25 L
+167.62 226.25 L
+167.75 224.50 L
+167.75 227.62 L
+167.75 223.38 L
+167.75 227.00 L
+167.88 226.75 L
+167.88 228.62 L
+167.88 222.88 L
+167.88 224.00 L
+168.00 227.88 L
+168.00 225.00 L
+168.12 227.75 L
+168.12 226.00 L
+168.12 226.38 L
+168.25 225.12 L
+168.25 228.12 L
+168.25 224.88 L
+168.25 225.38 L
+168.38 224.25 L
+168.38 226.12 L
+168.38 223.62 L
+168.38 225.00 L
+168.50 222.50 L
+168.50 228.50 L
+168.50 227.75 L
+168.62 224.62 L
+168.62 227.38 L
+168.75 226.75 L
+168.75 228.25 L
+168.75 225.38 L
+168.75 225.75 L
+168.88 228.00 L
+168.88 223.88 L
+169.00 227.50 L
+169.00 228.38 L
+169.00 225.38 L
+169.00 225.75 L
+169.12 225.62 L
+169.12 226.88 L
+169.12 224.62 L
+169.12 225.00 L
+169.25 228.62 L
+169.25 223.25 L
+169.38 224.88 L
+169.38 223.88 L
+169.38 227.12 L
+169.50 225.88 L
+169.50 226.75 L
+169.50 224.88 L
+169.62 224.38 L
+169.62 226.38 L
+169.62 224.00 L
+169.62 225.12 L
+169.75 223.75 L
+169.75 226.00 L
+169.75 222.25 L
+169.75 225.50 L
+169.88 221.75 L
+169.88 223.38 L
+169.88 220.25 L
+169.88 221.88 L
+170.00 224.62 L
+170.00 225.00 L
+170.00 222.12 L
+170.00 222.88 L
+170.12 225.50 L
+170.12 227.00 L
+170.12 223.38 L
+170.25 225.38 L
+170.25 224.75 L
+170.25 225.12 L
+170.38 222.25 L
+170.38 225.62 L
+170.38 223.88 L
+170.50 226.50 L
+170.50 223.62 L
+170.50 224.75 L
+170.62 225.88 L
+170.62 223.25 L
+170.75 225.25 L
+170.75 226.25 L
+170.75 220.88 L
+170.75 223.62 L
+170.88 222.88 L
+170.88 221.50 L
+170.88 223.62 L
+171.00 221.50 L
+171.00 224.00 L
+171.00 221.25 L
+171.12 219.25 L
+171.12 221.50 L
+171.12 220.38 L
+171.25 220.12 L
+171.25 218.00 L
+171.25 218.12 L
+171.38 218.75 L
+171.38 214.88 L
+171.50 216.00 L
+171.50 212.00 L
+171.62 211.25 L
+171.62 208.62 L
+171.75 207.88 L
+171.75 206.12 L
+171.75 207.50 L
+171.88 206.00 L
+171.88 205.25 L
+172.00 206.50 L
+172.00 204.50 L
+172.12 205.62 L
+172.12 207.75 L
+172.12 205.75 L
+172.25 205.62 L
+172.25 208.38 L
+172.25 206.50 L
+172.38 209.00 L
+172.38 210.88 L
+172.50 213.38 L
+172.50 212.88 L
+172.50 214.75 L
+172.62 215.50 L
+172.62 217.75 L
+172.62 215.12 L
+172.62 217.00 L
+172.75 217.38 L
+172.75 222.12 L
+172.88 220.12 L
+172.88 224.62 L
+172.88 220.62 L
+173.00 221.62 L
+173.00 225.00 L
+173.00 221.00 L
+173.12 223.00 L
+173.12 224.25 L
+173.12 222.25 L
+173.12 223.38 L
+173.25 228.25 L
+173.25 222.50 L
+173.38 222.50 L
+173.38 225.75 L
+173.38 225.50 L
+173.50 223.38 L
+173.50 226.00 L
+173.50 225.12 L
+173.62 227.50 L
+173.62 224.38 L
+173.75 228.25 L
+173.75 225.00 L
+173.75 227.12 L
+173.88 228.38 L
+173.88 225.25 L
+174.00 227.38 L
+174.00 228.12 L
+174.00 225.12 L
+174.12 230.00 L
+174.12 224.12 L
+174.12 229.00 L
+174.25 225.62 L
+174.25 228.88 L
+174.25 227.25 L
+174.38 228.88 L
+174.38 226.25 L
+174.38 226.75 L
+174.50 226.62 L
+174.50 227.00 L
+174.50 223.75 L
+174.50 225.75 L
+174.62 226.75 L
+174.62 226.00 L
+174.62 227.12 L
+174.75 225.88 L
+174.75 230.12 L
+174.75 224.38 L
+174.75 224.75 L
+174.88 224.62 L
+174.88 227.12 L
+174.88 226.12 L
+174.88 228.75 L
+175.00 226.62 L
+175.00 228.12 L
+175.00 225.25 L
+175.12 228.50 L
+175.12 226.00 L
+175.25 225.25 L
+175.25 226.50 L
+175.25 223.38 L
+175.25 225.75 L
+175.38 226.88 L
+175.38 228.00 L
+175.38 224.88 L
+175.38 226.38 L
+175.50 225.25 L
+175.50 227.75 L
+175.50 224.88 L
+175.62 224.25 L
+175.62 223.88 L
+175.62 226.12 L
+175.75 224.75 L
+175.75 222.88 L
+175.88 221.50 L
+175.88 223.38 L
+175.88 223.12 L
+176.00 223.38 L
+176.00 222.38 L
+176.00 225.25 L
+176.12 223.38 L
+176.12 224.62 L
+176.12 222.88 L
+176.12 223.25 L
+176.25 223.38 L
+176.25 226.38 L
+176.25 224.12 L
+176.38 224.12 L
+176.38 227.75 L
+176.38 225.25 L
+176.50 224.50 L
+176.50 230.25 L
+176.50 224.25 L
+176.50 224.62 L
+176.62 224.38 L
+176.62 227.75 L
+176.62 226.25 L
+176.75 225.12 L
+176.75 228.50 L
+176.88 226.00 L
+176.88 231.50 L
+176.88 226.25 L
+177.00 228.00 L
+177.00 228.75 L
+177.00 224.12 L
+177.00 226.50 L
+177.12 227.88 L
+177.12 228.50 L
+177.12 226.25 L
+177.25 229.62 L
+177.25 227.25 L
+177.25 227.50 L
+177.38 227.62 L
+177.38 227.12 L
+177.38 229.62 L
+177.50 227.62 L
+177.50 225.62 L
+177.50 229.00 L
+177.62 224.00 L
+177.62 232.25 L
+177.62 226.00 L
+177.75 228.25 L
+177.75 227.25 L
+177.75 230.12 L
+177.88 228.38 L
+177.88 226.62 L
+177.88 228.75 L
+178.00 227.50 L
+178.00 228.50 L
+178.00 227.88 L
+178.12 226.88 L
+178.12 229.25 L
+178.12 228.50 L
+178.25 226.25 L
+178.25 226.12 L
+178.25 228.25 L
+178.38 226.50 L
+178.38 229.00 L
+178.38 225.75 L
+178.50 226.62 L
+178.50 226.12 L
+178.50 229.12 L
+178.62 230.25 L
+178.62 227.12 L
+178.75 229.50 L
+178.75 223.88 L
+178.75 226.50 L
+178.88 228.12 L
+178.88 226.38 L
+178.88 229.62 L
+179.00 228.00 L
+179.00 225.00 L
+179.12 225.50 L
+179.12 228.00 L
+179.12 224.12 L
+179.25 228.75 L
+179.25 226.50 L
+179.25 231.00 L
+179.38 229.00 L
+179.38 226.38 L
+179.38 226.88 L
+179.50 228.12 L
+179.50 230.00 L
+179.50 227.50 L
+179.50 228.25 L
+179.62 228.12 L
+179.62 228.88 L
+179.62 228.00 L
+179.62 228.75 L
+179.75 227.12 L
+179.75 225.88 L
+179.75 231.38 L
+179.88 225.75 L
+179.88 229.75 L
+179.88 225.62 L
+179.88 228.62 L
+180.00 226.62 L
+180.00 231.12 L
+180.00 229.12 L
+180.12 226.62 L
+180.12 230.62 L
+180.25 230.00 L
+180.25 227.12 L
+180.25 230.12 L
+180.38 229.25 L
+180.38 229.75 L
+180.38 225.88 L
+180.38 227.88 L
+180.50 227.62 L
+180.50 229.62 L
+180.50 227.88 L
+180.62 227.25 L
+180.62 229.00 L
+180.62 228.12 L
+180.75 226.50 L
+180.75 229.25 L
+180.75 226.75 L
+180.88 227.38 L
+180.88 229.25 L
+181.00 229.50 L
+181.00 230.50 L
+181.00 225.38 L
+181.00 227.62 L
+181.12 227.50 L
+181.12 229.75 L
+181.25 226.38 L
+181.25 230.75 L
+181.38 226.75 L
+181.38 228.38 L
+181.38 224.12 L
+181.38 225.00 L
+181.50 228.00 L
+181.50 230.00 L
+181.50 226.12 L
+181.50 228.00 L
+181.62 228.38 L
+181.62 229.12 L
+181.62 227.25 L
+181.62 228.75 L
+181.75 228.75 L
+181.75 224.75 L
+181.75 226.75 L
+181.88 225.75 L
+181.88 229.88 L
+181.88 227.50 L
+182.00 228.12 L
+182.00 228.62 L
+182.00 227.38 L
+182.12 227.25 L
+182.12 232.00 L
+182.12 226.62 L
+182.25 226.75 L
+182.25 225.25 L
+182.38 225.75 L
+182.38 229.25 L
+182.38 227.12 L
+182.50 229.50 L
+182.50 226.62 L
+182.50 227.25 L
+182.62 227.25 L
+182.62 226.38 L
+182.62 226.62 L
+182.75 229.38 L
+182.75 227.75 L
+182.75 229.12 L
+182.88 225.88 L
+182.88 230.12 L
+182.88 227.25 L
+183.00 225.75 L
+183.00 225.25 L
+183.12 226.25 L
+183.12 228.12 L
+183.12 225.00 L
+183.12 226.75 L
+183.25 226.75 L
+183.25 224.50 L
+183.25 226.62 L
+183.38 226.75 L
+183.38 227.12 L
+183.38 225.00 L
+183.38 226.25 L
+183.50 225.50 L
+183.50 225.88 L
+183.50 224.62 L
+183.62 224.75 L
+183.62 226.25 L
+183.62 222.25 L
+183.75 225.75 L
+183.75 224.38 L
+183.75 226.88 L
+183.88 223.88 L
+183.88 227.75 L
+183.88 226.50 L
+184.00 228.75 L
+184.00 226.25 L
+184.00 229.88 L
+184.12 227.00 L
+184.12 231.25 L
+184.12 224.25 L
+184.12 227.12 L
+184.25 224.25 L
+184.25 229.00 L
+184.38 228.12 L
+184.38 227.50 L
+184.38 228.00 L
+184.50 228.00 L
+184.50 226.38 L
+184.62 228.12 L
+184.62 225.88 L
+184.62 229.50 L
+184.75 223.12 L
+184.75 226.12 L
+184.75 224.50 L
+184.88 226.50 L
+184.88 226.75 L
+184.88 225.62 L
+185.00 225.62 L
+185.00 227.75 L
+185.12 227.75 L
+185.12 224.12 L
+185.12 225.38 L
+185.25 228.88 L
+185.25 223.38 L
+185.25 224.62 L
+185.38 225.50 L
+185.38 227.25 L
+185.38 226.25 L
+185.50 226.50 L
+185.50 227.12 L
+185.50 225.62 L
+185.62 225.38 L
+185.62 225.50 L
+185.62 224.88 L
+185.75 226.00 L
+185.75 222.75 L
+185.75 225.38 L
+185.88 227.88 L
+185.88 223.62 L
+185.88 226.62 L
+186.00 224.25 L
+186.00 224.38 L
+186.00 222.50 L
+186.12 222.62 L
+186.12 225.12 L
+186.12 222.88 L
+186.25 223.38 L
+186.25 222.88 L
+186.25 224.12 L
+186.38 224.50 L
+186.38 221.88 L
+186.38 226.62 L
+186.50 224.75 L
+186.50 223.75 L
+186.50 226.12 L
+186.62 222.12 L
+186.62 223.75 L
+186.62 222.25 L
+186.75 223.38 L
+186.75 220.50 L
+186.75 222.88 L
+186.88 224.50 L
+186.88 225.00 L
+186.88 224.12 L
+186.88 224.38 L
+187.00 224.88 L
+187.00 222.88 L
+187.00 223.00 L
+187.12 222.38 L
+187.12 224.12 L
+187.12 220.75 L
+187.25 223.75 L
+187.25 220.50 L
+187.38 221.25 L
+187.38 222.50 L
+187.38 219.38 L
+187.50 225.75 L
+187.50 223.00 L
+187.50 224.75 L
+187.62 223.00 L
+187.62 220.62 L
+187.62 224.62 L
+187.75 220.38 L
+187.75 224.38 L
+187.88 224.88 L
+187.88 221.12 L
+187.88 221.75 L
+188.00 222.00 L
+188.00 220.75 L
+188.00 223.50 L
+188.12 222.62 L
+188.12 220.88 L
+188.12 224.00 L
+188.25 218.88 L
+188.25 223.62 L
+188.38 220.38 L
+188.38 224.75 L
+188.50 222.00 L
+188.50 222.50 L
+188.50 221.38 L
+188.50 222.12 L
+188.62 222.12 L
+188.62 223.88 L
+188.62 220.62 L
+188.75 221.12 L
+188.75 223.62 L
+188.88 223.12 L
+188.88 220.38 L
+188.88 224.62 L
+189.00 223.50 L
+189.00 221.50 L
+189.00 224.38 L
+189.12 221.12 L
+189.12 227.12 L
+189.25 224.25 L
+189.25 223.75 L
+189.25 225.00 L
+189.38 222.62 L
+189.38 224.00 L
+189.50 223.38 L
+189.50 226.00 L
+189.62 221.12 L
+189.62 225.38 L
+189.62 224.00 L
+189.75 223.25 L
+189.75 225.38 L
+189.75 225.12 L
+189.88 226.00 L
+189.88 224.25 L
+189.88 228.38 L
+190.00 223.25 L
+190.00 228.12 L
+190.00 224.75 L
+190.12 223.38 L
+190.12 230.12 L
+190.25 225.12 L
+190.25 222.50 L
+190.38 225.38 L
+190.38 226.38 L
+190.38 223.88 L
+190.50 224.12 L
+190.50 225.88 L
+190.50 224.38 L
+190.62 224.00 L
+190.62 227.38 L
+190.62 223.50 L
+190.75 226.25 L
+190.75 228.25 L
+190.75 223.25 L
+190.88 224.75 L
+190.88 228.38 L
+190.88 225.62 L
+191.00 226.00 L
+191.00 222.88 L
+191.00 226.00 L
+191.12 227.25 L
+191.12 228.75 L
+191.12 227.38 L
+191.25 226.88 L
+191.25 224.62 L
+191.25 225.50 L
+191.38 225.50 L
+191.38 226.50 L
+191.38 224.75 L
+191.38 226.25 L
+191.50 225.62 L
+191.50 229.62 L
+191.50 224.50 L
+191.62 226.62 L
+191.62 227.50 L
+191.62 225.50 L
+191.75 225.25 L
+191.75 226.12 L
+191.75 225.00 L
+191.88 225.00 L
+191.88 228.12 L
+192.00 228.00 L
+192.00 231.00 L
+192.00 225.88 L
+192.00 230.25 L
+192.12 226.88 L
+192.12 225.50 L
+192.12 230.88 L
+192.25 228.25 L
+192.25 226.25 L
+192.38 228.88 L
+192.38 224.75 L
+192.38 228.62 L
+192.50 228.88 L
+192.50 226.38 L
+192.50 227.00 L
+192.50 225.75 L
+192.62 226.12 L
+192.62 228.38 L
+192.62 225.88 L
+192.62 226.50 L
+192.75 228.62 L
+192.75 224.25 L
+192.75 225.62 L
+192.88 221.12 L
+192.88 229.50 L
+192.88 228.12 L
+193.00 227.75 L
+193.00 228.00 L
+193.00 226.38 L
+193.00 226.88 L
+193.12 226.00 L
+193.12 226.88 L
+193.12 225.75 L
+193.12 226.12 L
+193.25 228.50 L
+193.25 228.62 L
+193.25 225.75 L
+193.38 227.50 L
+193.38 226.50 L
+193.38 227.88 L
+193.50 227.12 L
+193.50 229.88 L
+193.62 225.38 L
+193.62 229.25 L
+193.62 225.00 L
+193.75 229.38 L
+193.75 225.75 L
+193.88 226.62 L
+193.88 225.75 L
+193.88 230.75 L
+194.00 224.00 L
+194.00 229.75 L
+194.00 227.62 L
+194.12 226.62 L
+194.12 227.62 L
+194.12 225.50 L
+194.25 229.12 L
+194.25 226.75 L
+194.25 227.25 L
+194.38 227.00 L
+194.38 228.12 L
+194.38 227.12 L
+194.50 225.50 L
+194.50 228.00 L
+194.50 224.62 L
+194.50 227.62 L
+194.62 227.50 L
+194.62 228.75 L
+194.62 225.50 L
+194.62 227.25 L
+194.75 228.62 L
+194.75 224.50 L
+194.75 228.62 L
+194.88 226.00 L
+194.88 225.25 L
+194.88 227.88 L
+195.00 228.38 L
+195.00 228.50 L
+195.00 225.25 L
+195.00 228.12 L
+195.12 227.62 L
+195.12 229.62 L
+195.12 227.25 L
+195.12 228.00 L
+195.25 229.12 L
+195.25 229.38 L
+195.25 225.38 L
+195.38 227.75 L
+195.38 224.75 L
+195.38 227.12 L
+195.50 225.25 L
+195.50 225.00 L
+195.50 227.88 L
+195.62 227.75 L
+195.62 223.00 L
+195.62 228.38 L
+195.75 222.25 L
+195.75 227.62 L
+195.75 225.25 L
+195.88 225.50 L
+195.88 227.25 L
+196.00 228.25 L
+196.00 225.00 L
+196.00 226.50 L
+196.12 226.62 L
+196.12 226.75 L
+196.12 225.62 L
+196.25 227.75 L
+196.25 225.38 L
+196.25 226.12 L
+196.38 228.00 L
+196.38 224.38 L
+196.50 224.12 L
+196.50 227.12 L
+196.50 225.38 L
+196.62 224.25 L
+196.62 228.75 L
+196.75 228.12 L
+196.75 225.75 L
+196.75 227.50 L
+196.88 227.25 L
+196.88 224.62 L
+196.88 225.50 L
+197.00 225.50 L
+197.00 227.12 L
+197.00 223.38 L
+197.00 226.00 L
+197.12 226.25 L
+197.12 226.75 L
+197.12 223.62 L
+197.25 226.00 L
+197.25 226.62 L
+197.25 222.12 L
+197.38 226.50 L
+197.38 223.75 L
+197.38 227.88 L
+197.50 223.75 L
+197.50 228.88 L
+197.62 228.25 L
+197.62 229.12 L
+197.62 226.62 L
+197.75 226.38 L
+197.75 226.50 L
+197.75 225.75 L
+197.75 225.88 L
+197.88 228.00 L
+197.88 224.50 L
+198.00 225.25 L
+198.00 228.00 L
+198.00 225.50 L
+198.12 225.50 L
+198.12 227.12 L
+198.25 224.12 L
+198.25 228.25 L
+198.38 225.62 L
+198.38 227.38 L
+198.38 224.62 L
+198.38 227.50 L
+198.50 225.50 L
+198.50 227.62 L
+198.50 225.25 L
+198.50 226.50 L
+198.62 226.38 L
+198.62 226.75 L
+198.62 224.75 L
+198.62 226.00 L
+198.75 225.50 L
+198.75 224.75 L
+198.75 226.75 L
+198.88 227.75 L
+198.88 223.12 L
+198.88 225.50 L
+199.00 226.62 L
+199.00 221.62 L
+199.12 227.12 L
+199.12 227.38 L
+199.12 222.38 L
+199.12 223.75 L
+199.25 224.50 L
+199.25 226.00 L
+199.25 223.38 L
+199.38 225.50 L
+199.38 227.38 L
+gsave 1.00 ps mstroke grestore
+[ ] sd
+newpath 199.38 227.38 M
+199.50 226.88 L
+199.50 224.75 L
+199.62 224.25 L
+199.62 226.50 L
+199.62 224.88 L
+199.75 226.50 L
+199.75 224.50 L
+199.75 226.88 L
+199.88 224.75 L
+199.88 225.88 L
+199.88 224.25 L
+200.00 226.88 L
+200.00 227.12 L
+200.00 224.62 L
+200.00 227.00 L
+200.12 223.50 L
+200.12 223.00 L
+200.12 224.00 L
+200.25 223.50 L
+200.25 227.00 L
+200.38 227.62 L
+200.38 223.25 L
+200.38 227.50 L
+200.50 228.12 L
+200.50 223.12 L
+200.50 226.25 L
+200.62 226.00 L
+200.62 227.00 L
+200.62 225.00 L
+200.62 225.38 L
+200.75 228.38 L
+200.75 222.38 L
+200.88 225.12 L
+200.88 229.00 L
+200.88 224.62 L
+200.88 225.38 L
+201.00 226.12 L
+201.00 222.00 L
+201.12 222.50 L
+201.12 226.00 L
+201.12 222.12 L
+201.25 222.00 L
+201.25 224.88 L
+201.25 221.75 L
+201.38 222.62 L
+201.38 224.50 L
+201.38 223.00 L
+201.50 221.12 L
+201.50 220.75 L
+201.50 224.38 L
+201.62 219.50 L
+201.62 225.38 L
+201.75 223.50 L
+201.75 223.88 L
+201.75 221.62 L
+201.75 222.75 L
+201.88 221.88 L
+201.88 220.88 L
+201.88 223.88 L
+202.00 222.12 L
+202.00 228.25 L
+202.00 221.12 L
+202.00 225.00 L
+202.12 226.38 L
+202.12 220.88 L
+202.12 224.50 L
+202.25 221.12 L
+202.25 224.62 L
+202.38 223.00 L
+202.38 223.25 L
+202.50 225.75 L
+202.50 223.25 L
+202.50 223.38 L
+202.62 224.12 L
+202.62 224.00 L
+202.62 226.12 L
+202.75 222.38 L
+202.75 228.00 L
+202.75 223.00 L
+202.88 225.88 L
+202.88 226.88 L
+202.88 224.38 L
+203.00 224.50 L
+203.00 226.12 L
+203.00 222.25 L
+203.00 225.38 L
+203.12 226.38 L
+203.12 224.50 L
+203.12 226.88 L
+203.25 226.88 L
+203.25 225.00 L
+203.25 227.12 L
+203.38 224.00 L
+203.38 225.38 L
+203.38 223.62 L
+203.50 225.75 L
+203.50 223.62 L
+203.50 224.88 L
+203.62 223.12 L
+203.62 225.88 L
+203.75 224.62 L
+203.75 226.12 L
+203.75 221.38 L
+203.88 225.50 L
+203.88 226.62 L
+203.88 225.38 L
+204.00 223.38 L
+204.00 227.38 L
+204.00 222.62 L
+204.12 227.62 L
+204.12 225.38 L
+204.25 226.62 L
+204.25 223.62 L
+204.25 224.75 L
+204.25 226.38 L
+204.38 223.38 L
+204.38 225.25 L
+204.38 223.62 L
+204.50 225.38 L
+204.50 227.75 L
+204.50 221.50 L
+204.50 222.88 L
+204.62 227.12 L
+204.62 221.75 L
+204.75 223.38 L
+204.75 225.75 L
+204.75 223.12 L
+204.75 225.12 L
+204.88 221.50 L
+204.88 225.50 L
+205.00 223.12 L
+205.00 226.75 L
+205.00 222.75 L
+205.00 223.38 L
+205.12 224.88 L
+205.12 226.12 L
+205.12 222.75 L
+205.12 223.88 L
+205.25 224.88 L
+205.25 227.62 L
+205.25 222.62 L
+205.25 224.25 L
+205.38 222.88 L
+205.38 225.62 L
+205.50 227.75 L
+205.50 222.88 L
+205.50 225.50 L
+205.62 223.38 L
+205.62 226.00 L
+205.62 223.25 L
+205.75 226.75 L
+205.75 223.88 L
+205.75 225.12 L
+205.88 225.62 L
+205.88 223.50 L
+206.00 224.75 L
+206.00 222.62 L
+206.12 227.75 L
+206.12 222.62 L
+206.25 224.88 L
+206.25 224.38 L
+206.25 226.12 L
+206.38 225.12 L
+206.38 227.00 L
+206.50 223.88 L
+206.50 224.00 L
+206.50 222.00 L
+206.62 222.25 L
+206.62 225.12 L
+206.62 221.75 L
+206.75 221.25 L
+206.75 220.62 L
+206.75 223.50 L
+206.88 225.12 L
+206.88 222.62 L
+206.88 226.12 L
+207.00 225.12 L
+207.00 222.12 L
+207.00 225.38 L
+207.12 223.62 L
+207.12 225.38 L
+207.12 222.38 L
+207.25 222.38 L
+207.25 224.00 L
+207.25 221.38 L
+207.38 223.38 L
+207.38 223.00 L
+207.38 224.38 L
+207.50 221.75 L
+207.50 226.50 L
+207.50 221.62 L
+207.62 224.12 L
+207.62 225.25 L
+207.62 224.38 L
+207.75 226.00 L
+207.75 221.38 L
+207.88 222.62 L
+207.88 224.38 L
+207.88 221.50 L
+207.88 224.00 L
+208.00 223.38 L
+208.00 225.38 L
+208.00 223.50 L
+208.12 224.00 L
+208.12 227.00 L
+208.12 223.62 L
+208.25 224.88 L
+208.25 225.12 L
+208.25 222.75 L
+208.25 224.38 L
+208.38 224.75 L
+208.38 225.00 L
+208.38 224.12 L
+208.38 224.25 L
+208.50 225.50 L
+208.50 223.88 L
+208.50 224.00 L
+208.62 225.12 L
+208.62 225.38 L
+208.62 223.12 L
+208.75 220.75 L
+208.75 226.00 L
+208.75 223.12 L
+208.88 222.38 L
+208.88 225.38 L
+208.88 222.25 L
+208.88 223.50 L
+209.00 221.38 L
+209.00 224.38 L
+209.12 222.75 L
+209.12 227.38 L
+209.12 227.25 L
+209.25 222.50 L
+209.25 223.25 L
+209.25 219.00 L
+209.38 223.00 L
+209.38 225.38 L
+209.38 221.75 L
+209.38 222.62 L
+209.50 223.75 L
+209.50 221.50 L
+209.50 228.50 L
+209.62 221.75 L
+209.62 226.12 L
+209.62 223.00 L
+209.75 222.00 L
+209.75 224.62 L
+209.88 222.00 L
+209.88 224.12 L
+209.88 222.25 L
+210.00 222.12 L
+210.00 224.88 L
+210.00 222.38 L
+210.12 222.75 L
+210.12 222.12 L
+210.12 223.38 L
+210.12 224.75 L
+210.25 221.88 L
+210.25 224.25 L
+210.25 223.75 L
+210.38 222.50 L
+210.38 225.00 L
+210.38 221.38 L
+210.38 223.25 L
+210.50 221.62 L
+210.50 224.38 L
+210.50 222.50 L
+210.62 222.12 L
+210.62 225.25 L
+210.75 222.12 L
+210.75 221.38 L
+210.75 224.88 L
+210.88 223.25 L
+210.88 224.38 L
+210.88 221.62 L
+210.88 222.62 L
+211.00 224.75 L
+211.00 225.00 L
+211.00 222.25 L
+211.00 223.00 L
+211.12 223.25 L
+211.12 225.12 L
+211.12 221.75 L
+211.25 221.50 L
+211.25 225.75 L
+211.25 224.38 L
+211.38 222.62 L
+211.38 222.12 L
+211.38 223.75 L
+211.50 225.12 L
+211.50 222.50 L
+211.50 223.25 L
+211.62 224.00 L
+211.62 225.62 L
+211.62 221.75 L
+211.62 222.62 L
+211.75 221.88 L
+211.75 227.25 L
+211.75 221.12 L
+211.75 223.25 L
+211.88 223.88 L
+211.88 222.38 L
+211.88 223.12 L
+212.00 222.88 L
+212.00 222.00 L
+212.12 221.38 L
+212.12 224.00 L
+212.12 221.62 L
+212.25 222.25 L
+212.25 221.50 L
+212.25 225.25 L
+212.38 223.38 L
+212.38 225.88 L
+212.38 222.62 L
+212.38 224.00 L
+212.50 223.00 L
+212.50 220.50 L
+212.50 223.25 L
+212.62 226.62 L
+212.62 222.50 L
+212.75 222.50 L
+212.75 223.75 L
+212.75 220.75 L
+212.75 223.00 L
+212.88 222.00 L
+212.88 223.50 L
+212.88 223.00 L
+213.00 221.38 L
+213.00 223.38 L
+213.00 222.75 L
+213.12 221.50 L
+213.12 224.25 L
+213.12 220.38 L
+213.12 223.00 L
+213.25 224.50 L
+213.25 221.38 L
+213.38 219.38 L
+213.38 221.00 L
+213.38 220.25 L
+213.50 226.00 L
+213.50 222.00 L
+213.50 222.62 L
+213.62 220.25 L
+213.62 224.88 L
+213.62 221.25 L
+213.75 223.00 L
+213.75 220.75 L
+213.75 222.62 L
+213.88 219.62 L
+213.88 223.88 L
+213.88 223.50 L
+214.00 224.50 L
+214.00 224.75 L
+214.00 222.50 L
+214.12 219.75 L
+214.12 222.25 L
+214.12 221.88 L
+214.25 222.38 L
+214.25 219.88 L
+214.38 219.88 L
+214.38 223.38 L
+214.50 223.00 L
+214.50 223.25 L
+214.50 219.88 L
+214.50 220.00 L
+214.62 222.00 L
+214.62 223.50 L
+214.62 222.38 L
+214.75 223.25 L
+214.75 223.88 L
+214.75 220.38 L
+214.88 221.62 L
+214.88 219.25 L
+214.88 222.12 L
+215.00 219.00 L
+215.00 217.88 L
+215.00 219.75 L
+215.12 218.62 L
+215.12 219.88 L
+215.12 216.62 L
+215.25 217.62 L
+215.25 215.38 L
+215.25 215.75 L
+215.38 215.75 L
+215.38 212.38 L
+215.50 213.25 L
+215.50 210.25 L
+215.62 210.00 L
+215.62 210.25 L
+215.62 208.00 L
+215.62 208.12 L
+215.75 209.12 L
+215.75 210.00 L
+215.75 208.50 L
+215.75 209.12 L
+215.88 209.62 L
+215.88 207.38 L
+215.88 207.75 L
+216.00 208.12 L
+216.00 204.88 L
+216.00 208.38 L
+216.12 207.38 L
+216.12 208.75 L
+216.12 206.50 L
+216.12 207.12 L
+216.25 208.50 L
+216.25 208.62 L
+216.25 205.62 L
+216.38 205.88 L
+216.38 201.62 L
+216.50 197.25 L
+216.50 191.00 L
+216.62 189.12 L
+216.62 180.75 L
+216.75 177.88 L
+216.75 171.50 L
+216.88 168.88 L
+216.88 161.75 L
+217.00 160.38 L
+217.00 155.38 L
+217.12 154.38 L
+217.12 151.75 L
+217.25 151.38 L
+217.25 149.62 L
+217.38 149.75 L
+217.38 149.38 L
+217.38 149.62 L
+217.50 150.00 L
+217.50 152.38 L
+217.62 154.12 L
+217.62 160.88 L
+217.75 165.12 L
+217.75 179.75 L
+217.88 183.00 L
+217.88 189.62 L
+218.00 191.88 L
+218.00 195.50 L
+218.12 194.62 L
+218.12 198.25 L
+218.12 197.25 L
+218.25 197.88 L
+218.25 201.12 L
+218.38 199.12 L
+218.38 201.25 L
+218.50 200.00 L
+218.50 203.38 L
+218.62 201.62 L
+218.62 204.12 L
+218.62 202.12 L
+218.75 202.62 L
+218.75 203.88 L
+218.88 203.12 L
+218.88 205.88 L
+218.88 205.38 L
+219.00 205.75 L
+219.00 203.88 L
+219.00 204.62 L
+219.12 205.00 L
+219.12 203.88 L
+219.12 205.75 L
+219.25 203.25 L
+219.25 205.88 L
+219.38 206.00 L
+219.38 204.62 L
+219.38 205.88 L
+219.50 207.38 L
+219.50 204.62 L
+219.62 205.25 L
+219.62 207.50 L
+219.62 204.62 L
+219.62 207.00 L
+219.75 205.62 L
+219.75 207.00 L
+219.75 205.38 L
+219.88 205.12 L
+219.88 206.00 L
+219.88 204.12 L
+220.00 206.62 L
+220.00 204.88 L
+220.00 206.88 L
+220.12 205.75 L
+220.12 206.88 L
+220.12 204.50 L
+220.12 205.00 L
+220.25 206.62 L
+220.25 204.38 L
+220.38 206.38 L
+220.38 203.88 L
+220.38 205.50 L
+220.50 204.38 L
+220.50 206.50 L
+220.62 204.88 L
+220.62 205.38 L
+220.62 204.12 L
+220.75 205.12 L
+220.75 205.50 L
+220.75 204.12 L
+220.75 205.25 L
+220.88 205.50 L
+220.88 204.62 L
+220.88 204.75 L
+221.00 205.75 L
+221.00 206.00 L
+221.00 204.75 L
+221.00 205.25 L
+221.12 205.25 L
+221.12 203.62 L
+221.12 204.00 L
+221.25 204.75 L
+221.25 205.00 L
+221.25 203.50 L
+221.38 205.50 L
+221.38 206.12 L
+221.38 204.12 L
+221.38 204.50 L
+221.50 204.25 L
+221.50 205.25 L
+221.50 204.38 L
+221.62 205.12 L
+221.62 203.25 L
+221.62 205.00 L
+221.75 205.00 L
+221.75 204.12 L
+221.88 204.50 L
+221.88 203.62 L
+221.88 204.50 L
+221.88 205.25 L
+222.00 203.62 L
+222.00 205.25 L
+222.00 202.38 L
+222.12 205.38 L
+222.12 202.88 L
+222.12 204.12 L
+222.25 204.50 L
+222.25 204.88 L
+222.25 203.50 L
+222.38 204.12 L
+222.38 202.88 L
+222.38 203.75 L
+222.50 203.50 L
+222.50 204.62 L
+222.50 204.12 L
+222.62 206.25 L
+222.62 203.38 L
+222.75 202.62 L
+222.75 204.50 L
+222.75 203.38 L
+222.88 202.75 L
+222.88 203.88 L
+222.88 202.00 L
+223.00 203.50 L
+223.00 202.75 L
+223.00 203.00 L
+223.12 202.75 L
+223.12 201.75 L
+223.12 203.00 L
+223.25 203.62 L
+223.25 203.25 L
+223.25 203.88 L
+223.38 202.12 L
+223.38 201.50 L
+223.38 202.25 L
+223.50 203.38 L
+223.50 201.50 L
+223.50 202.12 L
+223.62 202.12 L
+223.62 202.50 L
+223.62 202.00 L
+223.62 202.25 L
+223.75 202.00 L
+223.75 202.62 L
+223.75 201.00 L
+223.88 203.38 L
+223.88 201.00 L
+223.88 202.50 L
+224.00 201.50 L
+224.00 201.75 L
+224.00 201.38 L
+224.12 201.75 L
+224.12 200.25 L
+224.12 200.50 L
+224.25 201.50 L
+224.25 199.50 L
+224.25 199.62 L
+224.38 199.38 L
+224.38 200.75 L
+224.38 200.25 L
+224.50 200.38 L
+224.50 198.25 L
+224.62 199.25 L
+224.62 199.50 L
+224.62 199.25 L
+224.75 198.12 L
+224.75 199.75 L
+224.75 199.25 L
+224.88 200.38 L
+224.88 197.75 L
+224.88 198.88 L
+225.00 198.62 L
+225.00 197.88 L
+225.00 199.00 L
+225.12 198.50 L
+225.12 198.88 L
+225.12 196.12 L
+225.25 198.00 L
+225.25 197.12 L
+225.25 197.25 L
+225.38 196.50 L
+225.38 198.12 L
+225.38 196.00 L
+225.50 197.00 L
+225.50 197.75 L
+225.50 195.50 L
+225.62 196.62 L
+225.62 196.75 L
+225.62 195.50 L
+225.75 195.38 L
+225.75 196.38 L
+225.75 194.75 L
+225.88 196.62 L
+225.88 195.25 L
+225.88 196.25 L
+226.00 194.25 L
+226.00 195.25 L
+226.12 194.50 L
+226.12 194.62 L
+226.12 193.00 L
+226.25 194.50 L
+226.25 193.00 L
+226.38 193.38 L
+226.38 193.75 L
+226.38 192.12 L
+226.50 191.88 L
+226.50 193.38 L
+226.62 192.12 L
+226.62 192.25 L
+226.62 191.50 L
+226.62 191.62 L
+226.75 191.75 L
+226.75 190.62 L
+226.75 192.12 L
+226.88 191.12 L
+226.88 191.62 L
+226.88 191.38 L
+227.00 189.88 L
+227.00 190.88 L
+227.00 190.25 L
+227.12 190.12 L
+227.12 189.50 L
+227.12 189.75 L
+227.25 190.38 L
+227.25 188.38 L
+227.38 188.38 L
+227.38 189.38 L
+227.38 188.00 L
+227.38 188.75 L
+227.50 189.00 L
+227.50 187.00 L
+227.62 187.62 L
+227.62 187.88 L
+227.62 186.50 L
+227.62 187.00 L
+227.75 186.75 L
+227.75 185.75 L
+227.75 186.38 L
+227.75 186.12 L
+227.88 187.12 L
+227.88 185.12 L
+227.88 186.12 L
+228.00 184.75 L
+228.00 185.75 L
+228.00 185.25 L
+228.12 184.50 L
+228.12 185.12 L
+228.12 184.38 L
+228.12 185.00 L
+228.25 184.12 L
+228.25 184.38 L
+228.25 183.88 L
+228.38 184.25 L
+228.38 182.88 L
+228.50 182.75 L
+228.50 181.62 L
+228.62 180.62 L
+228.62 181.00 L
+228.62 178.62 L
+228.75 177.88 L
+228.75 176.12 L
+228.88 174.75 L
+228.88 171.75 L
+229.00 171.75 L
+229.00 168.50 L
+229.12 167.62 L
+229.12 164.88 L
+229.25 164.75 L
+229.25 162.88 L
+229.25 163.00 L
+229.38 162.62 L
+229.38 163.12 L
+229.50 163.00 L
+229.50 165.25 L
+229.62 166.75 L
+229.62 170.12 L
+229.75 170.50 L
+229.75 173.62 L
+229.88 173.75 L
+229.88 175.00 L
+229.88 174.50 L
+230.00 175.12 L
+230.00 175.25 L
+230.00 174.75 L
+230.12 174.88 L
+230.12 175.25 L
+230.12 174.12 L
+230.25 174.62 L
+230.25 175.00 L
+230.25 173.62 L
+230.25 174.50 L
+230.38 173.88 L
+230.38 172.88 L
+230.50 173.50 L
+230.50 171.75 L
+230.50 172.25 L
+230.62 171.12 L
+230.62 170.50 L
+230.62 170.62 L
+230.75 170.12 L
+230.75 170.50 L
+230.75 169.88 L
+230.88 169.38 L
+230.88 169.50 L
+230.88 169.00 L
+230.88 169.25 L
+231.00 168.62 L
+231.00 169.00 L
+231.00 168.38 L
+231.12 168.88 L
+231.12 169.50 L
+231.12 168.75 L
+231.12 169.25 L
+231.25 169.12 L
+231.25 169.62 L
+231.38 169.75 L
+231.38 170.38 L
+231.50 169.75 L
+231.50 170.12 L
+231.50 169.62 L
+231.62 169.38 L
+231.62 168.88 L
+231.62 169.50 L
+231.75 169.25 L
+231.75 168.25 L
+231.75 168.75 L
+231.88 168.62 L
+231.88 169.12 L
+231.88 168.12 L
+231.88 168.38 L
+232.00 168.75 L
+232.00 167.75 L
+232.12 168.25 L
+232.12 168.38 L
+232.12 167.50 L
+232.25 168.25 L
+232.25 167.38 L
+232.38 167.00 L
+232.38 166.50 L
+232.50 166.62 L
+232.50 166.38 L
+232.62 165.62 L
+232.62 166.25 L
+232.62 165.25 L
+232.62 166.00 L
+232.75 165.38 L
+232.75 166.12 L
+232.75 165.12 L
+232.75 165.25 L
+232.88 165.12 L
+232.88 165.62 L
+232.88 165.00 L
+232.88 165.12 L
+233.00 165.25 L
+233.00 164.50 L
+233.00 165.00 L
+233.12 165.25 L
+233.12 164.38 L
+233.12 164.62 L
+233.25 164.38 L
+233.25 164.00 L
+233.25 164.38 L
+233.38 164.12 L
+233.38 164.00 L
+233.38 164.38 L
+233.50 164.12 L
+233.50 164.38 L
+233.50 163.38 L
+233.62 163.50 L
+233.62 163.62 L
+233.62 163.62 L
+233.62 162.75 L
+233.75 163.25 L
+233.75 162.75 L
+233.75 163.12 L
+233.88 163.12 L
+233.88 162.50 L
+234.00 162.88 L
+234.00 162.38 L
+234.00 162.50 L
+234.12 162.38 L
+234.12 162.50 L
+234.12 161.75 L
+234.25 161.88 L
+234.25 162.12 L
+234.38 161.75 L
+234.38 162.00 L
+234.38 161.62 L
+234.50 161.25 L
+234.50 161.38 L
+234.62 161.12 L
+234.62 160.62 L
+234.75 161.00 L
+234.75 160.38 L
+234.75 160.50 L
+234.88 160.50 L
+234.88 160.62 L
+234.88 159.62 L
+235.00 159.88 L
+235.00 160.12 L
+235.00 159.38 L
+235.12 160.00 L
+235.12 158.88 L
+235.25 158.88 L
+235.25 159.25 L
+235.25 158.50 L
+235.25 158.62 L
+235.38 158.62 L
+235.38 158.00 L
+235.38 158.25 L
+235.50 158.38 L
+235.50 157.62 L
+235.62 157.38 L
+235.62 157.12 L
+235.75 156.62 L
+235.75 156.38 L
+235.75 156.88 L
+235.88 156.75 L
+235.88 156.00 L
+236.00 155.50 L
+236.00 155.62 L
+236.00 155.12 L
+236.12 154.50 L
+236.12 154.88 L
+236.12 154.00 L
+236.25 154.38 L
+236.25 153.62 L
+236.25 153.75 L
+236.38 152.88 L
+236.38 152.25 L
+236.50 151.62 L
+236.50 151.88 L
+236.50 151.00 L
+236.62 150.88 L
+236.62 149.88 L
+236.75 149.50 L
+236.75 147.50 L
+236.88 147.50 L
+236.88 145.12 L
+237.00 144.75 L
+237.00 142.50 L
+237.12 141.25 L
+237.12 138.38 L
+237.25 137.50 L
+237.25 133.88 L
+237.38 133.00 L
+237.38 130.00 L
+237.50 129.00 L
+237.50 125.38 L
+237.62 124.50 L
+237.62 121.88 L
+237.75 121.00 L
+237.75 117.62 L
+237.88 116.00 L
+237.88 108.25 L
+238.00 104.12 L
+238.00 91.00 L
+238.12 87.38 L
+238.12 78.50 L
+238.25 76.00 L
+238.25 69.25 L
+238.38 67.12 L
+238.38 61.25 L
+238.50 60.12 L
+238.50 57.12 L
+238.62 56.50 L
+238.62 55.50 L
+238.75 55.62 L
+238.75 57.00 L
+238.88 58.12 L
+238.88 62.88 L
+239.00 65.00 L
+239.00 69.62 L
+239.12 70.12 L
+239.12 70.25 L
+239.25 70.38 L
+239.25 72.12 L
+239.38 73.25 L
+239.38 79.25 L
+239.50 82.50 L
+239.50 86.50 L
+239.50 91.38 L
+239.50 96.62 L
+239.62 102.25 L
+239.62 117.00 L
+239.75 120.50 L
+239.75 127.88 L
+239.88 129.62 L
+239.88 134.12 L
+240.00 135.50 L
+240.00 139.88 L
+240.12 140.75 L
+240.12 143.62 L
+240.25 144.50 L
+240.25 146.88 L
+240.38 147.50 L
+240.38 149.50 L
+240.50 150.38 L
+240.50 151.88 L
+240.62 153.12 L
+240.62 155.00 L
+240.75 155.00 L
+240.75 156.88 L
+240.88 157.62 L
+240.88 159.25 L
+241.00 160.00 L
+241.00 159.75 L
+241.00 160.75 L
+241.12 161.12 L
+241.12 162.50 L
+241.25 162.75 L
+241.25 164.00 L
+241.38 164.25 L
+241.38 165.25 L
+241.38 165.12 L
+241.50 166.12 L
+241.50 167.12 L
+241.50 165.88 L
+241.50 166.25 L
+241.62 167.00 L
+241.62 168.38 L
+241.75 169.12 L
+241.75 169.50 L
+241.75 168.88 L
+241.75 169.12 L
+241.88 169.62 L
+241.88 171.25 L
+241.88 170.62 L
+242.00 172.38 L
+242.00 172.25 L
+242.00 172.75 L
+242.12 173.50 L
+242.12 173.00 L
+242.12 174.12 L
+242.25 173.75 L
+242.25 175.00 L
+242.25 174.88 L
+242.38 175.25 L
+242.38 176.25 L
+242.38 176.00 L
+242.50 176.38 L
+242.50 177.38 L
+242.50 177.12 L
+242.62 178.12 L
+242.62 178.38 L
+242.62 178.25 L
+242.75 178.25 L
+242.75 180.50 L
+242.88 181.38 L
+242.88 180.88 L
+242.88 181.00 L
+243.00 180.50 L
+243.00 182.25 L
+243.12 182.38 L
+243.12 183.00 L
+243.12 182.75 L
+243.25 183.88 L
+243.25 184.88 L
+243.25 183.38 L
+243.25 184.62 L
+243.38 184.88 L
+243.38 185.50 L
+243.38 184.50 L
+243.38 184.88 L
+243.50 185.00 L
+243.50 185.88 L
+243.62 185.88 L
+243.62 187.75 L
+243.62 187.00 L
+243.75 188.00 L
+243.75 186.62 L
+243.75 188.88 L
+gsave 1.00 ps mstroke grestore
+[ ] sd
+newpath 243.75 188.88 M
+243.88 188.88 L
+243.88 187.88 L
+243.88 189.12 L
+244.00 188.75 L
+244.00 190.12 L
+244.00 189.62 L
+244.12 190.50 L
+244.12 191.12 L
+244.12 190.25 L
+244.12 190.62 L
+244.25 191.00 L
+244.25 192.00 L
+244.38 192.12 L
+244.38 191.75 L
+244.38 192.25 L
+244.50 192.38 L
+244.50 193.50 L
+244.62 193.75 L
+244.62 192.88 L
+244.62 195.25 L
+244.75 194.00 L
+244.75 193.88 L
+244.75 194.88 L
+244.88 195.50 L
+244.88 194.62 L
+245.00 195.62 L
+245.00 196.12 L
+245.00 196.00 L
+245.12 195.12 L
+245.12 197.50 L
+245.12 196.00 L
+245.25 195.75 L
+245.25 197.62 L
+245.25 197.00 L
+245.38 198.25 L
+245.38 196.88 L
+245.38 198.00 L
+245.38 197.75 L
+245.50 197.00 L
+245.50 198.38 L
+245.50 198.12 L
+245.62 199.25 L
+245.62 196.12 L
+245.62 198.25 L
+245.75 200.00 L
+245.75 201.12 L
+245.75 198.12 L
+245.75 200.00 L
+245.88 198.00 L
+245.88 198.62 L
+246.00 199.88 L
+246.00 198.88 L
+246.00 199.25 L
+246.12 200.25 L
+246.12 199.75 L
+246.12 200.00 L
+246.25 200.62 L
+246.25 201.25 L
+246.25 200.00 L
+246.25 200.88 L
+246.38 200.88 L
+246.38 199.88 L
+246.38 200.62 L
+246.50 200.00 L
+246.50 201.75 L
+246.62 201.75 L
+246.62 202.75 L
+246.62 200.75 L
+246.62 201.75 L
+246.75 200.88 L
+246.75 203.38 L
+246.75 201.88 L
+246.88 203.25 L
+246.88 202.00 L
+247.00 202.50 L
+247.00 204.25 L
+247.00 203.62 L
+247.12 202.25 L
+247.12 204.25 L
+247.12 202.12 L
+247.25 203.62 L
+247.25 202.62 L
+247.25 203.62 L
+247.38 203.50 L
+247.38 204.25 L
+247.38 202.88 L
+247.50 203.12 L
+247.50 203.75 L
+247.62 205.50 L
+247.62 203.38 L
+247.62 203.88 L
+247.75 204.25 L
+247.75 204.38 L
+247.75 203.75 L
+247.75 204.12 L
+247.88 204.62 L
+247.88 204.25 L
+247.88 204.75 L
+248.00 204.38 L
+248.00 205.50 L
+248.00 204.88 L
+248.12 206.25 L
+248.12 204.50 L
+248.12 206.00 L
+248.25 204.38 L
+248.25 206.38 L
+248.25 205.88 L
+248.38 205.12 L
+248.38 204.38 L
+248.38 207.50 L
+248.50 207.12 L
+248.50 206.00 L
+248.50 206.50 L
+248.62 207.38 L
+248.62 205.75 L
+248.62 208.38 L
+248.75 205.88 L
+248.75 207.88 L
+248.88 207.88 L
+248.88 205.12 L
+249.00 209.50 L
+249.00 206.75 L
+249.12 206.38 L
+249.12 208.62 L
+249.12 207.38 L
+249.25 208.75 L
+249.25 208.88 L
+249.25 207.38 L
+249.38 207.62 L
+249.38 208.00 L
+249.38 206.88 L
+249.50 209.25 L
+249.50 207.12 L
+249.50 208.88 L
+249.62 208.62 L
+249.62 208.88 L
+249.62 207.88 L
+249.75 207.25 L
+249.75 208.88 L
+249.75 208.50 L
+249.88 207.75 L
+249.88 209.88 L
+249.88 207.50 L
+249.88 208.88 L
+250.00 208.38 L
+250.00 210.50 L
+250.00 208.00 L
+250.12 209.25 L
+250.12 210.00 L
+250.12 207.50 L
+250.12 208.12 L
+250.25 207.88 L
+250.25 209.50 L
+250.38 208.38 L
+250.38 208.25 L
+250.38 209.88 L
+250.50 209.12 L
+250.50 208.50 L
+250.50 209.25 L
+250.62 209.25 L
+250.62 211.62 L
+250.75 210.25 L
+250.75 208.75 L
+250.75 211.38 L
+250.88 213.75 L
+250.88 210.12 L
+250.88 210.25 L
+251.00 210.50 L
+251.00 209.88 L
+251.00 210.50 L
+251.12 212.12 L
+251.12 209.38 L
+251.12 210.38 L
+251.25 211.75 L
+251.25 210.12 L
+251.25 209.88 L
+251.25 212.00 L
+251.38 210.12 L
+251.38 208.75 L
+251.38 211.75 L
+251.50 210.12 L
+251.50 212.62 L
+251.50 210.25 L
+251.62 210.00 L
+251.62 212.12 L
+251.62 210.62 L
+251.75 210.88 L
+251.75 212.25 L
+251.75 210.50 L
+251.88 212.75 L
+251.88 213.12 L
+251.88 210.62 L
+252.00 210.12 L
+252.00 212.75 L
+252.00 210.12 L
+252.12 210.50 L
+252.12 210.38 L
+252.12 214.38 L
+252.25 211.75 L
+252.25 211.88 L
+252.25 210.12 L
+252.25 211.50 L
+252.38 211.38 L
+252.38 212.38 L
+252.38 212.12 L
+252.50 211.00 L
+252.50 213.62 L
+252.50 213.50 L
+252.62 213.88 L
+252.62 211.62 L
+252.75 211.25 L
+252.75 213.88 L
+252.75 212.50 L
+252.88 211.75 L
+252.88 214.38 L
+253.00 211.38 L
+253.00 213.25 L
+253.00 211.62 L
+253.12 212.12 L
+253.12 211.38 L
+253.12 213.25 L
+253.25 213.38 L
+253.25 213.50 L
+253.25 211.12 L
+253.25 212.00 L
+253.38 213.25 L
+253.38 212.00 L
+253.38 213.75 L
+253.50 214.00 L
+253.50 213.38 L
+253.50 213.75 L
+253.62 214.62 L
+253.62 211.62 L
+253.62 213.50 L
+253.75 214.38 L
+253.75 212.50 L
+253.75 214.25 L
+253.88 213.75 L
+253.88 216.25 L
+253.88 213.88 L
+254.00 214.25 L
+254.00 215.75 L
+254.00 212.25 L
+254.00 213.50 L
+254.12 214.50 L
+254.12 215.00 L
+254.25 213.75 L
+254.25 212.25 L
+254.25 214.75 L
+254.38 213.88 L
+254.38 215.38 L
+254.38 213.50 L
+254.50 213.88 L
+254.50 216.25 L
+254.50 215.75 L
+254.62 214.25 L
+254.62 214.75 L
+254.62 212.88 L
+254.62 214.12 L
+254.75 216.62 L
+254.75 217.12 L
+254.75 214.50 L
+254.75 214.62 L
+254.88 213.12 L
+254.88 216.12 L
+254.88 214.25 L
+255.00 214.62 L
+255.00 212.38 L
+255.00 216.00 L
+255.12 215.75 L
+255.12 216.00 L
+255.12 213.62 L
+255.25 215.00 L
+255.25 215.38 L
+255.25 212.62 L
+255.25 214.75 L
+255.38 215.12 L
+255.38 214.12 L
+255.38 216.00 L
+255.50 215.12 L
+255.50 214.75 L
+255.62 213.75 L
+255.62 215.25 L
+255.62 215.00 L
+255.75 213.75 L
+255.75 215.12 L
+255.75 213.50 L
+255.75 213.62 L
+255.88 213.25 L
+255.88 215.00 L
+255.88 212.50 L
+256.00 213.00 L
+256.00 214.50 L
+256.00 212.50 L
+256.12 213.62 L
+256.12 214.12 L
+256.12 212.88 L
+256.12 213.62 L
+256.25 211.75 L
+256.25 213.88 L
+256.25 212.62 L
+256.38 214.25 L
+256.38 215.88 L
+256.38 211.75 L
+256.50 214.38 L
+256.50 212.75 L
+256.50 213.38 L
+256.62 214.00 L
+256.62 213.00 L
+256.62 215.25 L
+256.75 215.75 L
+256.75 212.00 L
+256.75 213.62 L
+256.88 214.25 L
+256.88 217.25 L
+257.00 213.25 L
+257.00 215.88 L
+257.00 214.88 L
+257.12 215.25 L
+257.12 215.12 L
+257.12 215.62 L
+257.12 217.12 L
+257.25 215.62 L
+257.25 216.75 L
+257.25 215.75 L
+257.38 215.50 L
+257.38 212.75 L
+257.38 215.88 L
+257.50 216.88 L
+257.50 218.38 L
+257.62 215.62 L
+257.62 215.75 L
+257.62 213.75 L
+257.75 216.25 L
+257.75 218.00 L
+257.75 215.62 L
+257.75 216.00 L
+257.88 214.88 L
+257.88 217.75 L
+257.88 213.50 L
+257.88 214.25 L
+258.00 214.38 L
+258.00 217.38 L
+258.00 215.38 L
+258.12 213.75 L
+258.12 216.38 L
+258.25 214.12 L
+258.25 216.25 L
+258.25 214.75 L
+258.38 217.88 L
+258.38 215.50 L
+258.50 214.75 L
+258.50 216.88 L
+258.50 214.38 L
+258.50 214.50 L
+258.62 214.38 L
+258.62 213.88 L
+258.62 217.75 L
+258.75 217.75 L
+258.75 215.75 L
+258.75 215.88 L
+258.88 216.50 L
+258.88 213.62 L
+258.88 215.88 L
+259.00 216.88 L
+259.00 217.12 L
+259.00 216.25 L
+259.00 216.62 L
+259.12 216.12 L
+259.12 216.25 L
+259.12 214.12 L
+259.25 215.38 L
+259.25 214.50 L
+259.25 217.38 L
+259.38 217.00 L
+259.38 214.88 L
+259.38 218.38 L
+259.50 216.00 L
+259.50 217.50 L
+259.50 214.38 L
+259.50 216.38 L
+259.62 214.38 L
+259.62 217.00 L
+259.75 215.50 L
+259.75 216.25 L
+259.75 214.88 L
+259.75 216.12 L
+259.88 217.62 L
+259.88 215.50 L
+259.88 218.38 L
+260.00 217.38 L
+260.00 214.75 L
+260.00 216.38 L
+260.12 215.50 L
+260.12 217.00 L
+260.12 214.62 L
+260.25 217.88 L
+260.25 218.12 L
+260.25 214.50 L
+260.38 219.12 L
+260.38 214.12 L
+260.38 216.88 L
+260.50 216.62 L
+260.50 214.25 L
+260.50 215.38 L
+260.62 214.62 L
+260.62 218.12 L
+260.62 216.38 L
+260.75 216.38 L
+260.75 215.75 L
+260.75 218.38 L
+260.88 217.50 L
+260.88 216.25 L
+260.88 216.88 L
+261.00 217.00 L
+261.00 216.62 L
+261.00 219.62 L
+261.12 215.88 L
+261.12 218.12 L
+261.12 215.25 L
+261.12 216.50 L
+261.25 216.62 L
+261.25 220.00 L
+261.38 215.12 L
+261.38 216.75 L
+261.38 215.50 L
+261.50 216.88 L
+261.50 215.88 L
+261.50 217.38 L
+261.62 215.62 L
+261.62 217.88 L
+261.62 217.25 L
+261.75 215.50 L
+261.75 217.38 L
+261.75 215.25 L
+261.88 216.12 L
+261.88 219.25 L
+262.00 216.38 L
+262.00 215.50 L
+262.00 216.25 L
+262.12 217.75 L
+262.12 215.62 L
+262.12 216.25 L
+262.25 217.88 L
+262.25 219.00 L
+262.25 215.38 L
+262.25 218.12 L
+262.38 218.00 L
+262.38 216.38 L
+262.38 217.38 L
+262.50 218.38 L
+262.50 215.88 L
+262.50 218.50 L
+262.62 217.62 L
+262.62 216.12 L
+262.62 218.62 L
+262.75 218.75 L
+262.75 215.62 L
+262.75 219.50 L
+262.88 218.25 L
+262.88 215.38 L
+262.88 217.50 L
+263.00 215.88 L
+263.00 218.38 L
+263.00 217.12 L
+263.00 219.25 L
+263.12 216.12 L
+263.12 218.38 L
+263.12 216.88 L
+263.25 217.62 L
+263.25 219.38 L
+263.25 216.38 L
+263.25 218.25 L
+263.38 217.75 L
+263.38 216.75 L
+263.38 219.62 L
+263.50 218.12 L
+263.50 215.88 L
+263.50 217.50 L
+263.62 217.50 L
+263.62 220.00 L
+263.62 216.00 L
+263.62 218.75 L
+263.75 218.75 L
+263.75 217.12 L
+263.75 219.12 L
+263.88 218.25 L
+263.88 215.50 L
+263.88 216.62 L
+264.00 216.62 L
+264.00 218.38 L
+264.12 218.75 L
+264.12 217.75 L
+264.12 219.00 L
+264.25 217.00 L
+264.25 220.12 L
+264.38 216.75 L
+264.38 218.88 L
+264.38 217.25 L
+264.50 218.50 L
+264.50 216.38 L
+264.50 218.12 L
+264.62 217.00 L
+264.62 218.88 L
+264.62 217.75 L
+264.75 217.12 L
+264.75 221.50 L
+264.75 219.88 L
+264.88 216.00 L
+264.88 219.62 L
+265.00 218.00 L
+265.00 218.75 L
+265.00 217.38 L
+265.00 217.88 L
+265.12 217.12 L
+265.12 218.25 L
+265.12 217.00 L
+265.12 217.88 L
+265.25 218.50 L
+265.25 218.88 L
+265.25 216.75 L
+265.38 217.50 L
+265.38 214.75 L
+265.50 217.12 L
+265.50 216.12 L
+265.50 218.62 L
+265.62 217.88 L
+265.62 216.12 L
+265.62 218.75 L
+265.75 216.50 L
+265.75 217.88 L
+265.75 217.12 L
+265.88 218.50 L
+265.88 216.75 L
+265.88 219.62 L
+266.00 216.88 L
+266.00 218.12 L
+266.00 217.50 L
+266.12 218.25 L
+266.12 219.38 L
+266.12 215.50 L
+266.25 216.88 L
+266.25 218.38 L
+266.25 217.62 L
+266.38 216.00 L
+266.38 219.62 L
+266.38 215.75 L
+266.50 218.25 L
+266.50 220.50 L
+266.50 218.50 L
+266.62 216.25 L
+266.62 219.25 L
+266.62 219.00 L
+266.75 219.62 L
+266.75 217.62 L
+266.88 220.38 L
+266.88 217.38 L
+266.88 219.38 L
+267.00 217.50 L
+267.00 217.25 L
+267.00 218.12 L
+267.12 217.62 L
+267.12 218.75 L
+267.12 216.50 L
+267.25 216.38 L
+267.25 215.25 L
+267.25 220.88 L
+267.38 220.50 L
+267.38 218.25 L
+267.38 218.62 L
+267.50 219.00 L
+267.50 220.50 L
+267.50 217.12 L
+267.50 217.75 L
+267.62 218.38 L
+267.62 219.00 L
+267.62 217.12 L
+267.62 218.50 L
+267.75 216.62 L
+267.75 219.00 L
+267.88 217.88 L
+267.88 218.62 L
+267.88 217.75 L
+268.00 217.00 L
+268.00 218.25 L
+268.00 216.38 L
+268.00 216.75 L
+268.12 216.38 L
+268.12 219.25 L
+268.12 218.50 L
+268.25 217.88 L
+268.25 218.62 L
+268.25 217.75 L
+268.25 218.00 L
+268.38 220.00 L
+268.38 218.38 L
+268.50 217.88 L
+268.50 219.12 L
+268.50 217.38 L
+268.62 217.50 L
+268.62 219.25 L
+268.75 218.38 L
+268.75 216.38 L
+268.75 220.62 L
+268.88 218.75 L
+268.88 215.75 L
+268.88 219.00 L
+268.88 220.50 L
+268.88 219.38 L
+269.00 217.25 L
+269.00 219.38 L
+269.00 216.12 L
+269.00 218.25 L
+269.12 217.50 L
+269.12 219.50 L
+269.12 216.62 L
+269.12 219.00 L
+269.25 219.62 L
+269.25 216.62 L
+269.25 217.38 L
+269.38 219.00 L
+269.38 218.62 L
+269.38 220.12 L
+269.50 219.38 L
+269.50 219.25 L
+269.50 220.62 L
+269.62 216.75 L
+269.62 220.12 L
+269.75 219.88 L
+269.75 215.88 L
+269.75 220.50 L
+269.88 217.38 L
+269.88 219.88 L
+270.00 220.50 L
+270.00 217.25 L
+270.00 218.12 L
+270.12 218.00 L
+270.12 219.62 L
+270.12 216.12 L
+270.25 218.75 L
+270.25 219.38 L
+270.25 218.00 L
+270.25 218.12 L
+270.38 216.38 L
+270.38 220.25 L
+270.38 219.75 L
+270.50 220.12 L
+270.50 220.38 L
+270.50 216.00 L
+270.50 217.12 L
+270.62 218.25 L
+270.62 219.25 L
+270.62 216.12 L
+270.62 216.75 L
+270.75 219.12 L
+270.75 217.00 L
+270.75 217.12 L
+270.88 219.25 L
+270.88 216.12 L
+271.00 218.25 L
+271.00 219.25 L
+271.00 215.38 L
+271.00 217.00 L
+271.12 219.25 L
+271.12 216.75 L
+271.25 220.62 L
+271.25 217.50 L
+271.38 218.25 L
+271.38 218.00 L
+271.38 219.38 L
+271.50 219.00 L
+271.50 216.50 L
+271.50 220.25 L
+271.62 217.88 L
+271.62 219.75 L
+271.62 218.00 L
+271.75 218.38 L
+271.75 218.00 L
+271.75 219.88 L
+271.88 217.25 L
+271.88 219.50 L
+272.00 220.88 L
+272.00 217.25 L
+272.12 218.00 L
+272.12 219.62 L
+272.12 216.00 L
+272.12 217.75 L
+272.25 216.50 L
+272.25 219.62 L
+272.25 218.75 L
+272.38 219.25 L
+272.38 219.88 L
+272.38 218.00 L
+272.38 218.75 L
+272.50 218.25 L
+272.50 217.25 L
+272.50 218.12 L
+272.62 218.50 L
+272.62 216.00 L
+272.62 217.62 L
+272.75 217.50 L
+272.75 219.25 L
+272.75 218.50 L
+272.88 216.75 L
+272.88 219.38 L
+272.88 218.62 L
+273.00 220.12 L
+273.00 215.75 L
+273.00 218.62 L
+273.12 216.75 L
+273.12 219.75 L
+273.25 217.12 L
+273.25 218.75 L
+273.25 216.62 L
+273.38 216.75 L
+273.38 220.12 L
+273.38 216.25 L
+273.50 220.38 L
+273.50 218.00 L
+273.50 219.38 L
+273.62 221.25 L
+273.62 218.75 L
+273.62 219.62 L
+273.75 219.38 L
+273.75 215.88 L
+273.75 218.12 L
+273.88 218.75 L
+273.88 218.88 L
+273.88 216.62 L
+273.88 218.12 L
+274.00 217.12 L
+274.00 219.62 L
+274.00 218.38 L
+274.12 217.50 L
+274.12 217.25 L
+274.12 219.62 L
+274.25 218.00 L
+274.25 222.00 L
+274.25 217.88 L
+274.25 218.75 L
+274.38 217.75 L
+274.38 217.62 L
+274.38 220.25 L
+274.50 218.50 L
+274.50 217.25 L
+274.62 219.25 L
+274.62 216.88 L
+274.75 217.62 L
+274.75 216.00 L
+274.75 219.62 L
+274.75 218.25 L
+274.88 218.62 L
+274.88 221.50 L
+274.88 217.12 L
+275.00 220.00 L
+275.00 218.88 L
+275.00 219.00 L
+275.12 219.75 L
+275.12 219.88 L
+275.12 217.12 L
+275.12 219.50 L
+275.25 219.00 L
+275.25 217.75 L
+275.38 216.88 L
+275.38 219.12 L
+275.50 218.12 L
+275.50 217.88 L
+275.50 220.00 L
+275.62 221.62 L
+275.62 218.25 L
+275.75 218.75 L
+275.75 216.62 L
+275.88 217.50 L
+275.88 219.88 L
+276.00 216.25 L
+276.00 215.38 L
+276.00 218.12 L
+276.12 219.25 L
+276.12 219.38 L
+276.12 217.00 L
+276.12 217.75 L
+276.25 219.50 L
+276.25 216.00 L
+276.38 217.00 L
+276.38 216.75 L
+276.38 218.62 L
+276.50 219.25 L
+276.50 220.75 L
+276.50 217.75 L
+276.62 219.12 L
+276.62 217.38 L
+276.62 219.38 L
+276.75 217.12 L
+276.75 215.75 L
+276.75 218.88 L
+276.88 217.62 L
+276.88 216.75 L
+276.88 219.50 L
+277.00 218.12 L
+277.00 219.12 L
+277.00 217.25 L
+277.12 218.62 L
+277.12 218.75 L
+277.12 217.62 L
+277.25 221.00 L
+277.25 217.75 L
+277.25 219.38 L
+277.38 217.50 L
+277.38 220.12 L
+277.38 219.50 L
+277.50 218.50 L
+277.50 217.75 L
+277.50 219.38 L
+277.62 217.50 L
+277.62 219.12 L
+277.75 216.88 L
+277.75 220.12 L
+277.75 216.88 L
+277.88 217.00 L
+277.88 219.62 L
+277.88 218.25 L
+278.00 220.00 L
+278.00 216.62 L
+278.00 219.12 L
+278.12 221.12 L
+278.12 216.62 L
+278.12 217.25 L
+278.25 219.25 L
+278.25 217.12 L
+278.38 219.25 L
+278.38 219.75 L
+278.38 218.38 L
+278.38 218.62 L
+278.50 216.12 L
+278.50 219.00 L
+278.50 216.50 L
+278.62 217.12 L
+278.62 218.62 L
+278.62 218.12 L
+278.75 218.00 L
+278.75 220.00 L
+278.75 217.50 L
+278.75 218.12 L
+278.88 217.50 L
+278.88 219.00 L
+278.88 216.00 L
+279.00 218.25 L
+279.00 216.38 L
+279.00 217.88 L
+279.12 219.12 L
+279.12 220.00 L
+279.12 219.25 L
+279.25 219.12 L
+279.25 215.38 L
+279.25 218.12 L
+279.38 218.38 L
+279.38 215.25 L
+279.50 219.75 L
+279.50 218.12 L
+279.50 219.62 L
+279.62 217.50 L
+279.62 217.12 L
+279.62 219.12 L
+279.75 218.88 L
+279.75 217.75 L
+279.75 218.50 L
+279.88 219.12 L
+279.88 215.12 L
+279.88 220.75 L
+280.00 216.38 L
+280.00 219.12 L
+280.00 217.50 L
+280.12 217.50 L
+280.12 219.25 L
+280.12 216.75 L
+280.25 218.88 L
+280.25 219.62 L
+280.25 217.50 L
+280.38 217.25 L
+280.38 219.50 L
+280.38 217.12 L
+280.38 218.88 L
+280.50 217.00 L
+280.50 216.25 L
+280.50 219.00 L
+280.62 218.25 L
+280.62 216.12 L
+280.62 216.75 L
+280.75 218.88 L
+280.75 216.25 L
+280.75 218.75 L
+280.88 218.88 L
+280.88 219.12 L
+280.88 215.75 L
+280.88 216.12 L
+281.00 216.88 L
+281.00 216.25 L
+281.00 219.00 L
+281.12 218.25 L
+281.12 218.00 L
+281.12 218.75 L
+281.25 216.62 L
+281.25 219.75 L
+281.25 216.88 L
+281.38 217.50 L
+281.38 218.75 L
+281.38 218.25 L
+281.50 218.25 L
+281.50 218.75 L
+281.50 217.38 L
+281.62 219.62 L
+281.62 217.00 L
+281.62 218.50 L
+281.75 218.50 L
+281.75 218.75 L
+281.75 216.62 L
+281.75 218.25 L
+281.88 217.00 L
+281.88 218.75 L
+281.88 217.12 L
+282.00 216.25 L
+282.00 215.88 L
+282.00 218.75 L
+282.12 218.12 L
+282.12 220.50 L
+282.12 215.62 L
+282.12 217.38 L
+282.25 220.38 L
+282.25 216.75 L
+282.25 218.50 L
+282.38 218.62 L
+282.38 218.75 L
+282.38 217.00 L
+282.50 219.25 L
+282.50 216.50 L
+282.50 218.12 L
+282.62 217.00 L
+282.62 218.88 L
+282.75 219.50 L
+282.75 217.88 L
+282.75 218.75 L
+282.88 215.88 L
+282.88 218.50 L
+282.88 217.12 L
+283.00 217.38 L
+283.00 216.25 L
+283.12 218.38 L
+283.12 218.25 L
+283.12 218.88 L
+283.25 216.75 L
+283.25 219.62 L
+283.38 215.88 L
+283.38 218.88 L
+283.50 218.00 L
+283.50 216.62 L
+283.50 217.88 L
+283.62 218.62 L
+283.62 221.12 L
+283.62 217.62 L
+283.75 217.25 L
+283.75 219.50 L
+283.75 216.00 L
+283.75 218.50 L
+283.88 217.62 L
+283.88 215.75 L
+283.88 218.25 L
+284.00 216.88 L
+284.00 215.12 L
+284.00 217.00 L
+284.12 215.25 L
+284.12 216.50 L
+284.12 216.12 L
+284.25 217.38 L
+284.25 215.00 L
+284.25 215.88 L
+284.38 214.38 L
+284.38 216.75 L
+284.38 214.00 L
+284.38 216.12 L
+284.50 216.38 L
+284.50 213.12 L
+284.62 215.62 L
+284.62 213.88 L
+284.62 215.00 L
+284.75 215.25 L
+284.75 213.25 L
+284.75 215.00 L
+284.88 216.00 L
+284.88 213.38 L
+284.88 213.62 L
+285.00 211.75 L
+285.00 214.00 L
+285.12 213.75 L
+285.12 214.38 L
+285.12 212.38 L
+285.12 212.88 L
+285.25 212.62 L
+285.25 213.75 L
+285.25 211.75 L
+gsave 1.00 ps mstroke grestore
+[ ] sd
+newpath 285.25 211.75 M
+285.25 213.00 L
+285.38 213.12 L
+285.38 212.25 L
+285.38 215.75 L
+285.50 213.62 L
+285.50 214.38 L
+285.50 212.62 L
+285.50 213.75 L
+285.62 212.00 L
+285.62 214.25 L
+285.62 212.88 L
+285.75 213.50 L
+285.75 215.12 L
+285.75 213.88 L
+285.88 215.25 L
+285.88 215.50 L
+285.88 213.75 L
+286.00 215.12 L
+286.00 215.62 L
+286.00 212.88 L
+286.00 214.12 L
+286.12 213.38 L
+286.12 215.12 L
+286.25 214.25 L
+286.25 217.88 L
+286.25 213.88 L
+286.38 215.88 L
+286.38 214.62 L
+286.38 217.25 L
+286.50 216.88 L
+286.50 215.88 L
+286.50 218.00 L
+286.62 215.25 L
+286.62 217.75 L
+286.62 216.25 L
+286.75 217.50 L
+286.75 215.00 L
+286.88 219.50 L
+286.88 216.00 L
+286.88 217.88 L
+287.00 216.25 L
+287.00 218.88 L
+287.00 217.38 L
+287.12 217.12 L
+287.12 218.38 L
+287.12 216.50 L
+287.12 216.62 L
+287.25 218.62 L
+287.25 218.75 L
+287.25 217.62 L
+287.38 217.50 L
+287.38 219.25 L
+287.38 217.00 L
+287.50 218.50 L
+287.50 217.88 L
+287.50 218.12 L
+287.62 218.38 L
+287.62 216.75 L
+287.75 215.88 L
+287.75 214.62 L
+287.75 219.75 L
+287.88 218.62 L
+287.88 217.25 L
+287.88 218.00 L
+288.00 218.25 L
+288.00 219.12 L
+288.00 216.62 L
+288.00 218.00 L
+288.12 217.38 L
+288.12 218.00 L
+288.12 215.75 L
+288.25 217.75 L
+288.25 216.62 L
+288.25 219.75 L
+288.38 217.12 L
+288.38 218.00 L
+288.50 215.88 L
+288.50 218.38 L
+288.50 217.00 L
+288.62 218.62 L
+288.62 219.38 L
+288.62 218.00 L
+288.75 217.12 L
+288.75 217.88 L
+288.75 216.38 L
+288.88 219.25 L
+288.88 216.75 L
+289.00 217.62 L
+289.00 217.38 L
+289.00 218.00 L
+289.12 216.25 L
+289.12 217.62 L
+289.25 218.00 L
+289.25 218.12 L
+289.25 216.25 L
+289.25 217.00 L
+289.38 216.62 L
+289.38 217.75 L
+289.50 220.75 L
+289.50 215.88 L
+289.50 217.38 L
+289.62 217.12 L
+289.62 216.12 L
+289.62 218.88 L
+289.75 218.00 L
+289.75 218.25 L
+289.75 216.75 L
+289.88 217.12 L
+289.88 218.75 L
+289.88 215.62 L
+289.88 217.38 L
+290.00 217.75 L
+290.00 219.62 L
+290.00 216.75 L
+290.00 218.12 L
+290.12 215.88 L
+290.12 218.12 L
+290.12 217.62 L
+290.25 218.12 L
+290.25 218.88 L
+290.25 217.12 L
+290.38 219.00 L
+290.38 219.12 L
+290.38 216.88 L
+290.50 216.00 L
+290.50 218.88 L
+290.50 218.00 L
+290.62 216.12 L
+290.62 218.25 L
+290.62 217.50 L
+290.75 217.88 L
+290.75 218.88 L
+290.75 217.38 L
+290.88 217.62 L
+290.88 220.50 L
+290.88 216.50 L
+290.88 218.38 L
+291.00 218.50 L
+291.00 219.38 L
+291.00 215.62 L
+291.00 217.25 L
+291.12 217.88 L
+291.12 219.75 L
+291.12 216.62 L
+291.12 219.38 L
+291.25 217.75 L
+291.25 218.12 L
+291.25 216.62 L
+291.38 217.12 L
+291.38 219.38 L
+291.38 218.38 L
+291.50 219.00 L
+291.50 220.00 L
+291.50 217.50 L
+291.62 215.88 L
+291.62 219.00 L
+291.62 214.62 L
+291.75 219.75 L
+291.75 214.88 L
+291.75 215.38 L
+291.88 219.62 L
+291.88 215.38 L
+291.88 216.50 L
+292.00 217.00 L
+292.00 217.25 L
+292.00 216.88 L
+292.00 217.00 L
+292.12 220.12 L
+292.12 216.75 L
+292.12 218.75 L
+292.25 217.62 L
+292.25 215.12 L
+292.25 216.50 L
+292.38 217.25 L
+292.38 217.88 L
+292.38 216.50 L
+292.50 216.50 L
+292.50 215.88 L
+292.50 217.00 L
+292.62 216.38 L
+292.62 218.88 L
+292.62 218.25 L
+292.75 215.38 L
+292.75 218.88 L
+292.75 217.62 L
+292.88 217.75 L
+292.88 219.12 L
+292.88 217.00 L
+293.00 219.75 L
+293.00 216.25 L
+293.00 217.50 L
+293.12 216.50 L
+293.12 219.25 L
+293.12 217.75 L
+293.25 217.38 L
+293.25 217.25 L
+293.25 218.50 L
+293.38 218.38 L
+293.38 216.62 L
+293.38 217.88 L
+293.50 218.62 L
+293.50 215.25 L
+293.50 217.62 L
+293.62 218.75 L
+293.62 215.50 L
+293.62 217.38 L
+293.75 219.62 L
+293.75 217.25 L
+293.75 218.88 L
+293.88 217.00 L
+293.88 218.62 L
+293.88 217.00 L
+294.00 217.38 L
+294.00 215.88 L
+294.00 218.00 L
+294.12 219.25 L
+294.12 215.25 L
+294.12 219.00 L
+294.25 218.12 L
+294.25 216.88 L
+294.25 217.62 L
+294.38 215.88 L
+294.38 219.00 L
+294.38 217.12 L
+294.50 219.38 L
+294.50 217.75 L
+294.62 217.38 L
+294.62 219.00 L
+294.62 216.25 L
+294.75 218.50 L
+294.75 217.88 L
+294.88 218.25 L
+294.88 216.50 L
+294.88 216.75 L
+295.00 216.88 L
+295.00 217.75 L
+295.12 217.25 L
+295.12 215.88 L
+295.12 217.62 L
+295.25 219.12 L
+295.25 215.38 L
+295.25 218.88 L
+295.38 219.00 L
+295.38 217.62 L
+295.38 218.00 L
+295.50 218.00 L
+295.50 218.50 L
+295.50 217.25 L
+295.62 217.75 L
+295.62 215.62 L
+295.62 218.12 L
+295.75 217.25 L
+295.75 218.38 L
+295.75 216.00 L
+295.75 218.00 L
+295.88 218.25 L
+295.88 218.62 L
+295.88 216.25 L
+296.00 217.12 L
+296.00 216.50 L
+296.00 217.88 L
+296.12 219.12 L
+296.12 217.88 L
+296.12 218.50 L
+296.25 217.62 L
+296.25 214.75 L
+296.38 219.88 L
+296.38 215.38 L
+296.38 218.88 L
+296.50 216.25 L
+296.50 217.50 L
+296.50 215.88 L
+296.62 216.12 L
+296.62 218.25 L
+296.62 215.75 L
+296.75 218.75 L
+296.75 220.00 L
+296.75 215.00 L
+296.75 217.62 L
+296.88 217.62 L
+296.88 220.25 L
+296.88 216.25 L
+296.88 217.50 L
+297.00 215.12 L
+297.00 217.88 L
+297.00 215.00 L
+297.00 215.75 L
+297.12 218.50 L
+297.12 220.00 L
+297.12 217.12 L
+297.12 217.75 L
+297.25 216.25 L
+297.25 218.00 L
+297.38 215.50 L
+297.38 217.00 L
+297.38 216.62 L
+297.50 219.12 L
+297.50 216.62 L
+297.62 215.62 L
+297.62 221.00 L
+297.62 220.25 L
+297.75 218.00 L
+297.75 216.38 L
+297.75 217.75 L
+297.88 217.75 L
+297.88 216.62 L
+298.00 216.38 L
+298.00 218.62 L
+298.00 218.50 L
+298.12 216.12 L
+298.12 219.25 L
+298.12 216.50 L
+298.25 216.25 L
+298.25 218.00 L
+298.25 218.38 L
+298.25 215.25 L
+298.38 219.50 L
+298.38 217.38 L
+298.50 216.62 L
+298.50 215.38 L
+298.50 217.75 L
+298.62 217.12 L
+298.62 214.88 L
+298.62 217.38 L
+298.75 216.38 L
+298.75 218.75 L
+298.88 216.38 L
+298.88 217.75 L
+299.00 218.00 L
+299.00 219.12 L
+299.00 217.50 L
+299.12 218.00 L
+299.12 215.88 L
+299.25 216.62 L
+299.25 215.62 L
+299.25 217.12 L
+299.38 217.12 L
+299.38 218.12 L
+299.38 215.88 L
+299.38 217.38 L
+299.50 217.88 L
+299.50 219.12 L
+299.50 215.88 L
+299.62 216.50 L
+299.62 216.12 L
+299.62 217.38 L
+299.75 217.88 L
+299.75 219.25 L
+299.75 215.88 L
+299.75 217.00 L
+299.88 216.12 L
+299.88 218.50 L
+300.00 218.38 L
+300.00 215.12 L
+300.00 216.38 L
+300.12 216.25 L
+300.12 217.88 L
+300.12 215.75 L
+300.12 217.75 L
+300.25 216.12 L
+300.25 219.25 L
+300.25 217.12 L
+300.38 217.00 L
+300.38 214.75 L
+300.38 215.88 L
+300.50 214.88 L
+300.50 218.62 L
+300.50 217.12 L
+300.62 216.50 L
+300.62 218.88 L
+300.62 216.25 L
+300.62 218.12 L
+300.75 217.00 L
+300.75 218.75 L
+300.75 217.00 L
+300.88 217.50 L
+300.88 216.88 L
+300.88 217.38 L
+301.00 220.50 L
+301.00 216.75 L
+301.00 217.50 L
+301.12 217.50 L
+301.12 216.75 L
+301.25 216.75 L
+301.25 215.88 L
+301.25 218.38 L
+301.38 217.12 L
+301.38 219.00 L
+301.50 218.62 L
+301.50 215.38 L
+301.62 217.12 L
+301.62 218.50 L
+301.62 217.12 L
+301.75 217.50 L
+301.75 216.12 L
+301.75 217.88 L
+301.88 215.62 L
+301.88 218.25 L
+301.88 215.88 L
+302.00 217.38 L
+302.00 218.75 L
+302.00 216.50 L
+302.12 217.25 L
+302.12 217.62 L
+302.12 214.75 L
+302.12 217.00 L
+302.25 215.88 L
+302.25 217.25 L
+302.25 216.12 L
+302.38 218.38 L
+302.38 215.75 L
+302.38 217.25 L
+302.50 215.25 L
+302.50 218.88 L
+302.62 216.25 L
+302.62 218.50 L
+302.62 215.50 L
+302.62 216.38 L
+302.75 216.50 L
+302.75 218.62 L
+302.75 218.00 L
+302.88 216.25 L
+302.88 218.50 L
+302.88 217.25 L
+303.00 217.75 L
+303.00 217.88 L
+303.00 215.75 L
+303.12 218.50 L
+303.12 214.50 L
+303.25 217.00 L
+303.25 218.50 L
+303.25 216.12 L
+303.38 219.12 L
+303.38 215.62 L
+303.38 217.12 L
+303.50 217.00 L
+303.50 219.62 L
+303.50 218.50 L
+303.62 217.88 L
+303.62 214.25 L
+303.62 217.25 L
+303.75 215.00 L
+303.75 218.50 L
+303.88 216.50 L
+303.88 218.62 L
+303.88 216.62 L
+304.00 215.12 L
+304.00 216.88 L
+304.00 214.75 L
+304.12 217.50 L
+304.12 216.75 L
+304.12 219.12 L
+304.25 216.75 L
+304.25 218.25 L
+304.25 215.38 L
+304.38 217.50 L
+304.38 216.12 L
+304.38 216.50 L
+304.50 216.50 L
+304.50 218.12 L
+304.50 214.62 L
+304.62 217.25 L
+304.62 219.50 L
+304.62 215.00 L
+304.75 218.12 L
+304.75 216.25 L
+304.75 218.25 L
+304.88 216.50 L
+304.88 215.25 L
+304.88 219.00 L
+305.00 217.38 L
+305.00 220.62 L
+305.00 216.38 L
+305.12 217.62 L
+305.12 216.00 L
+305.12 216.50 L
+305.25 216.88 L
+305.25 217.12 L
+305.25 216.00 L
+305.38 216.38 L
+305.38 218.50 L
+305.38 214.25 L
+305.50 216.50 L
+305.50 216.38 L
+305.50 218.25 L
+305.62 216.88 L
+305.62 217.00 L
+305.62 216.25 L
+305.75 216.88 L
+305.75 217.25 L
+305.75 215.75 L
+305.75 216.38 L
+305.88 216.88 L
+305.88 215.50 L
+305.88 217.12 L
+306.00 216.75 L
+306.00 217.25 L
+306.00 216.12 L
+306.12 217.25 L
+306.12 216.00 L
+306.12 217.62 L
+306.25 216.62 L
+306.25 217.62 L
+306.25 215.75 L
+306.38 216.12 L
+306.38 218.50 L
+306.38 215.25 L
+306.50 217.50 L
+306.50 218.75 L
+306.50 215.88 L
+306.62 219.25 L
+306.62 216.25 L
+306.62 216.38 L
+306.75 218.00 L
+306.75 214.12 L
+306.88 216.12 L
+306.88 218.25 L
+306.88 215.25 L
+306.88 217.88 L
+307.00 216.00 L
+307.00 216.50 L
+307.00 215.25 L
+307.12 216.12 L
+307.12 213.62 L
+307.25 216.88 L
+307.25 215.88 L
+307.38 217.00 L
+307.38 218.38 L
+307.38 216.38 L
+307.50 216.88 L
+307.50 219.75 L
+307.50 216.25 L
+307.50 217.75 L
+307.62 215.62 L
+307.62 218.00 L
+307.62 214.25 L
+307.62 217.00 L
+307.75 215.75 L
+307.75 214.38 L
+307.75 216.50 L
+307.88 217.12 L
+307.88 215.50 L
+307.88 217.50 L
+308.00 215.38 L
+308.00 217.00 L
+308.00 216.38 L
+308.12 214.75 L
+308.12 217.00 L
+308.25 216.62 L
+308.25 219.12 L
+308.25 215.62 L
+308.25 215.88 L
+308.38 216.50 L
+308.38 216.88 L
+308.38 215.88 L
+308.50 217.38 L
+308.50 216.25 L
+308.50 218.00 L
+308.62 214.12 L
+308.62 213.25 L
+308.62 216.12 L
+308.75 217.38 L
+308.75 216.00 L
+308.75 217.12 L
+308.88 215.62 L
+308.88 215.12 L
+308.88 217.88 L
+309.00 217.12 L
+309.00 214.62 L
+309.00 216.12 L
+309.12 217.75 L
+309.12 215.88 L
+309.25 218.62 L
+309.25 214.00 L
+309.25 215.00 L
+309.38 216.88 L
+309.38 218.25 L
+309.38 215.25 L
+309.38 216.62 L
+309.50 218.00 L
+309.50 215.38 L
+309.50 216.25 L
+309.62 217.62 L
+309.62 214.50 L
+309.62 215.88 L
+309.75 217.38 L
+309.75 215.12 L
+309.88 218.25 L
+309.88 215.00 L
+309.88 216.25 L
+310.00 216.75 L
+310.00 215.25 L
+310.00 216.25 L
+310.00 215.00 L
+310.12 216.75 L
+310.12 215.00 L
+310.12 215.88 L
+gsave 1.00 ps mstroke grestore
+grestore
+AnObj restore
+end
+IgorSave restore
+%%Trailer
+%%EOF
